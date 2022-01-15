@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Logo from "../asset/img/logo.png";
-import "./Header/header.css";
+import Logo from "../../asset/img/logo.png";
+import "./header.css";
 
 export class Header extends Component {
   render() {
@@ -8,8 +8,10 @@ export class Header extends Component {
       <div className="header">
         {/* Logo */}
         <div className="logo">
-          <img src={Logo} />
-          <h1>Reveratel</h1>
+          <a href="index">
+            <img src={Logo} />
+            <h1>Reveratel</h1>
+          </a>
         </div>
 
         {/* Menu tipo hambuger */}
