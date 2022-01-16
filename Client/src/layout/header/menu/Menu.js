@@ -1,19 +1,31 @@
-import React from "react";
+// import React from "react";
 import "./menu.css";
+import { useState } from "react";
 
 function Menu() {
-  //   const open = document.ready(function () {
-  //     "#nav-icon3".click(function () {
-  //       this.toggleClass("open");
-  //     });
-  //   });onClick={open}
+  const [active, setMode] = useState(false);
+  const ToggleMode = () => {
+    setMode(!active);
+  };
   return (
-    <div id="nav-icon3">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <nav>
+      <div className={active ? "icon iconActive" : "icon"} onClick={ToggleMode}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={active ? "menu menuOpen" : "menu menuClose"}>
+        <div className="list">
+          <ul className="listItem">
+            <li>Home</li>
+            <li>About</li>
+            <li>Work</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
