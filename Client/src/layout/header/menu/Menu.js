@@ -1,12 +1,13 @@
 // import React from "react";
 import "./menu.css";
-import { useState } from "react";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [active, setMode] = useState(false);
-  const ToggleMode = () => {
-    setMode(!active);
-  };
+  const ToggleMode = () => setMode(!active);
+  const closeMenu = () => setMode(false);
+
   return (
     <nav>
       <div className={active ? "icon iconActive" : "icon"} onClick={ToggleMode}>
@@ -18,10 +19,26 @@ function Menu() {
       <div className={active ? "menu menuOpen" : "menu menuClose"}>
         <div className="list">
           <ul className="listItem">
-            <li>Home</li>
-            <li>About</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={closeMenu}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/work" onClick={closeMenu}>
+                Work
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={closeMenu}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

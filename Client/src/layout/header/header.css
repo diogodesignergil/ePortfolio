@@ -21,9 +21,15 @@
 }
 .logo h1 {
   line-height: 0;
+  color: white;
+  font-family: "Lato", sans-serif;
 }
 @media (max-width: 750px) {
   .logo h1 {
     display: none;
   }
+}
+a {
+  color: white;
+  text-decoration: none;
 }

@@ -51,7 +51,7 @@ nav {
 .icon span:nth-child(3) {
   top: 12.5px;
   width: 25px;
-  background: rgb(0, 113, 148);
+  background: rgb(0, 162, 211);
 }
 
 .icon span:nth-child(4) {
@@ -114,6 +114,8 @@ nav {
   font-size: 4rem;
   font-weight: 600;
   color: white;
+  font-family: "Lato", sans-serif;
+  transition-delay: 0.25s;
 }
 .list .listItem li:hover {
   font-size: 4.5rem;
@@ -182,7 +184,7 @@ nav {
 }
 .menu.menuClose {
   position: absolute;
-  left: -100%;
+  left: -30%;
   height: 100vh;
   top: 0;
   background: rgb(43, 43, 43);

@@ -4,8 +4,17 @@ import "./App.css";
 import react, { Component } from "react";
 // import { head } from "../../Server/Routes/auth";
 import { Header } from "./layout/header/Header";
+import {
+  BrowserRouter as Router,
+  Routes as Switch,
+  Route,
+} from "react-router-dom";
+import Home from "./page/Home";
+import About from "./page/About";
+import Work from "./page/Work";
+import Contact from "./page/Contact";
 
-export default class App extends Component {
+function App() {
   // constructor(props) {
   //   super(props);
   //   this.state = { results: [] };
@@ -24,12 +33,17 @@ export default class App extends Component {
   //     return <p>{data.text}</p>;
   //   });
   // }
-
-  render() {
-    return (
-      <div className="container">
-        <Header />
-      </div>
-    );
-  }
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+      </Switch>
+    </Router>
+  );
 }
+
+export default App;

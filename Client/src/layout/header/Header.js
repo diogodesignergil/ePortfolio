@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Logo from "../../asset/img/logo.png";
 import "./header.css";
 import Menu from "./menu/Menu";
+import { Link } from "react-router-dom";
 
 export class Header extends Component {
   render() {
@@ -11,10 +12,10 @@ export class Header extends Component {
         <Menu />
         {/* Logo */}
         <div className="logo">
-          <a href="index">
+          <Link to="/">
             <img src={Logo} />
             <h1>Reveratel</h1>
-          </a>
+          </Link>
         </div>
       </div>
     );
