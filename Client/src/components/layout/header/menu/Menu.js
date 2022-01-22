@@ -30,8 +30,13 @@ function Menu() {
               </Link>
             </li>
             <li>
-              <Link to="/work" onClick={closeMenu}>
-                Work
+              <Link to="/services" onClick={closeMenu}>
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" onClick={closeMenu}>
+                Projects
               </Link>
             </li>
             <li>

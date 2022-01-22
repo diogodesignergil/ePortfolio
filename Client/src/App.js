@@ -3,7 +3,7 @@ import "./App.css";
 // import axios from "axios";
 import react, { Component } from "react";
 // import { head } from "../../Server/Routes/auth";
-import { Header } from "./layout/header/Header";
+import { Header } from "./components/layout/header/Header";
 import {
   BrowserRouter as Router,
   Routes as Switch,
@@ -11,8 +11,9 @@ import {
 } from "react-router-dom";
 import Home from "./page/Home";
 import About from "./page/About";
-import Work from "./page/Work";
 import Contact from "./page/Contact";
+import Services from "./page/Services";
+import Projects from "./page/Projects";
 
 function App() {
   // constructor(props) {
@@ -39,7 +40,8 @@ function App() {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Switch>
     </Router>
