@@ -147,7 +147,7 @@ nav {
   transition: 0.25s left cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .menu.menuOpen {
     width: 35%;
   }
@@ -161,12 +161,26 @@ nav {
     font-size: 4.5rem;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .menu.menuOpen {
-    width: 55%;
+    width: 45%;
   }
   .menu.menuClose {
-    left: -55%;
+    left: -45%;
+  }
+  .list .listItem li {
+    font-size: 3rem;
+  }
+  .list .listItem li:hover {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu.menuOpen {
+    width: 75%;
+  }
+  .menu.menuClose {
+    left: -75%;
   }
   .list .listItem li {
     font-size: 2.5rem;

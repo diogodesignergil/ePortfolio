@@ -14,6 +14,7 @@ import About from "./page/About";
 import Contact from "./page/Contact";
 import Services from "./page/Services";
 import Projects from "./page/Projects";
+import Footer from "./components/layout/footer/Footer";
 
 function App() {
   // constructor(props) {
@@ -44,6 +45,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

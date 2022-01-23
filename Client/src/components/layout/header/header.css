@@ -1,9 +1,6 @@
 .header {
   padding: 10px;
   display: flex;
-  width: auto;
-  height: auto;
-  /* background-color: lightgrey; */
 }
 
 .logo a {
@@ -27,8 +24,4 @@
   .logo h1 {
     display: none;
   }
-}
-a {
-  color: white;
-  text-decoration: none;
 }
