@@ -114,7 +114,6 @@ nav {
   font-size: 4rem;
   font-weight: 600;
   color: white;
-  font-family: "Lato", sans-serif;
   transition-delay: 0.25s;
 }
 .list .listItem li:hover {

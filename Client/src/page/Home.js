@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../components/Button";
 import "./home.css";
 
 function Home() {
@@ -21,6 +23,27 @@ function Home() {
                 <span>Freelancer</span>
               </li>
             </ul>
+          </div>
+          <div className="button">
+            <a href="asset/img/logo.png" download>
+              <Button
+                className="btns"
+                buttonStyle="btn--outline"
+                buttonSize="btn--large"
+              >
+                <i class="fas fa-download" />
+                &nbsp;DOWNLOAD CV
+              </Button>
+            </a>
+            <Link to="/contact">
+              <Button
+                className="btns"
+                buttonStyle="btn--primary"
+                buttonSize="btn--large"
+              >
+                HIRE ME
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

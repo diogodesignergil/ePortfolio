@@ -5,7 +5,7 @@
   display: flex;
 }
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: auto 0 auto 100px;
 }
 .home .home-content .static-txt-1 {
   font-size: 27px;
@@ -50,7 +50,12 @@
     margin: auto 0 auto 15px;
   }
 }
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 415px) {
+  .home .max-width {
+    margin: auto 0 auto 15px;
+  }
+}
+@media screen and (max-width: 770px) {
   .home .max-width {
     margin: auto 0 auto 15px;
   }
@@ -72,7 +77,7 @@
 }
 
 .wrapper .dynamic-txts li {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 500;
   margin: 0;
   list-style: none;
@@ -123,8 +128,19 @@
 }
 
 @keyframes typing {
-  100% {
+  40%,
+  60% {
     left: 100%;
-    margin: 0 -25px 0 25px;
+    margin: 0 -35px 0 35px;
   }
+  100% {
+    left: 0;
+  }
+}
+
+.button {
+  margin-top: 10px;
+}
+.button Button {
+  margin: 5px 5px;
 }
