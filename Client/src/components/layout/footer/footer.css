@@ -4,6 +4,7 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
+  border: 1px white solid;
 }
 .copyright {
   margin: 10px auto;
@@ -19,10 +20,9 @@ footer {
   display: inline-block;
   padding-right: 10px;
   padding-left: 10px;
-  margin-bottom: 10px;
 }
 .social-icons .fab {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .social-icons .fab {
   width: 50px;
@@ -43,11 +43,11 @@ footer {
 
 .social-icons.icon-zoom .fab:hover,
 .social-icons.icon-zoom .fab:active {
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .social-icons .fa-github,

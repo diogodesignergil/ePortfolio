@@ -2,12 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
 import "./home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function Home() {
   return (
     <section className="home" id="home">
       <div className="max-width">
-        <div className="home-content">
+        <div
+          className="home-content"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+        >
           <div className="static-txt-1">Hello, my name is</div>
           <div className="static-txt-2">Diogo "Reveratel" Gil</div>
           <div className="wrapper">
@@ -25,7 +33,7 @@ function Home() {
             </ul>
           </div>
           <div className="button">
-            <a href="asset/img/logo.png" download>
+            <a href="asset/document/CV-DiogoGil.pdf" download>
               <Button
                 className="btns"
                 buttonStyle="btn--outline"

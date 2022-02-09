@@ -6,9 +6,7 @@ import { Link } from "react-router-dom";
 export class Header extends Component {
   render() {
     return (
-      <div className="header">
-        {/* Menu tipo hambuger */}
-        <Menu />
+      <header className="header">
         {/* Logo */}
         <div className="logo">
           <Link to="/">
@@ -16,7 +14,9 @@ export class Header extends Component {
             <h1>Reveratel</h1>
           </Link>
         </div>
-      </div>
+        {/* Menu tipo hambuger */}
+        <Menu />
+      </header>
     );
   }
 }

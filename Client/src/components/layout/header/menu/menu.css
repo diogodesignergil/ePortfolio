@@ -1,8 +1,7 @@
 nav {
   width: 40px;
   height: 25px;
-  margin: auto 0;
-  padding-right: 25px;
+  margin: auto 25px;
 }
 .icon {
   width: 100%;
@@ -19,18 +18,18 @@ nav {
   transition: 0.5s ease-in-out;
   cursor: pointer;
   margin-right: 25px;
-  z-index: 2;
+  z-index: 10;
 }
 .icon span {
   display: block;
   position: absolute;
-  z-index: 4;
+  z-index: 5;
   height: 6px;
   width: 100%;
 
   border-radius: 5px;
   opacity: 1;
-  left: 0;
+  right: 0;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -65,7 +64,7 @@ nav {
 .icon.iconActive span:nth-child(1) {
   top: 23px;
   width: 0%;
-  left: 50%;
+  right: 50%;
 }
 
 .icon.iconActive span:nth-child(2) {
@@ -91,67 +90,123 @@ nav {
 .icon.iconActive span:nth-child(4) {
   top: 18px;
   width: 0%;
-  left: 50%;
+  right: 50%;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  left: 1%;
+  right: 1%;
   padding: 75px 0 0;
   flex-wrap: nowrap;
 }
 
 .list .listItem {
-  list-style: none;
   margin: 0;
 }
 
 .list .listItem li {
-  margin: 2px -10px;
+  margin: 2px 25px;
   cursor: pointer;
   transition: 0.25s ease-in-out;
   font-size: 4rem;
   font-weight: 600;
   color: white;
   transition-delay: 0.25s;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+  text-align: right;
+  z-index: 10;
 }
 .list .listItem li:hover {
   font-size: 4.5rem;
 }
 
-.menu.menuOpen {
+.menuOpen {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   margin: 0;
   top: 0;
-  left: 0;
-  background: rgb(43, 43, 43);
-  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  right: 0;
+  background: rgb(177, 0, 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
   width: 30%;
-  transition: 0.25s left cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.2s right cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 9;
 }
+/* .menuOpen::after {
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  background: rgb(177, 0, 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+  width: 90%;
+  transition: 0.3s right cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: -3;
+  content: "";
+}
+.menuOpen::before {
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  background: rgb(0, 127, 177);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+  width: 95%;
+  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
+  content: "";
+  z-index: -3;
+} */
 
 .menu.menuClose {
   position: absolute;
-  left: -30%;
+  right: -30%;
   height: 100vh;
   top: 0;
-  background: rgb(43, 43, 43);
-  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  background: rgb(177, 0, 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
   width: 30%;
-  transition: 0.25s left cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 4;
 }
 
-@media screen and (max-width: 1024px) {
+/* .menu.menuClose::after {
+  position: absolute;
+  right: -35%;
+  height: 100vh;
+  top: 0;
+  background: rgb(0, 112, 177);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+  width: 35%;
+  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 4;
+}
+.menu.menuClose::before {
+  position: absolute;
+  right: -35%;
+  height: 100vh;
+  top: 0;
+  background: rgb(177, 159, 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+  width: 35%;
+  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 4;
+} */
+
+@media (max-width: 1124px) {
   .menu.menuOpen {
     width: 35%;
   }
   .menu.menuClose {
-    left: -35%;
+    right: -35%;
   }
   .list .listItem li {
     font-size: 4rem;
@@ -160,26 +215,68 @@ nav {
     font-size: 4.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 980px) {
   .menu.menuOpen {
     width: 45%;
   }
   .menu.menuClose {
-    left: -45%;
+    right: -45%;
+  }
+  .list .listItem li {
+    font-size: 3.5rem;
+  }
+  .list .listItem li:hover {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 730px) {
+  .menu.menuOpen {
+    width: 50%;
+  }
+  .menu.menuClose {
+    right: -50%;
+  }
+  .list .listItem li {
+    font-size: 3.5rem;
+  }
+  .list .listItem li:hover {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 650px) {
+  .menu.menuOpen {
+    width: 55%;
+  }
+  .menu.menuClose {
+    right: -55%;
+  }
+  .list .listItem li {
+    font-size: 3.5rem;
+  }
+  .list .listItem li:hover {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 580px) {
+  .menu.menuOpen {
+    width: 60%;
+  }
+  .menu.menuClose {
+    right: -60%;
   }
   .list .listItem li {
     font-size: 3rem;
   }
   .list .listItem li:hover {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .menu.menuOpen {
     width: 75%;
   }
   .menu.menuClose {
-    left: -75%;
+    right: -75%;
   }
   .list .listItem li {
     font-size: 2.5rem;

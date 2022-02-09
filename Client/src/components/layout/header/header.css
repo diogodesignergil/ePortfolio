@@ -1,6 +1,9 @@
 .header {
-  padding: 10px;
   display: flex;
+  height: 8vh;
+  width: 100%;
+  border: 1px white solid;
+  justify-content: space-between;
 }
 
 .logo a {
@@ -11,6 +14,7 @@
   color: rgb(44, 44, 44);
   align-items: center;
   justify-content: center;
+  margin: auto 25px;
 }
 .logo img {
   margin-right: 10px;
@@ -24,4 +28,8 @@
   .logo h1 {
     display: none;
   }
+}
+
+Menu {
+  float: right;
 }

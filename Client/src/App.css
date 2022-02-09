@@ -1,15 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Share+Tech&family=Ubuntu:wght@400;500;700&display=swap");
 
-:root {
-  margin: 0;
-  padding: 0;
+body,
+html {
+  width: 100vw;
+  box-sizing: border-box;
   background-color: rgb(30, 30, 43);
   font-family: "Ubuntu", sans-serif;
   color: white;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 3px darkgrey solid; */
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+ul {
+  list-style: none;
 }
