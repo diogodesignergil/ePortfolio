@@ -1,11 +1,14 @@
 .home {
   width: 100%;
-  height: 78.5vh;
+  height: 100vh;
   display: flex;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .home .max-width {
-  margin: auto 0 auto 100px;
+  margin: auto 0 auto 200px;
 }
 .home .home-content .static-txt-1 {
   font-size: 27px;
@@ -146,4 +149,26 @@
 }
 .button Button:first-child {
   margin-left: 0;
+}
+
+.ring {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  /* transform: translateY(-50%); */
+}
+
+.ring img {
+  height: 80vh;
+  animation: 20s rotate infinite linear;
+  overflow-x: hidden;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
