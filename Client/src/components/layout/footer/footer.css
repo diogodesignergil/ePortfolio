@@ -1,15 +1,17 @@
 footer {
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 15px 0;
 	text-align: center;
-	bottom: 0;
-	height: 10vh;
+	display: inline-block;
+	justify-content: center;
+	align-content: center;
+	height: 12vh;
+	/* border: 1px white solid; */
 }
 .copyright {
-	margin: 10px auto;
-	padding-top: 10px;
 	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 .list-unstyled {

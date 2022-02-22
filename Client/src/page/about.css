@@ -1,3 +1,14 @@
+* {
+	--ps1: #8bc3fc;
+	--ps2: #3c327b;
+	--ai1: #fbbb4d;
+	--ai2: #5f4b26;
+	--pr1: #db76fa;
+	--pr2: #523a5c;
+	--ae1: #cf96fd;
+	--ae2: #393665;
+}
+
 .about {
 	width: 100%;
 	margin: 25px auto;
@@ -43,9 +54,10 @@
 .info-contianer {
 	margin-top: 50px;
 	width: 50%;
-	border: 5px solid rgba(0, 0, 0, 0.308);
+	/* border: 5px solid rgba(0, 0, 0, 0.308); */
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 .info-contianer .wrapp {
 	width: auto;
@@ -61,6 +73,7 @@
 	z-index: 4;
 	-webkit-box-shadow: 5px 0 20px black;
 	box-shadow: 5px 0 20px black;
+	transition: 0.25s ease-in-out;
 }
 
 .card-contianer img {
@@ -90,12 +103,12 @@
 	display: flex;
 	max-height: 355px;
 	height: 355px;
-	width: auto;
+	width: 100%;
 	margin: auto 0;
 	/* border: 1px solid white; */
 }
 
-.slide-contianer .resumo {
+.slide-contianer .aboutme {
 	background-color: #b90000;
 	z-index: 3;
 	position: relative;
@@ -108,11 +121,11 @@
 	transition: 0.25s ease-in-out;
 }
 
-.slide-contianer .resumo h2 {
+.slide-contianer .aboutme h2 {
 	margin-bottom: 5px;
 }
 
-.slide-contianer .resumo p {
+.slide-contianer .aboutme p {
 	text-align: justify;
 	text-align-last: left;
 	line-height: 25px;
@@ -125,7 +138,6 @@
 	padding: 25px;
 	display: flex;
 	width: 100%;
-	max-width: 100%;
 	height: 100%;
 	border-radius: 0 10px 10px 0;
 	transition: 0.25s ease-in-out;
@@ -146,36 +158,33 @@
 .slide-contianer .hobby .iconhobby {
 	display: block;
 }
-.slide-contianer .hobby ul {
-	margin-top: 30px;
-}
 .slide-contianer .hobby ul li {
-	display: flex;
-	flex-direction: column;
-	float: right;
+	display: inline;
+	float: left;
 	text-align: center;
-	width: 75px;
-	margin: 5px 25px;
-	font-size: 16px;
-	margin-bottom: 30px;
+	width: 100px;
+	height: 110px;
+	font-size: 15px;
+	margin: 10px 10px;
+	padding: 5px;
+	/* border: 1px black solid; */
 }
 .slide-contianer .hobby ul li i {
-	font-size: 35px;
+	font-size: 40px;
 	margin-bottom: 10px;
 }
-.slide-contianer .test {
+.slide-contianer .comunication {
 	background-color: #c2bf00;
 	z-index: 1;
 	position: relative;
 	padding: 25px;
-	display: flex;
 	width: 100%;
 	height: 100%;
 	border-radius: 0 10px 10px 0;
 	transition: 0.25s ease-in-out;
 	flex-direction: column;
 }
-.slide-contianer .test::after {
+.slide-contianer .comunication::after {
 	content: "";
 	background: #c2bf00;
 	position: absolute;
@@ -184,30 +193,229 @@
 	top: 0;
 	left: -10px;
 }
-.slide-contianer .test h2 {
+.slide-contianer .comunication h2 {
 	margin-bottom: 5px;
 }
-.slide-contianer .resumo.close,
+
+.slide-contianer .comunication .iconcom {
+	display: block;
+}
+.slide-contianer .comunication ul li {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100px;
+	height: 110px;
+	font-size: 15px;
+	margin: 10px 10px;
+	padding: 5px;
+	/* border: 1px black solid; */
+}
+.slide-contianer .comunication ul li i {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.slide-contianer .aboutme.close,
 .slide-contianer .hobby.close,
-.slide-contianer .test.close {
+.slide-contianer .comunication.close {
 	width: auto;
 	padding: 10px;
 	transition: 0.25s ease-in-out;
 	cursor: pointer;
 }
-.slide-contianer .resumo.close h2,
+.slide-contianer .aboutme.close h2,
 .slide-contianer .hobby.close h2,
 .slide-contianer .close h2 {
 	writing-mode: vertical-rl;
-	text-orientation: upright;
+	/* text-orientation: upright; */
 	transition: 0.25s ease-in-out;
 }
 
-.slide-contianer .resumo.close p,
+.slide-contianer .aboutme.close p,
 .slide-contianer .hobby.close ul,
-.slide-contianer .test.close p {
+.slide-contianer .comunication.close ul {
 	width: 0%;
 	right: 50%;
 	display: none;
 	transition: 0.25s ease-in-out;
+}
+
+.skill-contianer {
+	width: 100%;
+	border: 2px white solid;
+	padding: 25px;
+}
+
+.skill-contianer h2 {
+	margin-bottom: 25px;
+}
+
+.cards-contianer {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.cards-contianer .card {
+	position: relative;
+	width: 250px;
+	height: 300px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.cards-contianer .card.photoshop {
+	border: 5px var(--ps1) solid;
+	background: linear-gradient(180deg, var(--ps2), #111727);
+}
+.cards-contianer .card::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.cards-contianer .card.photoshop::after {
+	content: "Ps";
+	color: var(--ps1);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+	font-size: 10em;
+	transition: 0.25s ease-in-out;
+	/* display: none; */
+}
+.cards-contianer .card.photoshop:hover::after {
+	filter: blur(5px);
+	opacity: 0.25;
+}
+.card.photoshop:hover .card-skill,
+.card.card.illustrator:hover .card-skill,
+.card.card.card.premierer:hover .card-skill,
+.card.card.card.aftereffect:hover .card-skill {
+	opacity: 1;
+}
+.card-skill {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin: auto 0;
+	opacity: 0;
+	transition: 0.25s ease-in-out;
+}
+
+.card-skill h3 {
+	font-size: 40px;
+	margin: 20px 0;
+}
+
+.card-skill p {
+	font-size: 25px;
+}
+.card-skill p span {
+	font-size: 2rem;
+}
+
+.bar {
+	display: flex;
+	width: 100%;
+}
+
+.progres {
+	width: 45px;
+	height: 15px;
+	border-radius: 50px;
+	margin: 25px 5px;
+}
+.progres.ps {
+	border: 2px var(--ps1) solid;
+}
+.progres.ps.yes {
+	background-color: #597b9c;
+	box-shadow: 0 0 5px var(--ps1);
+}
+/* Illustrator */
+.cards-contianer .card.illustrator {
+	border: 5px var(--ai1) solid;
+	background: linear-gradient(180deg, var(--ai2), #5f4b26);
+}
+.cards-contianer .card.illustrator::after {
+	content: "Ai";
+	color: var(--ai1);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+	font-size: 10em;
+	transition: 0.25s ease-in-out;
+	/* display: none; */
+}
+.cards-contianer .card.illustrator:hover::after {
+	filter: blur(5px);
+	opacity: 0.25;
+}
+
+.progres.ai {
+	border: 2px var(--ai1) solid;
+}
+.progres.ai.yes {
+	background-color: #9c8a59;
+	box-shadow: 0 0 5px var(--ai1);
+}
+/* Premier */
+.cards-contianer .card.premierer {
+	border: 5px var(--pr1) solid;
+	background: linear-gradient(180deg, var(--pr2), #33243a);
+}
+.cards-contianer .card.card.premierer::after {
+	content: "Pr";
+	color: var(--pr1);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+	font-size: 10em;
+	transition: 0.25s ease-in-out;
+	/* display: none; */
+}
+.cards-contianer .card.card.premierer:hover::after {
+	filter: blur(5px);
+	opacity: 0.25;
+}
+
+.progres.pr {
+	border: 2px var(--pr1) solid;
+}
+.progres.pr.yes {
+	background-color: #885f9b;
+	box-shadow: 0 0 5px var(--ar1);
+}
+/* After Effect */
+.cards-contianer .card.aftereffect {
+	border: 5px var(--pr1) solid;
+	background: linear-gradient(180deg, var(--ae2), #33243a);
+}
+.cards-contianer .card.card.aftereffect::after {
+	content: "Ae";
+	color: var(--ae1);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+	font-size: 10em;
+	transition: 0.25s ease-in-out;
+	/* display: none; */
+}
+.cards-contianer .card.card.aftereffect:hover::after {
+	filter: blur(5px);
+	opacity: 0.25;
+}
+
+.progres.ae {
+	border: 2px var(--ae1) solid;
+}
+.progres.ae.yes {
+	background-color: #885f9b;
+	box-shadow: 0 0 5px var(--ae1);
 }
