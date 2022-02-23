@@ -172,6 +172,11 @@ function About() {
 			</div>
 			<div className="skill-contianer">
 				<h2>Conhecimento dos Programas</h2>
+				<div className="line">
+					<hr></hr>
+					<hr></hr>
+					<hr></hr>
+				</div>
 				<div className="cards-contianer">
 					<div className="card photoshop">
 						<div className="card-skill">
@@ -209,7 +214,7 @@ function About() {
 					</div>
 					<div className="card premierer">
 						<div className="card-skill">
-							<h3>Adobe Premierer</h3>
+							<h3>Adobe Premierer Pro</h3>
 							<p>
 								Nível
 								<br></br>
@@ -238,6 +243,182 @@ function About() {
 								<div className="progres ae" />
 								<div className="progres ae" />
 								<div className="progres ae" />
+							</div>
+						</div>
+					</div>
+					<div className="card microOffice">
+						<div className="card-skill">
+							<h3>
+								Microsoft Office<br></br>
+								<label>(Word, Excel, PowerPoint)</label>
+							</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Avançado</span>
+							</p>
+							<div className="bar">
+								<div className="progres mo yes" />
+								<div className="progres mo yes" />
+								<div className="progres mo yes" />
+								<div className="progres mo yes" />
+								<div className="progres mo" />
+							</div>
+						</div>
+					</div>
+					<div className="card html">
+						<div className="card-skill">
+							<h3>Html</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Avançado</span>
+							</p>
+							<div className="bar">
+								<div className="progres html yes" />
+								<div className="progres html yes" />
+								<div className="progres html yes" />
+								<div className="progres html yes" />
+								<div className="progres html" />
+							</div>
+						</div>
+					</div>
+					<div className="card css">
+						<div className="card-skill">
+							<h3>Css</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Avançado</span>
+							</p>
+							<div className="bar">
+								<div className="progres css yes" />
+								<div className="progres css yes" />
+								<div className="progres css yes" />
+								<div className="progres css yes" />
+								<div className="progres css" />
+							</div>
+						</div>
+					</div>
+					<div className="card js">
+						<div className="card-skill">
+							<h3>Javascript</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Intermédio</span>
+							</p>
+							<div className="bar">
+								<div className="progres js yes" />
+								<div className="progres js yes" />
+								<div className="progres js" />
+								<div className="progres js" />
+								<div className="progres js" />
+							</div>
+						</div>
+					</div>
+					<div className="card php">
+						<div className="card-skill">
+							<h3>PHP</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Intermédio +</span>
+							</p>
+							<div className="bar">
+								<div className="progres php yes" />
+								<div className="progres php yes" />
+								<div className="progres php yes" />
+								<div className="progres php" />
+								<div className="progres php" />
+							</div>
+						</div>
+					</div>
+					<div className="card react">
+						<div className="card-skill">
+							<h3>ReactJs</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Básico</span>
+							</p>
+							<div className="bar">
+								<div className="progres react yes" />
+								<div className="progres react" />
+								<div className="progres react" />
+								<div className="progres react" />
+								<div className="progres react" />
+							</div>
+						</div>
+					</div>
+					<div className="card cc">
+						<div className="card-skill">
+							<h3>C++ / C#</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Intermédio +</span>
+							</p>
+							<div className="bar">
+								<div className="progres cc yes" />
+								<div className="progres cc yes" />
+								<div className="progres cc yes" />
+								<div className="progres cc" />
+								<div className="progres cc" />
+							</div>
+						</div>
+					</div>
+					<div className="card java">
+						<div className="card-skill">
+							<h3>Java</h3>
+							<p>
+								Nível
+								<br></br>
+								<span>Intermédio +</span>
+							</p>
+							<div className="bar">
+								<div className="progres java yes" />
+								<div className="progres java yes" />
+								<div className="progres java yes" />
+								<div className="progres java" />
+								<div className="progres java" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="language">
+					<h2>Línguagem</h2>
+					<div className="line">
+						<hr></hr>
+						<hr></hr>
+						<hr></hr>
+					</div>
+					<div className="cards-contianer">
+						<div className="card-language portugal">
+							<div className="card-lang">
+								<h3>Português</h3>
+								<div className="card-progress">
+									<div className="circle-progress fala"></div>
+									<div className="circle-progress escrita"></div>
+								</div>
+							</div>
+						</div>
+						<div className="card-language english">
+							<div className="card-lang">
+								<h3>Inglês</h3>
+								<div className="card-progress">
+									<div className="circle-progress fala"></div>
+									<div className="circle-progress escrita"></div>
+								</div>
+							</div>
+						</div>
+						<div className="card-language france">
+							<div className="card-lang">
+								<h3>Francês</h3>
+								<div className="card-progress">
+									<div className="circle-progress fala"></div>
+									<div className="circle-progress escrita"></div>
+								</div>
 							</div>
 						</div>
 					</div>
