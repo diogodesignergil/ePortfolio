@@ -767,7 +767,7 @@
 	width: 450px;
 	border-radius: 20px;
 	/* border: 2px solid white; */
-	overflow: hidden;
+	/* overflow: hidden; */
 	margin: 5px 10px;
 	cursor: default;
 	-webkit-touch-callout: none;
@@ -836,7 +836,7 @@
 	margin: 10px 5px;
 	border-bottom: 2px solid rgb(31, 31, 31);
 }
-.card-progress .circle-progress {
+.card-progress .overflow .circle-progress {
 	width: 12rem;
 	height: 12rem;
 	border-radius: 50%;
@@ -844,9 +844,11 @@
 	position: relative;
 	border: 2px solid rgb(31, 31, 31);
 }
-.card-progress .circle-progress.fala {
+.card-progress .overflow .circle-progress.fala {
+	position: relative;
 	background: linear-gradient(#414141 50%, #ff0000 50%);
 }
+
 .card-progress .circle-progress.escrita {
 	background: linear-gradient(#414141 50%, #1bb100 50%);
 }
@@ -858,12 +860,13 @@
 	top: 0;
 	left: 0;
 	background: rgb(30, 30, 43) content-box;
-	content: "Fala";
+	content: "";
 	border-radius: 50%;
 	padding: 0.5em;
 	box-sizing: border-box;
 	font-size: 2rem;
 	line-height: 3.5em;
+	z-index: 4;
 }
 .card-progress .circle-progress.escrita::before {
 	width: 100%;
@@ -872,12 +875,13 @@
 	top: 0;
 	left: 0;
 	background: rgb(30, 30, 43) content-box;
-	content: "Escrita";
+	content: "";
 	border-radius: 50%;
 	padding: 0.5em;
 	box-sizing: border-box;
 	font-size: 2rem;
 	line-height: 3.5em;
+	z-index: 4;
 }
 .card-progress .circle-progress.fala::after {
 	width: 100%;
@@ -890,6 +894,7 @@
 	content: "";
 	transform: scale(1.1);
 	line-height: 6em;
+	z-index: 3;
 }
 .card-progress .circle-progress.escrita::after {
 	width: 100%;
@@ -902,6 +907,26 @@
 	border-radius: 50%;
 	transform: scale(1.1);
 	line-height: 6em;
+}
+.card-progress .overflow .circle-progress.fala div,
+.card-progress .overflow .circle-progress.escrita div {
+	width: 100%;
+	height: 100%;
+	/* border: 2px solid white; */
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	padding: 25px;
+}
+.card-progress .overflow .circle-progress.fala div span,
+.card-progress .overflow .circle-progress.escrita div span {
+	font-size: 18px;
+}
+.card-progress .overflow .circle-progress.fala div label,
+.card-progress .overflow .circle-progress.escrita div label {
+	font-size: 40px;
 }
 
 /* Portugal */
@@ -923,12 +948,6 @@
 }
 .card-language.portugal .card-progress .circle-progress.escrita {
 	background: linear-gradient(0deg, #414141 50%, #1bb100 50%);
-}
-.card-language.portugal .card-progress .circle-progress.fala::after {
-	content: "Nativo";
-}
-.card-language.portugal .card-progress .circle-progress.escrita::after {
-	content: "Nativo";
 }
 
 /* English */
@@ -953,8 +972,16 @@
 .card-language.english .card-progress .circle-progress.fala {
 	transform: rotate(133.2deg);
 }
+.card-language.english .card-progress .overflow .circle-progress.fala div {
+	transform: rotate(-133.2deg);
+}
+
 .card-language.english .card-progress .circle-progress.escrita {
 	transform: rotate(140.4deg);
+}
+
+.card-language.english .card-progress .overflow .circle-progress.escrita div {
+	transform: rotate(-140.4deg);
 }
 
 .card-language.english .card-progress .circle-progress.fala::before {
@@ -965,11 +992,9 @@
 }
 .card-language.english .card-progress .circle-progress.fala::after {
 	transform: rotate(-133.2deg);
-	content: "74%";
 }
 .card-language.english .card-progress .circle-progress.escrita::after {
 	transform: rotate(-140.4deg);
-	content: "78%";
 }
 
 /* France */
@@ -994,6 +1019,13 @@
 }
 .card-language.france .card-progress .circle-progress.escrita {
 	transform: rotate(18deg);
+}
+.card-language.france .card-progress .overflow .circle-progress.fala div {
+	transform: rotate(-14.4deg);
+}
+
+.card-language.france .card-progress .overflow .circle-progress.escrita div {
+	transform: rotate(-18deg);
 }
 
 .card-language.france .card-progress .circle-progress.fala::before {

@@ -396,10 +396,22 @@ function About() {
 								<h3>Português</h3>
 								<div className="card-progress">
 									<div className="overflow">
-										<div className="circle-progress fala"></div>
+										<div className="circle-progress fala">
+											<div>
+												<span>Nativo</span>
+												<br></br>
+												<label>Fala</label>
+											</div>
+										</div>
 									</div>
 									<div className="overflow">
-										<div className="circle-progress escrita"></div>
+										<div className="circle-progress escrita">
+											<div>
+												<span>Nativo</span>
+												<br></br>
+												<label>Escrita</label>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -409,10 +421,22 @@ function About() {
 								<h3>Inglês</h3>
 								<div className="card-progress">
 									<div className="overflow">
-										<div className="circle-progress fala"></div>
+										<div className="circle-progress fala">
+											<div>
+												<span>74%</span>
+												<br></br>
+												<label>Fala</label>
+											</div>
+										</div>
 									</div>
 									<div className="overflow">
-										<div className="circle-progress escrita"></div>
+										<div className="circle-progress escrita">
+											<div>
+												<span>78%</span>
+												<br></br>
+												<label>Escrita</label>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -422,10 +446,22 @@ function About() {
 								<h3>Francês</h3>
 								<div className="card-progress">
 									<div className="overflow">
-										<div className="circle-progress fala"></div>
+										<div className="circle-progress fala">
+											<div>
+												<span>8%</span>
+												<br></br>
+												<label>Fala</label>
+											</div>
+										</div>
 									</div>
 									<div className="overflow">
-										<div className="circle-progress escrita"></div>
+										<div className="circle-progress escrita">
+											<div>
+												<span>10%</span>
+												<br></br>
+												<label>Escrita</label>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
