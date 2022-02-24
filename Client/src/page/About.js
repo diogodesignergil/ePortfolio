@@ -33,9 +33,6 @@ function About() {
 	const [yellow, setYellow] = useState(false);
 	const ToggleYellow = () =>
 		setYellow(!yellow) + setRed(false) + setBlue(false);
-	// const closeRed = () => setRed(false);
-	// const closeBlue = () => setBlue(false);
-	// const closeYellow = () => setYellow(false);
 
 	return (
 		<section className="about" id="about">
@@ -78,7 +75,7 @@ function About() {
 						className="slide-contianer"
 						data-aos="fade-right"
 						data-aos-easing="ease-in-out"
-						data-aos-delay="250"
+						data-aos-delay="300"
 					>
 						<div
 							className={red ? "aboutme" : "aboutme  close"}
@@ -398,8 +395,12 @@ function About() {
 							<div className="card-lang">
 								<h3>Português</h3>
 								<div className="card-progress">
-									<div className="circle-progress fala"></div>
-									<div className="circle-progress escrita"></div>
+									<div className="overflow">
+										<div className="circle-progress fala"></div>
+									</div>
+									<div className="overflow">
+										<div className="circle-progress escrita"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -407,8 +408,12 @@ function About() {
 							<div className="card-lang">
 								<h3>Inglês</h3>
 								<div className="card-progress">
-									<div className="circle-progress fala"></div>
-									<div className="circle-progress escrita"></div>
+									<div className="overflow">
+										<div className="circle-progress fala"></div>
+									</div>
+									<div className="overflow">
+										<div className="circle-progress escrita"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -416,9 +421,149 @@ function About() {
 							<div className="card-lang">
 								<h3>Francês</h3>
 								<div className="card-progress">
-									<div className="circle-progress fala"></div>
-									<div className="circle-progress escrita"></div>
+									<div className="overflow">
+										<div className="circle-progress fala"></div>
+									</div>
+									<div className="overflow">
+										<div className="circle-progress escrita"></div>
+									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="timeline-container">
+				<h2>Experiência</h2>
+				<div className="line">
+					<hr></hr>
+					<hr></hr>
+					<hr></hr>
+				</div>
+				<div className="wrapper-time">
+					<div className="expericens-contianer">
+						<div className="card-experiences">
+							<div className="exper-info">
+								<h3>Design Gráfico</h3>
+								<data>09/2009 - 03/2013</data>
+								<br />
+								<label>Escola Sec. Padre António Vieira</label>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+									scelerisque lacus euismod nulla vulputate efficitur.
+									Pellentesque ultricies in dui eget dignissim. Donec malesuada
+									dictum quam vitae convallis. Integer non mi eget sapien cursus
+									interdum eu ac justo. Cras in egestas mauris, quis condimentum
+									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
+									a bibendum tempor, leo ante sollicitudin nulla, at ornare
+									mauris odio sed lorem. Pellentesque nec nisi nunc.
+								</p>
+							</div>
+							<div className="time-line">
+								<div className="year">
+									<data>2013</data>
+								</div>
+								<hr></hr>
+							</div>
+						</div>
+
+						<div className="card-experiences">
+							<div className="exper-info">
+								<h3>Design Gráfico</h3>
+								<data>09/2009 - 03/2013</data>
+								<br />
+								<label>Escola Sec. Padre António Vieira</label>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+									scelerisque lacus euismod nulla vulputate efficitur.
+									Pellentesque ultricies in dui eget dignissim. Donec malesuada
+									dictum quam vitae convallis. Integer non mi eget sapien cursus
+									interdum eu ac justo. Cras in egestas mauris, quis condimentum
+									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
+									a bibendum tempor, leo ante sollicitudin nulla, at ornare
+									mauris odio sed lorem. Pellentesque nec nisi nunc.
+								</p>
+							</div>
+							<div className="time-line">
+								<div className="year">
+									<data>2014</data>
+								</div>
+								<hr></hr>
+							</div>
+						</div>
+
+						<div className="card-experiences">
+							<div className="exper-info">
+								<h3>Design Gráfico</h3>
+								<data>09/2009 - 03/2013</data>
+								<br />
+								<label>Escola Sec. Padre António Vieira</label>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+									scelerisque lacus euismod nulla vulputate efficitur.
+									Pellentesque ultricies in dui eget dignissim. Donec malesuada
+									dictum quam vitae convallis. Integer non mi eget sapien cursus
+									interdum eu ac justo. Cras in egestas mauris, quis condimentum
+									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
+									a bibendum tempor, leo ante sollicitudin nulla, at ornare
+									mauris odio sed lorem. Pellentesque nec nisi nunc.
+								</p>
+							</div>
+							<div className="time-line">
+								<div className="year">
+									<data>2015</data>
+								</div>
+								<hr></hr>
+							</div>
+						</div>
+
+						<div className="card-experiences">
+							<div className="exper-info">
+								<h3>Design Gráfico</h3>
+								<data>09/2009 - 03/2013</data>
+								<br />
+								<label>Escola Sec. Padre António Vieira</label>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+									scelerisque lacus euismod nulla vulputate efficitur.
+									Pellentesque ultricies in dui eget dignissim. Donec malesuada
+									dictum quam vitae convallis. Integer non mi eget sapien cursus
+									interdum eu ac justo. Cras in egestas mauris, quis condimentum
+									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
+									a bibendum tempor, leo ante sollicitudin nulla, at ornare
+									mauris odio sed lorem. Pellentesque nec nisi nunc.
+								</p>
+							</div>
+							<div className="time-line">
+								<div className="year">
+									<data>2016</data>
+								</div>
+								<hr></hr>
+							</div>
+						</div>
+
+						<div className="card-experiences">
+							<div className="exper-info">
+								<h3>Design Gráfico</h3>
+								<data>09/2009 - 03/2013</data>
+								<br />
+								<label>Escola Sec. Padre António Vieira</label>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+									scelerisque lacus euismod nulla vulputate efficitur.
+									Pellentesque ultricies in dui eget dignissim. Donec malesuada
+									dictum quam vitae convallis. Integer non mi eget sapien cursus
+									interdum eu ac justo. Cras in egestas mauris, quis condimentum
+									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
+									a bibendum tempor, leo ante sollicitudin nulla, at ornare
+									mauris odio sed lorem. Pellentesque nec nisi nunc.
+								</p>
+							</div>
+							<div className="time-line">
+								<div className="year">
+									<data>2017</data>
+								</div>
+								<hr></hr>
 							</div>
 						</div>
 					</div>

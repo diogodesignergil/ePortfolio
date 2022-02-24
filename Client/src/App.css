@@ -6,11 +6,37 @@
 	box-sizing: border-box;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #57577a #1e1e2b;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #54546b7c;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #000000;
+	box-shadow: inset 0px 0px 5px 1px #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #57577a;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #3d3d3d;
+	box-shadow: inset 0px 0px 5px 1px #3d3d3d;
+}
+
 body,
 html {
 	width: 100vw;
 	box-sizing: border-box;
-	background-color: rgb(30, 30, 43);
+	background-color: #1e1e2b;
 	font-family: "Ubuntu", sans-serif;
 	color: white;
 	margin: 0;
