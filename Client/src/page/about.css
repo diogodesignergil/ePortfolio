@@ -31,6 +31,8 @@
 	display: block;
 	/* min-height: 100vh; */
 	overflow: hidden;
+	/* border: 5px solid white; */
+	margin-top: 8vh;
 }
 
 .about h1 {
@@ -1055,7 +1057,7 @@
 .timeline-container .wrapper-time {
 	overflow-x: scroll;
 	/* border: 2px solid white; */
-	width: 99%;
+	width: 95%;
 	margin: 0 auto;
 	position: relative;
 	overflow-y: hidden;
@@ -1071,7 +1073,7 @@
 	flex-wrap: nowrap;
 }
 .timeline-container .wrapper-time .expericens-contianer .card-experiences {
-	min-width: 500px;
+	min-width: 400px;
 	min-height: 350px;
 	/* border: 2px solid white; */
 	padding: 15px;
@@ -1091,7 +1093,7 @@
 	color: #1e1e2b;
 	background-color: #d3d3d3;
 	position: relative;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 }
 .exper-info h3 {
 	margin-bottom: 5px;
@@ -1119,7 +1121,7 @@
 	background-color: #005670;
 	position: absolute;
 	left: 5;
-	bottom: -24.5px;
+	bottom: -25px;
 }
 .exper-info::before {
 	content: "";
@@ -1152,15 +1154,25 @@
 	color: #1e1e2b;
 	position: relative;
 	z-index: 2;
+	/* border: 5px solid #1e1e2b; */
 }
 .time-line hr {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 30px;
-	width: 500px;
+	width: 400px;
 	height: 7px;
 	z-index: 1;
 	background-color: #00a2d3;
 	border: none;
+}
+
+.timeline-container
+	.wrapper-time
+	.expericens-contianer
+	.card-experiences:last-child
+	.time-line
+	hr {
+	display: none;
 }

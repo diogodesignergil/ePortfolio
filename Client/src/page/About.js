@@ -602,6 +602,31 @@ function About() {
 								<hr></hr>
 							</div>
 						</div>
+
+						<div className="card-experiences">
+							<div className="exper-info">
+								<h3>Design Gráfico</h3>
+								<data>09/2009 - 03/2013</data>
+								<br />
+								<label>Escola Sec. Padre António Vieira</label>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+									scelerisque lacus euismod nulla vulputate efficitur.
+									Pellentesque ultricies in dui eget dignissim. Donec malesuada
+									dictum quam vitae convallis. Integer non mi eget sapien cursus
+									interdum eu ac justo. Cras in egestas mauris, quis condimentum
+									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
+									a bibendum tempor, leo ante sollicitudin nulla, at ornare
+									mauris odio sed lorem. Pellentesque nec nisi nunc.
+								</p>
+							</div>
+							<div className="time-line">
+								<div className="year">
+									<data>2018</data>
+								</div>
+								<hr></hr>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

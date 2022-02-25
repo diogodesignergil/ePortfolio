@@ -1,0 +1,76 @@
+.contact {
+	margin-top: 8vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.contact h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 55px;
+	text-align: center;
+}
+
+.contact p {
+	margin-top: 15px;
+	font-size: 25px;
+}
+
+.contact form {
+	width: 55%;
+	margin: 15px auto;
+	height: 65vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	font-size: 35px;
+	color: white;
+	font-family: "Ubuntu", sans-serif;
+}
+
+input,
+textarea {
+	border: none;
+	background: transparent;
+	height: auto;
+	padding: 1rem;
+	border-bottom: 3px solid white;
+	margin: 15px;
+	color: white;
+	font-size: 1.8rem;
+	transition: 0.25s ease-in-out;
+}
+
+textarea {
+	min-height: 250px;
+	resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input:focus:first-child {
+	border-bottom: 3px solid #ca1b1b;
+}
+input:focus:nth-child(2) {
+	border-bottom: 3px solid #1b7bca;
+}
+input:focus:nth-child(3) {
+	border-bottom: 3px solid #cac71b;
+}
+textarea:focus {
+	border-bottom: 3px solid #95658d;
+}
+
+::placeholder {
+	font-size: 25px;
+	font-family: "Ubuntu", sans-serif;
+	color: rgba(216, 216, 216, 0.829);
+}
