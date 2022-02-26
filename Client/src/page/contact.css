@@ -14,8 +14,9 @@
 }
 
 .contact p {
-	margin: 15px auto;
+	margin: 15px 5px;
 	font-size: 25px;
+	text-align: center;
 }
 
 .contact form {
