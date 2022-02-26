@@ -1,0 +1,19 @@
+{
+  "menu": {
+    "languages": {
+      "portuguese": "Portuguese",
+      "english": "English"
+    },
+    "sidebar": {}
+  },
+  "home": {
+    "text1": "Hello, my name is",
+    "text3": "And I'm a",
+    "download": "DOWNLOAD CV",
+    "hire": "HIRE ME"
+  },
+  "about": {},
+  "services": {},
+  "projects": {},
+  "contact": {}
+}
