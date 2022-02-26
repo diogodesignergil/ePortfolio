@@ -78,7 +78,7 @@ textarea:focus {
 form .button-contianer {
 	width: 100%;
 	position: relative;
-	border: 1px white solid;
+	/* border: 1px white solid; */
 	margin: 15px;
 }
 

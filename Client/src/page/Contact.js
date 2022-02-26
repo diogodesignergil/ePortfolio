@@ -1,7 +1,13 @@
 import React from "react";
 import "./contact.css";
+
 import { Button } from "../components/Button";
+
 import emailjs from "emailjs-com";
+
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
 	function sendEmail(e) {
@@ -16,12 +22,22 @@ function Contact() {
 			)
 			.then((res) => {
 				document.getElementById("contactForm").reset();
+				toast.success("A sua mensagem foi enviado!", {
+					position: "top-center",
+					autoClose: 5000,
+					hideProgressBar: false,
+					closeOnClick: true,
+					pauseOnHover: false,
+					draggable: false,
+					progress: undefined,
+				});
 				console.log(res);
 			})
 			.catch((err) => console.log(err));
 	}
 	return (
 		<section className="contact">
+			<ToastContainer theme="dark" />
 			<h1>Contact</h1>
 			<div className="line">
 				<hr></hr>
