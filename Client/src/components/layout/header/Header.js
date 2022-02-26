@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./header.css";
 import Menu from "./menu/Menu";
+import LanguageMenu from "./language/language";
 import { Link } from "react-router-dom";
 
 export class Header extends Component {
@@ -14,6 +15,8 @@ export class Header extends Component {
             <h1>Reveratel</h1>
           </Link>
         </div>
+        {/* Menu Linguagens */}
+        <LanguageMenu />
         {/* Menu tipo hambuger */}
         <Menu />
       </header>

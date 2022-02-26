@@ -1,0 +1,19 @@
+{
+  "menu": {
+    "languages": {
+      "portuguese": "Português",
+      "english": "Inglês"
+    },
+    "sidebar": {}
+  },
+  "home": {
+    "text1": "Olá, o meu nome é",
+    "text3": "E eu sou",
+    "download": "TRANSFERIR CV",
+    "hire": "CONTRATE-ME"
+  },
+  "about": {},
+  "services": {},
+  "projects": {},
+  "contact": {}
+}
