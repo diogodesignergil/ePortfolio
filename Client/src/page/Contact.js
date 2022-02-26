@@ -15,6 +15,7 @@ function Contact() {
 				"user_f2ecmxnUHgpBDOPsRCC9l"
 			)
 			.then((res) => {
+				document.getElementById("contactForm").reset();
 				console.log(res);
 			})
 			.catch((err) => console.log(err));
@@ -30,7 +31,7 @@ function Contact() {
 			<p className="contact-note">
 				Entrar em contacto comigo, por favor usar o formulário em baixo.
 			</p>
-			<form onSubmit={sendEmail}>
+			<form onSubmit={sendEmail} id="contactForm">
 				<input type="text" placeholder="Nome" name="name" required />
 				<input type="email" placeholder="Email" name="user_email" required />
 				<input type="text" placeholder="Assunto" name="subject" required />
