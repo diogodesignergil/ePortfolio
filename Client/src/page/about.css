@@ -1062,9 +1062,7 @@
 	position: relative;
 	overflow-y: hidden;
 }
-/* .timeline-container .wrapper-time:hover {
-	overflow-x: scroll;
-} */
+
 .timeline-container .wrapper-time .expericens-contianer {
 	/* border: 2px solid white; */
 	margin: 25px;

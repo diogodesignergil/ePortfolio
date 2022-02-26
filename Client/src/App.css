@@ -35,6 +35,7 @@
 body,
 html {
 	width: 100vw;
+	min-height: 100vh;
 	box-sizing: border-box;
 	background-color: #1e1e2b;
 	font-family: "Ubuntu", sans-serif;
