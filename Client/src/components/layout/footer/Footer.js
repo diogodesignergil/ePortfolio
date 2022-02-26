@@ -6,21 +6,21 @@ function Footer() {
     <footer>
       <div className="copyright">Copyright &copy; 2022</div>
       <div className="social">
-        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+        <ul className="social-icons icon-circle icon-zoom list-unstyled list-inline">
           <li>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
           </li>
           <li>
-            <i class="fab fa-github-alt"></i>
+            <i className="fab fa-github-alt"></i>
           </li>
           <li>
-            <i class="fab fa-codepen"></i>
+            <i className="fab fa-codepen"></i>
           </li>
           <li>
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </li>
           <li>
-            <i class="fab fa-patreon"></i>
+            <i className="fab fa-patreon"></i>
           </li>
         </ul>
       </div>
