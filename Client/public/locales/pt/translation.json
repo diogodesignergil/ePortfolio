@@ -1,19 +1,45 @@
 {
-  "menu": {
-    "languages": {
-      "portuguese": "Português",
-      "english": "Inglês"
-    },
-    "sidebar": {}
-  },
-  "home": {
-    "text1": "Olá, o meu nome é",
-    "text3": "E eu sou",
-    "download": "TRANSFERIR CV",
-    "hire": "CONTRATE-ME"
-  },
-  "about": {},
-  "services": {},
-  "projects": {},
-  "contact": {}
+	"menu": {
+		"languages": {
+			"portuguese": "Português",
+			"english": "Inglês"
+		},
+		"sidebar": {
+			"home": "Início",
+			"about": "Sobre Mim",
+			"services": "Serviços",
+			"projects": "Projetos",
+			"contact": "Contacto"
+		}
+	},
+	"home": {
+		"text1": "Olá, o meu nome é",
+		"text3": "E eu sou",
+		"download": "TRANSFERIR CV",
+		"hire": "CONTRATE-ME"
+	},
+	"about": {
+		"section1": {
+			"title": "Sobre Mim",
+			"name": "Nome:",
+			"nickname": "Alcunha:",
+			"birth": "Data de Nascimento:",
+			"local1": "Localização:",
+			"local2": "Lisboa, Portugal",
+			"education1": "Escolaridade:",
+			"education2": "12º",
+			"course1": "Curso:",
+			"course2": "Design Gráfico"
+		}
+	},
+	"services": {},
+	"projects": {},
+	"contact": {
+		"title": "Contacto",
+		"info": "Entrar em contacto comigo, por favor usar o formulário em baixo.",
+		"name": "Nome",
+		"subject": "Assunto",
+		"message": "Mensagem",
+		"submit": "Submeter"
+	}
 }

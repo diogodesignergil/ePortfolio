@@ -42,30 +42,8 @@
 	text-align: center;
 }
 
-.line {
+.about .line {
 	width: 75%;
-	position: relative;
-	margin: 0 auto;
-}
-
-.line hr {
-	position: absolute;
-	width: 100%;
-	height: 6px;
-	border-radius: 50px;
-	border: none;
-}
-
-.line hr:nth-child(1) {
-	background: rgb(177, 0, 0);
-}
-.line hr:nth-child(2) {
-	background: rgb(0, 112, 177);
-	clip-path: polygon(30% 0, 100% 0%, 100% 100%, 25% 100%);
-}
-.line hr:nth-child(3) {
-	background: rgb(177, 136, 0);
-	clip-path: polygon(65% 0, 100% 0%, 100% 100%, 60% 100%);
 }
 
 .info-contianer {
@@ -292,12 +270,10 @@
 	width: 50%;
 	text-align: center;
 }
-.skill-contianer .line,
-.language .line,
-.timeline-container .line {
-	margin: 0 auto;
-	margin-bottom: 25px;
-	width: 50%;
+.about .skill-contianer .line,
+.about .language .line,
+.about .timeline-container .line {
+	width: 45%;
 }
 
 .cards-contianer {

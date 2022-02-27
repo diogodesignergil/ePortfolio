@@ -9,7 +9,13 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
+import Line from "../components/Line";
+
+import { useTranslation } from "react-i18next";
+
 function Contact() {
+	const [t] = useTranslation();
+
 	function sendEmail(e) {
 		e.preventDefault();
 
@@ -38,20 +44,28 @@ function Contact() {
 	return (
 		<section className="contact">
 			<ToastContainer theme="dark" />
-			<h1>Contact</h1>
-			<div className="line">
-				<hr></hr>
-				<hr></hr>
-				<hr></hr>
-			</div>
-			<p className="contact-note">
-				Entrar em contacto comigo, por favor usar o formulário em baixo.
-			</p>
+			<h1>{t("contact.title")}</h1>
+			<Line />
+			<p className="contact-note">{t("contact.info")}</p>
 			<form onSubmit={sendEmail} id="contactForm">
-				<input type="text" placeholder="Nome" name="name" required />
+				<input
+					type="text"
+					placeholder={t("contact.name")}
+					name="name"
+					required
+				/>
 				<input type="email" placeholder="Email" name="user_email" required />
-				<input type="text" placeholder="Assunto" name="subject" required />
-				<textarea placeholder="Mensagem" name="message" required></textarea>
+				<input
+					type="text"
+					placeholder={t("contact.subject")}
+					name="subject"
+					required
+				/>
+				<textarea
+					placeholder={t("contact.message")}
+					name="message"
+					required
+				></textarea>
 				<div className="button-contianer">
 					<Button
 						className="btns"
@@ -59,7 +73,7 @@ function Contact() {
 						buttonSize="btn--large"
 						type="submit"
 					>
-						SUBMETER
+						{t("contact.submit")}
 					</Button>
 				</div>
 			</form>
