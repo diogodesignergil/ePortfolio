@@ -42,7 +42,7 @@ function Contact() {
 			.catch((err) => console.log(err));
 	}
 	return (
-		<section className="contact">
+		<section className="contact" data-aos="fade-in">
 			<ToastContainer theme="dark" />
 			<h1>{t("contact.title")}</h1>
 			<Line />
@@ -66,16 +66,14 @@ function Contact() {
 					name="message"
 					required
 				></textarea>
-				<div className="button-contianer">
-					<Button
-						className="btns"
-						buttonStyle="btn--primary"
-						buttonSize="btn--large"
-						type="submit"
-					>
-						{t("contact.submit")}
-					</Button>
-				</div>
+				<Button
+					className="btns"
+					buttonStyle="btn--primary"
+					buttonSize="btn--large"
+					type="submit"
+				>
+					{t("contact.submit")}
+				</Button>
 			</form>
 		</section>
 	);

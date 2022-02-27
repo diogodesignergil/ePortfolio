@@ -5,11 +5,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: center;
 }
 
 .contact h1 {
-	margin: 0;
-	padding: 0;
 	font-size: 55px;
 	text-align: center;
 }
@@ -19,30 +18,40 @@
 }
 
 .contact p {
-	margin: 15px 5px;
+	margin: 10px 5px;
 	font-size: 25px;
 	text-align: center;
 }
 
 .contact form {
 	width: 55%;
-	margin: 15px auto;
-	height: 63.5vh;
 	display: flex;
 	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: nowrap;
 	font-size: 35px;
 	color: white;
 	font-family: "Ubuntu", sans-serif;
 	position: relative;
+	margin: auto;
+}
+
+@media screen and (max-width: 750px) {
+	.contact form {
+		width: 95%;
+		height: 60vh;
+		margin: 0 auto;
+	}
 }
 
 input,
 textarea {
 	border: none;
 	background: transparent;
-	padding: 0.5rem;
+	padding: 0.5rem 0;
 	border-bottom: 3px solid white;
-	margin: 15px;
+	margin: 15px 0;
 	color: white;
 	font-size: 1.8rem;
 	transition: 0.25s ease-in-out;
@@ -50,7 +59,7 @@ textarea {
 }
 
 textarea {
-	min-height: 270px;
+	min-height: 40%;
 	resize: none;
 }
 
@@ -81,13 +90,29 @@ textarea:focus {
 	color: rgba(216, 216, 216, 1);
 }
 
-form .button-contianer {
+form Button {
 	width: 100%;
 	position: relative;
-	/* border: 1px white solid; */
-	margin: 15px;
+	display: flex;
+	justify-content: center;
 }
 
-form .button-contianer Button {
-	float: right;
+@media screen and (max-width: 340px) {
+	.contact {
+		height: 75vh;
+	}
+	.contact form {
+		width: 85%;
+		height: auto;
+	}
+	input,
+	textarea {
+		font-size: 1rem;
+	}
+	textarea {
+		min-height: 30%;
+	}
+	::placeholder {
+		font-size: 20px;
+	}
 }
