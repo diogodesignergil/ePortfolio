@@ -6,7 +6,7 @@
 		},
 		"sidebar": {
 			"home": "Home",
-			"about": "About",
+			"about": "About Me",
 			"services": "Services",
 			"projects": "Projects",
 			"contact": "Contact"
@@ -20,7 +20,7 @@
 	},
 	"about": {
 		"section1": {
-			"title": "About",
+			"title": "About Me",
 			"name": "Name:",
 			"nickname": "Nickname:",
 			"birth": "Birth date:",

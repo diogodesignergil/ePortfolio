@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import Line from "../components/Line";
 
+import Foto from "../asset/img/foto.jpg";
+
 AOS.init({
 	// Global settings:
 	disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -50,7 +52,7 @@ function About() {
 						data-aos="fade-up"
 						data-aos-easing="ease-in-out"
 					>
-						<img src="asset/img/about_foto.jpg"></img>
+						<img src={Foto}></img>
 						<ul className="info">
 							<li>
 								<b>{t("about.section1.name")}</b> Diogo Oliveira Gil
@@ -100,32 +102,32 @@ function About() {
 							<div className="iconhobby">
 								<ul>
 									<li>
-										<i className="fas fa-photo-video"></i>
+										<i className="fas fa-photo-video" />
 										<br></br>
 										<label>Edição de vídeo e imagem</label>
 									</li>
 									<li>
-										<i className="fas fa-code"></i>
+										<i className="fas fa-code" />
 										<br></br>
 										<label>VS Code Dev</label>
 									</li>
 									<li>
-										<i className="fas fa-palette"></i>
+										<i className="fas fa-palette" />
 										<br></br>
 										<label>Desenhar</label>
 									</li>
 									<li>
-										<i className="fab fa-twitch"></i>
+										<i className="fab fa-twitch" />
 										<br></br>
 										<label>Twitch</label>
 									</li>
 									<li>
-										<i className="fab fa-youtube"></i>
+										<i className="fab fa-youtube" />
 										<br></br>
 										<label>YouTube</label>
 									</li>
 									<li>
-										<i className="fas fa-book-reader"></i>
+										<i className="fas fa-book-reader" />
 										<br></br>
 										<label>Ler livros</label>
 									</li>
@@ -140,27 +142,27 @@ function About() {
 							<div className="iconcom">
 								<ul>
 									<li>
-										<i className="fas fa-comments"></i>
+										<i className="fas fa-comments" />
 										<br></br>
 										<label>Comunicação Interpessoal</label>
 									</li>
 									<li>
-										<i className="fab fa-leanpub"></i>
+										<i className="fab fa-leanpub" />
 										<br></br>
 										<label>Aprender algo de novo</label>
 									</li>
 									<li>
-										<i className="fas fa-sitemap"></i>
+										<i className="fas fa-sitemap" />
 										<br></br>
 										<label>Organização das tarefas</label>
 									</li>
 									<li>
-										<i className="fas fa-newspaper"></i>
+										<i className="fas fa-newspaper" />
 										<br></br>
 										<label>Tentar estar informado</label>
 									</li>
 									<li>
-										<i className="fas fa-inventory"></i>
+										<i className="fas fa-inventory" />
 										<br></br>
 										<label>Organização do espaço</label>
 									</li>
@@ -183,11 +185,11 @@ function About() {
 								<span>Intermédio +</span>
 							</p>
 							<div className="bar">
-								<div className="progres ps yes" />
-								<div className="progres ps yes" />
-								<div className="progres ps yes" />
-								<div className="progres ps" />
-								<div className="progres ps" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres " />
+								<div className="progres " />
 							</div>
 						</div>
 					</div>
@@ -200,11 +202,11 @@ function About() {
 								<span>Intermédio +</span>
 							</p>
 							<div className="bar">
-								<div className="progres ai yes" />
-								<div className="progres ai yes" />
-								<div className="progres ai yes" />
-								<div className="progres ai" />
-								<div className="progres ai" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres " />
+								<div className="progres " />
 							</div>
 						</div>
 					</div>
@@ -217,11 +219,11 @@ function About() {
 								<span>Intermédio</span>
 							</p>
 							<div className="bar">
-								<div className="progres pr yes" />
-								<div className="progres pr yes" />
-								<div className="progres pr" />
-								<div className="progres pr" />
-								<div className="progres pr" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -234,11 +236,11 @@ function About() {
 								<span>Intermédio</span>
 							</p>
 							<div className="bar">
-								<div className="progres ae yes" />
-								<div className="progres ae yes" />
-								<div className="progres ae" />
-								<div className="progres ae" />
-								<div className="progres ae" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -254,11 +256,11 @@ function About() {
 								<span>Avançado</span>
 							</p>
 							<div className="bar">
-								<div className="progres mo yes" />
-								<div className="progres mo yes" />
-								<div className="progres mo yes" />
-								<div className="progres mo yes" />
-								<div className="progres mo" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -271,11 +273,11 @@ function About() {
 								<span>Avançado</span>
 							</p>
 							<div className="bar">
-								<div className="progres html yes" />
-								<div className="progres html yes" />
-								<div className="progres html yes" />
-								<div className="progres html yes" />
-								<div className="progres html" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -288,11 +290,11 @@ function About() {
 								<span>Avançado</span>
 							</p>
 							<div className="bar">
-								<div className="progres css yes" />
-								<div className="progres css yes" />
-								<div className="progres css yes" />
-								<div className="progres css yes" />
-								<div className="progres css" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -305,11 +307,11 @@ function About() {
 								<span>Intermédio</span>
 							</p>
 							<div className="bar">
-								<div className="progres js yes" />
-								<div className="progres js yes" />
-								<div className="progres js" />
-								<div className="progres js" />
-								<div className="progres js" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -322,11 +324,11 @@ function About() {
 								<span>Intermédio +</span>
 							</p>
 							<div className="bar">
-								<div className="progres php yes" />
-								<div className="progres php yes" />
-								<div className="progres php yes" />
-								<div className="progres php" />
-								<div className="progres php" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -339,11 +341,11 @@ function About() {
 								<span>Básico</span>
 							</p>
 							<div className="bar">
-								<div className="progres react yes" />
-								<div className="progres react" />
-								<div className="progres react" />
-								<div className="progres react" />
-								<div className="progres react" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -356,11 +358,11 @@ function About() {
 								<span>Intermédio +</span>
 							</p>
 							<div className="bar">
-								<div className="progres cc yes" />
-								<div className="progres cc yes" />
-								<div className="progres cc yes" />
-								<div className="progres cc" />
-								<div className="progres cc" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>
@@ -373,11 +375,11 @@ function About() {
 								<span>Intermédio +</span>
 							</p>
 							<div className="bar">
-								<div className="progres java yes" />
-								<div className="progres java yes" />
-								<div className="progres java yes" />
-								<div className="progres java" />
-								<div className="progres java" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres yes" />
+								<div className="progres" />
+								<div className="progres" />
 							</div>
 						</div>
 					</div>

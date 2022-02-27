@@ -4,6 +4,8 @@ import Menu from "./menu/Menu";
 import LanguageMenu from "./language/language";
 import { Link } from "react-router-dom";
 
+import Logo from "../../../asset/img/logo.png";
+
 export class Header extends Component {
 	render() {
 		return (
@@ -11,7 +13,7 @@ export class Header extends Component {
 				{/* Logo */}
 				<div className="logo">
 					<Link to="/">
-						<img src="asset/img/logo.png" />
+						<img src={Logo} />
 						<h1>Reveratel</h1>
 					</Link>
 				</div>
