@@ -24,9 +24,8 @@ function Services() {
             </p>
           </div>
           <div className="card-footer">
-            <label>
-              Saber mais <i className="fas fa-angle-right" />
-            </label>
+            <label>Saber mais </label>
+            <i className="far fa-angle-right" />
           </div>
         </div>
       </div>
