@@ -409,8 +409,8 @@
 
 .cards-contianer .card::after {
   content: "";
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 300px;
   position: absolute;
   z-index: 1;
 }
@@ -549,7 +549,7 @@
   transition: 0.25s ease-in-out;
   /* display: none; */
 }
-.cards-contianer .card.card.premierer:hover::after {
+.cards-contianer .card.premierer:hover::after {
   filter: blur(5px);
   opacity: 0.25;
 }

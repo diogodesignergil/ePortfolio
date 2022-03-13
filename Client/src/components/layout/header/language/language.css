@@ -12,6 +12,12 @@
   position: relative;
   display: inline-block;
 }
+@media screen and (max-width: 480px) {
+  .sl-nav {
+    width: 100px;
+    text-align: center;
+  }
+}
 .sl-nav li {
   cursor: pointer;
 }
