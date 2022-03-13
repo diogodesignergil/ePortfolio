@@ -43,20 +43,20 @@ nav {
 .icon span:nth-child(1) {
   top: 0px;
   width: 35px;
-  background: #b90000;
+  background-color: var(--red);
 }
 
 .icon span:nth-child(2),
 .icon span:nth-child(3) {
   top: 12.5px;
   width: 25px;
-  background: #00a2d3;
+  background-color: var(--blue);
 }
 
 .icon span:nth-child(4) {
   top: 25px;
   width: 40px;
-  background: #fffb00;
+  background-color: var(--yellow);
 }
 /* .icon.iconActive {
   background-color: rgb(31, 31, 31);
@@ -127,7 +127,7 @@ nav {
   margin: 0;
   top: 0;
   right: 0;
-  background: rgb(177, 130, 0);
+  background-color: var(--yellow);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
   width: 30%;
@@ -140,7 +140,7 @@ nav {
   margin: 0;
   top: 0;
   right: 0;
-  background: rgb(177, 0, 0);
+  background-color: var(--red);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 45% 100%);
   width: 100%;
@@ -154,7 +154,7 @@ nav {
   margin: 0;
   top: 0;
   right: 0;
-  background: rgb(0, 127, 177);
+  background-color: var(--blue);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%);
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
   width: 100%;
@@ -168,7 +168,7 @@ nav {
   right: -30%;
   height: 100vh;
   top: 0;
-  background: rgb(177, 130, 0);
+  background-color: var(--yellow);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
   width: 30%;
@@ -182,7 +182,7 @@ nav {
   margin: 0;
   top: 0;
   right: 0;
-  background: rgb(177, 0, 0);
+  background-color: var(--red);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 45% 100%);
   width: 100%;
@@ -197,7 +197,7 @@ nav {
   margin: 0;
   top: 0;
   right: 0;
-  background: rgb(0, 127, 177);
+  background-color: var(--blue);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%);
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
   width: 100%;

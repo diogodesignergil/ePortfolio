@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --red: rgb(190, 1, 1);
+  --blue: rgb(0, 140, 255);
+  --yellow: rgb(202, 138, 0);
 }
 
 /* ===== Scrollbar CSS ===== */

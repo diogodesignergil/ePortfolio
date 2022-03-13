@@ -71,16 +71,16 @@ textarea:focus {
 
 @keyframes border {
   0% {
-    border-bottom: 3px solid #ca1b1b;
+    border-bottom: 3px solid var(--red);
   }
   25% {
-    border-bottom: 3px solid #1b5eca;
+    border-bottom: 3px solid var(--blue);
   }
   75% {
-    border-bottom: 3px solid #cab01b;
+    border-bottom: 3px solid var(--yellow);
   }
   100% {
-    border-bottom: 3px solid #ca1b1b;
+    border-bottom: 3px solid var(--red);
   }
 }
 

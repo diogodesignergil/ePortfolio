@@ -78,7 +78,7 @@
   justify-content: center;
   align-content: center;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .info-contianer {
     width: 90%;
   }
@@ -100,7 +100,7 @@
   box-shadow: 5px 0 20px black;
   transition: 0.25s ease-in-out;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .card-contianer {
     box-shadow: 0 5px 20px black;
   }
@@ -145,7 +145,7 @@
 
 .slide-contianer .aboutme,
 .slide-contianer2 .aboutme {
-  background-color: #b90000;
+  background-color: var(--red);
   z-index: 3;
   position: relative;
   padding: 25px;
@@ -177,7 +177,8 @@
 
 .slide-contianer .hobby,
 .slide-contianer2 .hobby {
-  background-color: #00a2d3;
+  background-color: var(--blue);
+
   z-index: 2;
   position: relative;
   padding: 25px;
@@ -194,7 +195,8 @@
 .slide-contianer .hobby::after,
 .slide-contianer2 .hobby::after {
   content: "";
-  background: #00a2d3;
+  background-color: var(--blue);
+
   position: absolute;
   height: 100%;
   width: 20px;
@@ -241,7 +243,7 @@
 }
 .slide-contianer .comunication,
 .slide-contianer2 .comunication {
-  background-color: #c2bf00;
+  background-color: var(--yellow);
   z-index: 1;
   position: relative;
   padding: 25px;
@@ -257,7 +259,7 @@
 .slide-contianer .comunication::after,
 .slide-contianer2 .comunication::after {
   content: "";
-  background: #c2bf00;
+  background-color: var(--yellow);
   position: absolute;
   height: 100%;
   width: 20px;
@@ -340,7 +342,7 @@
   transition: 0.25s ease-in-out;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .slide-contianer {
     display: none;
   }
@@ -348,6 +350,7 @@
     position: relative;
     display: flex;
     margin: auto 0;
+    margin-top: -8px;
     max-height: 355px;
     height: 355px;
     width: 100%;
