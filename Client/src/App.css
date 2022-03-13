@@ -17,6 +17,19 @@
 *::-webkit-scrollbar {
   width: 15px;
 }
+@media screen and (max-width: 750px) {
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 0;
+    scrollbar-color: #57577a #1e1e2b;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+}
 
 *::-webkit-scrollbar-track {
   background: #54546b7c;
