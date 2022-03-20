@@ -31,6 +31,15 @@
       "education2": "12º",
       "course1": "Curso:",
       "course2": "Design Gráfico"
+    },
+    "section2": {
+      "title": "Conhecimento dos Programas",
+      "level": "Nível",
+      "basic": "Básico",
+      "interm": "Intermédio",
+      "intermplus": "Intermédio +",
+      "adven": "Avançado",
+      "advenplus": "Avançado +"
     }
   },
   "services": {},

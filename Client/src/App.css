@@ -4,9 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --red: rgb(190, 1, 1);
-  --blue: rgb(0, 140, 255);
-  --yellow: rgb(202, 138, 0);
+  --red: #be0101;
+  --blue: #008cff;
+  --yellow: #cabc00;
+  --bg: #1e1e2b;
+  --white: #fff;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -52,7 +54,7 @@ html {
   width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: #1e1e2b;
+  background-color: var(--bg);
   font-family: "Ubuntu", sans-serif;
   color: white;
   margin: 0;

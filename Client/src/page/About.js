@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Line from "../components/Line";
 
 import Foto from "../asset/img/foto.jpg";
+import SkillCards from "../components/SkillCards";
 
 function About() {
   const [red, setRed] = useState(false);
@@ -242,9 +243,17 @@ function About() {
         </div>
       </div>
       <div className="skill-contianer">
-        <h2>Conhecimento dos Programas</h2>
+        <h2>{t("about.section2.title")}</h2>
         <Line />
         <div className="cards-contianer">
+          <SkillCards
+            cardStyle="cardStyle"
+            title="Adobe Photoshop"
+            subtitle=""
+            level={t("about.section2.intermplus")}
+            cardLevel="intermplus"
+          />
+          {/* Photoshop */}
           <div className="card photoshop">
             <div className="card-skill">
               <h3>Adobe Photoshop</h3>
@@ -262,6 +271,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* Illustrator */}
           <div className="card illustrator">
             <div className="card-skill">
               <h3>Adobe Illustrator</h3>
@@ -279,6 +289,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* Premierer */}
           <div className="card premierer">
             <div className="card-skill">
               <h3>Adobe Premierer Pro</h3>
@@ -296,6 +307,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* After Effects */}
           <div className="card aftereffect">
             <div className="card-skill">
               <h3>Adobe After Effect</h3>
@@ -313,6 +325,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* Microsoft Office */}
           <div className="card microOffice">
             <div className="card-skill">
               <h3>
@@ -333,6 +346,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* HTML */}
           <div className="card html">
             <div className="card-skill">
               <h3>Html</h3>
@@ -350,6 +364,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* CSS */}
           <div className="card css">
             <div className="card-skill">
               <h3>Css</h3>
@@ -367,6 +382,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* Javascript */}
           <div className="card js">
             <div className="card-skill">
               <h3>Javascript</h3>
@@ -384,6 +400,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* PHP */}
           <div className="card php">
             <div className="card-skill">
               <h3>PHP</h3>
@@ -401,6 +418,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* React JS */}
           <div className="card react">
             <div className="card-skill">
               <h3>ReactJs</h3>
@@ -418,6 +436,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* C++ / C# */}
           <div className="card cc">
             <div className="card-skill">
               <h3>C++ / C#</h3>
@@ -435,6 +454,7 @@ function About() {
               </div>
             </div>
           </div>
+          {/* Java */}
           <div className="card java">
             <div className="card-skill">
               <h3>Java</h3>
@@ -454,6 +474,7 @@ function About() {
           </div>
         </div>
 
+        {/* Language */}
         <div className="language">
           <h2>Línguagem</h2>
           <Line />

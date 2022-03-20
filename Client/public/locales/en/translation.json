@@ -31,6 +31,15 @@
       "education2": "12th",
       "course1": "Course:",
       "course2": "Graphic design"
+    },
+    "section2": {
+      "title": "Programme Knowledge",
+      "level": "Level",
+      "basic": "Basic",
+      "interm": "Intermediate",
+      "intermplus": "Intermediate +",
+      "adven": "Advanced",
+      "advenplus": "Advanced +"
     }
   },
   "services": {},
