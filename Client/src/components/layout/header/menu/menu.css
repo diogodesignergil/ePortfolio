@@ -120,7 +120,6 @@ nav {
 .list .listItem li:hover {
   font-size: 4.5rem;
 }
-
 .menuOpen {
   height: 100vh;
   position: absolute;
@@ -247,5 +246,19 @@ nav {
   }
   .list .listItem li:hover {
     font-size: 3.2rem;
+  }
+}
+@media (max-width: 320px) {
+  .menu.menuOpen {
+    width: 100%;
+  }
+  .menu.menuClose {
+    right: -100%;
+  }
+  .list .listItem li {
+    font-size: 2.5rem;
+  }
+  .list .listItem li:hover {
+    font-size: 2.6rem;
   }
 }

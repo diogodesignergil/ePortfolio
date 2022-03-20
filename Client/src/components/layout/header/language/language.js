@@ -38,7 +38,7 @@ function LanguageMenu() {
                 </span>
               </li>
               <li onClick={() => handleLanguageChange("en")}>
-                <i class="sl-flag flag-en"></i>
+                <i className="sl-flag flag-en"></i>
                 <span className={getActive === "en" ? "active" : ""}>
                   {t("menu.languages.english")}
                 </span>
