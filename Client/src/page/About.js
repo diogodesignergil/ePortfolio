@@ -1,12 +1,13 @@
 import { React, useState } from "react";
 import "./about.css";
+import "../components/LangCards.css";
 
 import { useTranslation } from "react-i18next";
 
 import Line from "../components/Line";
 
 import Foto from "../asset/img/foto.jpg";
-import SkillCards from "../components/Skill/SkillCards";
+import SkillCards from "../components/SkillCards.js";
 
 function About() {
 	const [red, setRed] = useState(false);
@@ -30,6 +31,105 @@ function About() {
 		setYellow2(true) + setRed2(false) + setBlue2(false);
 
 	const [t] = useTranslation();
+
+	const allSkill = [
+		{
+			id: "1",
+			style: "photoshop",
+			title: "Adobe Photoshop",
+			subtitle: "",
+			textLevel: "about.section2.intermplus",
+			level: "intermplus",
+		},
+		{
+			id: "2",
+			style: "illustrator",
+			title: "Adobe Illustrator",
+			subtitle: "",
+			textLevel: "about.section2.intermplus",
+			level: "intermplus",
+		},
+		{
+			id: "3",
+			style: "premierer",
+			title: "Adobe Premierer Pro",
+			subtitle: "",
+			textLevel: "about.section2.interm",
+			level: "interm",
+		},
+		{
+			id: "4",
+			style: "aftereffect",
+			title: "Adobe After Effect",
+			subtitle: "",
+			textLevel: "about.section2.interm",
+			level: "interm",
+		},
+		{
+			id: "5",
+			style: "microOffice",
+			title: "Microsoft Office",
+			subtitle: "(Word, Excel, PowerPoint)",
+			textLevel: "about.section2.adven",
+			level: "adven",
+		},
+		{
+			id: "6",
+			style: "html",
+			title: "Html",
+			subtitle: "",
+			textLevel: "about.section2.adven",
+			level: "adven",
+		},
+		{
+			id: "7",
+			style: "css",
+			title: "Css",
+			subtitle: "",
+			textLevel: "about.section2.adven",
+			level: "adven",
+		},
+		{
+			id: "8",
+			style: "js",
+			title: "Javascript",
+			subtitle: "",
+			textLevel: "about.section2.interm",
+			level: "interm",
+		},
+		{
+			id: "9",
+			style: "php",
+			title: "PHP",
+			subtitle: "",
+			textLevel: "about.section2.intermplus",
+			level: "intermplus",
+		},
+		{
+			id: "10",
+			style: "react",
+			title: "React.js",
+			subtitle: "",
+			textLevel: "about.section2.basic",
+			level: "basic",
+		},
+		{
+			id: "11",
+			style: "cc",
+			title: "C++ / C#",
+			subtitle: "",
+			textLevel: "about.section2.intermplus",
+			level: "intermplus",
+		},
+		{
+			id: "12",
+			style: "java",
+			title: "Java",
+			subtitle: "",
+			textLevel: "about.section2.intermplus",
+			level: "intermplus",
+		},
+	];
 
 	return (
 		<section className="about" id="about" data-aos="fade-in">
@@ -246,309 +346,94 @@ function About() {
 				<h2>{t("about.section2.title")}</h2>
 				<Line />
 				<div className="cards-contianer">
-					<SkillCards
-						cardStyle="photoshop"
-						title="Adobe Photoshop"
-						subtitle=""
-						level={t("about.section2.intermplus")}
-						cardLevel="intermplus"
-					/>
-					{/* Photoshop */}
-					<div className="card photoshop">
-						<div className="card-skill">
-							<h3>Adobe Photoshop</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio +</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres " />
-								<div className="progres " />
-							</div>
-						</div>
-					</div>
-					{/* Illustrator */}
-					<div className="card illustrator">
-						<div className="card-skill">
-							<h3>Adobe Illustrator</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio +</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres " />
-								<div className="progres " />
-							</div>
-						</div>
-					</div>
-					{/* Premierer */}
-					<div className="card premierer">
-						<div className="card-skill">
-							<h3>Adobe Premierer Pro</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* After Effects */}
-					<div className="card aftereffect">
-						<div className="card-skill">
-							<h3>Adobe After Effect</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* Microsoft Office */}
-					<div className="card microOffice">
-						<div className="card-skill">
-							<h3>
-								Microsoft Office<br></br>
-								<label>(Word, Excel, PowerPoint)</label>
-							</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Avançado</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* HTML */}
-					<div className="card html">
-						<div className="card-skill">
-							<h3>Html</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Avançado</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* CSS */}
-					<div className="card css">
-						<div className="card-skill">
-							<h3>Css</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Avançado</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* Javascript */}
-					<div className="card js">
-						<div className="card-skill">
-							<h3>Javascript</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* PHP */}
-					<div className="card php">
-						<div className="card-skill">
-							<h3>PHP</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio +</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* React JS */}
-					<div className="card react">
-						<div className="card-skill">
-							<h3>ReactJs</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Básico</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* C++ / C# */}
-					<div className="card cc">
-						<div className="card-skill">
-							<h3>C++ / C#</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio +</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
-					{/* Java */}
-					<div className="card java">
-						<div className="card-skill">
-							<h3>Java</h3>
-							<p>
-								Nível
-								<br></br>
-								<span>Intermédio +</span>
-							</p>
-							<div className="bar">
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres yes" />
-								<div className="progres" />
-								<div className="progres" />
-							</div>
-						</div>
-					</div>
+					{allSkill.map((skillStatus) => {
+						return (
+							<SkillCards
+								key={skillStatus.id}
+								cardStyle={skillStatus.style}
+								title={skillStatus.title}
+								subtitle={skillStatus.subtitle}
+								level={t(skillStatus.textLevel)}
+								cardLevel={skillStatus.level}
+							/>
+						);
+					})}
 				</div>
-
-				{/* Language */}
-				<div className="language">
-					<h2>Línguagem</h2>
-					<Line />
-					<div className="cards-contianer">
-						<div className="card-language portugal">
-							<div className="card-lang">
-								<h3>Português</h3>
-								<div className="card-progress">
-									<div className="overflow">
-										<div className="circle-progress fala">
-											<div>
-												<span>Nativo</span>
-												<br></br>
-												<label>Fala</label>
-											</div>
+			</div>
+			{/* Language */}
+			<div className="language">
+				<h2>Línguagem</h2>
+				<Line />
+				<div className="cards-contianer">
+					<div className="card-language portugal">
+						<div className="card-lang">
+							<h3>Português</h3>
+							<div className="card-progress">
+								<div className="overflow">
+									<div className="circle-progress fala">
+										<div>
+											<span>Nativo</span>
+											<br></br>
+											<label>Fala</label>
 										</div>
 									</div>
-									<div className="overflow">
-										<div className="circle-progress escrita">
-											<div>
-												<span>Nativo</span>
-												<br></br>
-												<label>Escrita</label>
-											</div>
+								</div>
+								<div className="overflow">
+									<div className="circle-progress escrita">
+										<div>
+											<span>Nativo</span>
+											<br></br>
+											<label>Escrita</label>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="card-language english">
-							<div className="card-lang">
-								<h3>Inglês</h3>
-								<div className="card-progress">
-									<div className="overflow">
-										<div className="circle-progress fala">
-											<div>
-												<span>74%</span>
-												<br></br>
-												<label>Fala</label>
-											</div>
+					</div>
+					<div className="card-language english">
+						<div className="card-lang">
+							<h3>Inglês</h3>
+							<div className="card-progress">
+								<div className="overflow">
+									<div className="circle-progress fala">
+										<div>
+											<span>74%</span>
+											<br></br>
+											<label>Fala</label>
 										</div>
 									</div>
-									<div className="overflow">
-										<div className="circle-progress escrita">
-											<div>
-												<span>78%</span>
-												<br></br>
-												<label>Escrita</label>
-											</div>
+								</div>
+								<div className="overflow">
+									<div className="circle-progress escrita">
+										<div>
+											<span>78%</span>
+											<br></br>
+											<label>Escrita</label>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="card-language france">
-							<div className="card-lang">
-								<h3>Francês</h3>
-								<div className="card-progress">
-									<div className="overflow">
-										<div className="circle-progress fala">
-											<div>
-												<span>8%</span>
-												<br></br>
-												<label>Fala</label>
-											</div>
+					</div>
+					<div className="card-language france">
+						<div className="card-lang">
+							<h3>Francês</h3>
+							<div className="card-progress">
+								<div className="overflow">
+									<div className="circle-progress fala">
+										<div>
+											<span>8%</span>
+											<br></br>
+											<label>Fala</label>
 										</div>
 									</div>
-									<div className="overflow">
-										<div className="circle-progress escrita">
-											<div>
-												<span>10%</span>
-												<br></br>
-												<label>Escrita</label>
-											</div>
+								</div>
+								<div className="overflow">
+									<div className="circle-progress escrita">
+										<div>
+											<span>10%</span>
+											<br></br>
+											<label>Escrita</label>
 										</div>
 									</div>
 								</div>
