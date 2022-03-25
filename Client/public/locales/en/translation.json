@@ -1,55 +1,63 @@
 {
-  "menu": {
-    "languages": {
-      "choosenLanguage": "Language",
-      "portuguese": "Portuguese",
-      "english": "English"
-    },
-    "sidebar": {
-      "home": "Home",
-      "about": "About Me",
-      "services": "Services",
-      "projects": "Projects",
-      "contact": "Contact"
-    }
-  },
-  "home": {
-    "text1": "Hello, my name is",
-    "text3": "And I'm a",
-    "download": "DOWNLOAD CV",
-    "hire": "HIRE ME"
-  },
-  "about": {
-    "section1": {
-      "title": "About Me",
-      "name": "Name:",
-      "nickname": "Nickname:",
-      "birth": "Birth date:",
-      "local1": "Localization:",
-      "local2": "Lisbon, Portugal",
-      "education1": "Education:",
-      "education2": "12th",
-      "course1": "Course:",
-      "course2": "Graphic design"
-    },
-    "section2": {
-      "title": "Programme Knowledge",
-      "level": "Level",
-      "basic": "Basic",
-      "interm": "Intermediate",
-      "intermplus": "Intermediate +",
-      "adven": "Advanced",
-      "advenplus": "Advanced +"
-    }
-  },
-  "services": {},
-  "projects": {},
-  "contact": {
-    "title": "Contact",
-    "info": "To contact me, please use the form below.",
-    "name": "Name",
-    "subject": "Subject",
-    "message": "Message",
-    "submit": "Submit"
-  }
+	"menu": {
+		"languages": {
+			"choosenLanguage": "Language",
+			"portuguese": "Portuguese",
+			"english": "English"
+		},
+		"sidebar": {
+			"home": "Home",
+			"about": "About Me",
+			"services": "Services",
+			"projects": "Projects",
+			"contact": "Contact"
+		}
+	},
+	"home": {
+		"text1": "Hello, my name is",
+		"text3": "And I'm a",
+		"download": "DOWNLOAD CV",
+		"hire": "HIRE ME"
+	},
+	"about": {
+		"section1": {
+			"title": "About Me",
+			"name": "Name:",
+			"nickname": "Nickname:",
+			"birth": "Birth date:",
+			"local1": "Localization:",
+			"local2": "Lisbon, Portugal",
+			"education1": "Education:",
+			"education2": "12th",
+			"course1": "Course:",
+			"course2": "Graphic design"
+		},
+		"section2": {
+			"title": "Programme Knowledge",
+			"level": "Level",
+			"basic": "Basic",
+			"interm": "Intermediate",
+			"intermplus": "Intermediate +",
+			"adven": "Advanced",
+			"advenplus": "Advanced +"
+		},
+		"section3": {
+			"speak": "Speak",
+			"write": "Write",
+			"portugal": "Portuguese",
+			"english": "English",
+			"france": "Frances",
+			"native": "Native"
+		}
+	},
+	"services": {},
+	"projects": {},
+	"contact": {
+		"title": "Contact",
+		"info": "To contact me, please use the form below.",
+		"name": "Name",
+		"subject": "Subject",
+		"message": "Message",
+		"submit": "Submit"
+	}
 }
