@@ -70,5 +70,8 @@
 		"subject": "Assunto",
 		"message": "Mensagem",
 		"submit": "Submeter"
+	},
+	"error": {
+		"notfound": "Página Não Encontrado"
 	}
 }

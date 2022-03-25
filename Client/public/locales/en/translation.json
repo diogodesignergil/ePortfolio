@@ -70,5 +70,8 @@
 		"subject": "Subject",
 		"message": "Message",
 		"submit": "Submit"
+	},
+	"error": {
+		"notfound": "Page Not Found"
 	}
 }
