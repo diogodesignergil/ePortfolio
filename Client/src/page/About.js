@@ -7,7 +7,9 @@ import { useTranslation } from "react-i18next";
 import Line from "../components/Line";
 
 import Foto from "../asset/img/foto.jpg";
+
 import SkillCards from "../components/SkillCards.js";
+import LangCards from "../components/LangCards.js";
 
 function About() {
 	const [red, setRed] = useState(false);
@@ -128,6 +130,30 @@ function About() {
 			subtitle: "",
 			textLevel: "about.section2.intermplus",
 			level: "intermplus",
+		},
+	];
+
+	const allLang = [
+		{
+			id: "1",
+			style: "portugal",
+			title: "about.section3.portugal.title",
+			speak: "about.section3.portugal.speakPer",
+			write: "about.section3.portugal.writePer",
+		},
+		{
+			id: "2",
+			style: "english",
+			title: "about.section3.english.title",
+			speak: "about.section3.english.speakPer",
+			write: "about.section3.english.writePer",
+		},
+		{
+			id: "3",
+			style: "france",
+			title: "about.section3.france.title",
+			speak: "about.section3.france.speakPer",
+			write: "about.section3.france.writePer",
 		},
 	];
 
@@ -342,6 +368,7 @@ function About() {
 					</div>
 				</div>
 			</div>
+			{/* Skill */}
 			<div className="skill-contianer">
 				<h2>{t("about.section2.title")}</h2>
 				<Line />
@@ -365,85 +392,21 @@ function About() {
 				<h2>Línguagem</h2>
 				<Line />
 				<div className="cards-contianer">
-					<div className="card-language portugal">
-						<div className="card-lang">
-							<h3>Português</h3>
-							<div className="card-progress">
-								<div className="overflow">
-									<div className="circle-progress fala">
-										<div>
-											<span>Nativo</span>
-											<br></br>
-											<label>Fala</label>
-										</div>
-									</div>
-								</div>
-								<div className="overflow">
-									<div className="circle-progress escrita">
-										<div>
-											<span>Nativo</span>
-											<br></br>
-											<label>Escrita</label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="card-language english">
-						<div className="card-lang">
-							<h3>Inglês</h3>
-							<div className="card-progress">
-								<div className="overflow">
-									<div className="circle-progress fala">
-										<div>
-											<span>74%</span>
-											<br></br>
-											<label>Fala</label>
-										</div>
-									</div>
-								</div>
-								<div className="overflow">
-									<div className="circle-progress escrita">
-										<div>
-											<span>78%</span>
-											<br></br>
-											<label>Escrita</label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="card-language france">
-						<div className="card-lang">
-							<h3>Francês</h3>
-							<div className="card-progress">
-								<div className="overflow">
-									<div className="circle-progress fala">
-										<div>
-											<span>8%</span>
-											<br></br>
-											<label>Fala</label>
-										</div>
-									</div>
-								</div>
-								<div className="overflow">
-									<div className="circle-progress escrita">
-										<div>
-											<span>10%</span>
-											<br></br>
-											<label>Escrita</label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					{allLang.map((langStatus) => {
+						return (
+							<LangCards
+								key={langStatus.id}
+								langStyle={langStatus.style}
+								title={t(langStatus.title)}
+								speakPer={t(langStatus.speak)}
+								writePer={t(langStatus.write)}
+							/>
+						);
+					})}
 				</div>
 			</div>
 			<div className="timeline-container">
-				<h2>Experiência</h2>
+				<h2>Experiência Profissional</h2>
 				<Line />
 				<div className="wrapper-time">
 					<div className="expericens-contianer">

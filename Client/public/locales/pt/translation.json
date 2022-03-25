@@ -44,10 +44,21 @@
 		"section3": {
 			"speak": "Fala",
 			"write": "Escrita",
-			"portugal": "Português",
-			"english": "Inglês",
-			"france": "Francês",
-			"native": "Nativo"
+			"portugal": {
+				"title": "Português",
+				"speakPer": "Nativo",
+				"writePer": "Nativo"
+			},
+			"english": {
+				"title": "Inglês",
+				"speakPer": "74%",
+				"writePer": "78%"
+			},
+			"france": {
+				"title": "Francês",
+				"speakPer": "8%",
+				"writePer": "10%"
+			}
 		}
 	},
 	"services": {},
