@@ -1,8 +1,3 @@
-* {
-	--brShadow: -6px 6px 15px rgba(0, 0, 0, 0.5);
-	--tlShadow: 6px -6px 15px rgba(255, 255, 255, 0.8);
-}
-
 .error {
 	height: calc(100vh - 8vh - 12vh);
 	display: flex;
@@ -17,12 +12,15 @@
 .error h1 {
 	font-size: 15rem;
 	margin: 25px;
-	background: linear-gradient(
+	color: transparent;
+	-webkit-text-stroke: 4px white;
+	background: -webkit-linear-gradient(
 		-45deg,
 		var(--red) 10%,
 		var(--blue) 50%,
 		var(--yellow) 90%
 	);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-size: 400% 400%;
