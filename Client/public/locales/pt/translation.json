@@ -1,7 +1,6 @@
 {
 	"menu": {
 		"languages": {
-			"choosenLanguage": "Linguagem",
 			"portuguese": "Português",
 			"english": "Inglês"
 		},
@@ -42,6 +41,7 @@
 			"advenplus": "Avançado +"
 		},
 		"section3": {
+			"title": "",
 			"speak": "Fala",
 			"write": "Escrita",
 			"portugal": {
@@ -59,7 +59,8 @@
 				"speakPer": "8%",
 				"writePer": "10%"
 			}
-		}
+		},
+		"section4": {}
 	},
 	"services": {},
 	"projects": {},
