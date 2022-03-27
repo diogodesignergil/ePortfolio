@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./about.css";
-import "../components/LangCards.css";
 
 import { useTranslation } from "react-i18next";
 
@@ -10,6 +9,7 @@ import Foto from "../asset/img/foto.jpg";
 
 import SkillCards from "../components/SkillCards.js";
 import LangCards from "../components/LangCards.js";
+import ExpCards from "../components/ExpCards";
 
 function About() {
 	const [red, setRed] = useState(false);
@@ -157,6 +157,73 @@ function About() {
 		},
 	];
 
+	const allExp = [
+		{
+			id: "1",
+			title: "about.section4.card1.title",
+			date: "09/2009-03/2013",
+			local: "about.section4.card1.local",
+			body: "about.section4.card1.body",
+			year: "2009",
+		},
+		{
+			id: "2",
+			title: "about.section4.card2.title",
+			date: "10/2014-12/2014",
+			local: "about.section4.card2.local",
+			body: "about.section4.card2.body",
+			year: "2014",
+		},
+		{
+			id: "3",
+			title: "about.section4.card3.title",
+			date: "04/2015-09/2015",
+			local: "about.section4.card3.local",
+			body: "about.section4.card3.body",
+			year: "2015",
+		},
+		{
+			id: "4",
+			title: "about.section4.card4.title",
+			date: "04/2016-12/2012",
+			local: "about.section4.card4.local",
+			body: "about.section4.card4.body",
+			year: "2016",
+		},
+		{
+			id: "5",
+			title: "about.section4.card5.title",
+			date: "10/2017-06/2018",
+			local: "about.section4.card6.local",
+			body: "about.section4.card6.body",
+			year: "2017",
+		},
+		{
+			id: "6",
+			title: "about.section4.card6.title",
+			date: "07/2018-09/2019",
+			local: "about.section4.card6.local",
+			body: "about.section4.card6.body",
+			year: "2018",
+		},
+		{
+			id: "7",
+			title: "about.section4.card7.title",
+			date: "01/2020-09/2020",
+			local: "about.section4.card7.local",
+			body: "about.section4.card7.body",
+			year: "2018",
+		},
+		{
+			id: "8",
+			title: "about.section4.card8.title",
+			date: "09/2021-12/2021",
+			local: "about.section4.card8.local",
+			body: "about.section4.card8.body",
+			year: "2021",
+		},
+	];
+
 	return (
 		<section className="about" id="about" data-aos="fade-in">
 			<h1>{t("about.section1.title")}</h1>
@@ -193,50 +260,47 @@ function About() {
 							className={red ? "aboutme" : "aboutme  close"}
 							onClick={ToggleRed}
 						>
-							<h2>Sobre mim</h2>
+							<h2>{t("about.section1.slide1.title")}</h2>
 							<p>
-								Sou designer/programador com alguns conhecimentos na área na
-								criação de logos e overlays para streamers de Twitch e YouTube e
-								entidades, com Html e Java, CSS e muito mais. Entrei nesta aréa
-								pelo qual eu gostou de ser criativo.
+								{t("about.section1.slide1.text1")}
+								<br></br>
+								{t("about.section1.slide1.text2")}
+								<br></br>
+								{t("about.section1.slide1.text3")}
 							</p>
 						</div>
 						<div
 							className={blue ? "hobby" : "hobby  close"}
 							onClick={ToggleBlue}
 						>
-							<h2>Hobby</h2>
+							<h2>{t("about.section1.slide2.title")}</h2>
+
 							<div className="iconhobby">
 								<ul>
 									<li>
 										<i className="fas fa-photo-video" />
 										<br></br>
-										<label>Edição de vídeo e imagem</label>
+										<label>{t("about.section1.slide2.icons.video")}</label>
 									</li>
 									<li>
 										<i className="fas fa-code" />
 										<br></br>
-										<label>VS Code Dev</label>
+										<label>{t("about.section1.slide2.icons.code")}</label>
 									</li>
 									<li>
 										<i className="fas fa-palette" />
 										<br></br>
-										<label>Desenhar</label>
+										<label>{t("about.section1.slide2.icons.art")}</label>
 									</li>
 									<li>
-										<i className="fab fa-twitch" />
+										<i class="fas fa-headset" />
 										<br></br>
-										<label>Twitch</label>
-									</li>
-									<li>
-										<i className="fab fa-youtube" />
-										<br></br>
-										<label>YouTube</label>
+										<label>{t("about.section1.slide2.icons.live")}</label>
 									</li>
 									<li>
 										<i className="fas fa-book-reader" />
 										<br></br>
-										<label>Ler livros</label>
+										<label>{t("about.section1.slide2.icons.read")}</label>
 									</li>
 								</ul>
 							</div>
@@ -245,33 +309,38 @@ function About() {
 							className={yellow ? "comunication" : "comunication  close"}
 							onClick={ToggleYellow}
 						>
-							<h2>Comunicação</h2>
+							<h2>{t("about.section1.slide3.title")}</h2>
 							<div className="iconcom">
 								<ul>
 									<li>
+										<i class="fas fa-users" />
+										<br></br>
+										<label>{t("about.section1.slide3.icons.team")}</label>
+									</li>
+									<li>
 										<i className="fas fa-comments" />
 										<br></br>
-										<label>Comunicação Interpessoal</label>
+										<label>{t("about.section1.slide3.icons.cominter")}</label>
 									</li>
 									<li>
 										<i className="fab fa-leanpub" />
 										<br></br>
-										<label>Aprender algo de novo</label>
+										<label>{t("about.section1.slide3.icons.learn")}</label>
 									</li>
 									<li>
 										<i className="fas fa-sitemap" />
 										<br></br>
-										<label>Organização das tarefas</label>
-									</li>
-									<li>
-										<i className="fas fa-newspaper" />
-										<br></br>
-										<label>Tentar estar informado</label>
+										<label>{t("about.section1.slide3.icons.todo")}</label>
 									</li>
 									<li>
 										<i className="fas fa-inventory" />
 										<br></br>
-										<label>Organização do espaço</label>
+										<label>{t("about.section1.slide3.icons.space")}</label>
+									</li>
+									<li>
+										<i className="fas fa-newspaper" />
+										<br></br>
+										<label>{t("about.section1.slide3.icons.news")}</label>
 									</li>
 								</ul>
 							</div>
@@ -282,50 +351,47 @@ function About() {
 							className={red2 ? "aboutme" : "aboutme  close"}
 							onClick={ToggleRed2}
 						>
-							<h2>Sobre mim</h2>
+							<h2>{t("about.section1.slide1.title")}</h2>
 							<p>
-								Sou designer/programador com alguns conhecimentos na área na
-								criação de logos e overlays para streamers de Twitch e YouTube e
-								entidades, com Html e Java, CSS e muito mais. Entrei nesta aréa
-								pelo qual eu gostou de ser criativo.
+								{t("about.section1.slide1.text1")}
+								<br></br>
+								{t("about.section1.slide1.text2")}
+								<br></br>
+								{t("about.section1.slide1.text3")}
 							</p>
 						</div>
 						<div
 							className={blue2 ? "hobby" : "hobby  close"}
 							onClick={ToggleBlue2}
 						>
-							<h2>Hobby</h2>
+							<h2>{t("about.section1.slide2.title")}</h2>
+
 							<div className="iconhobby">
 								<ul>
 									<li>
 										<i className="fas fa-photo-video" />
 										<br></br>
-										<label>Edição de vídeo e imagem</label>
+										<label>{t("about.section1.slide2.icons.video")}</label>
 									</li>
 									<li>
 										<i className="fas fa-code" />
 										<br></br>
-										<label>VS Code Dev</label>
+										<label>{t("about.section1.slide2.icons.code")}</label>
 									</li>
 									<li>
 										<i className="fas fa-palette" />
 										<br></br>
-										<label>Desenhar</label>
+										<label>{t("about.section1.slide2.icons.art")}</label>
 									</li>
 									<li>
-										<i className="fab fa-twitch" />
+										<i class="fas fa-headset" />
 										<br></br>
-										<label>Twitch</label>
-									</li>
-									<li>
-										<i className="fab fa-youtube" />
-										<br></br>
-										<label>YouTube</label>
+										<label>{t("about.section1.slide2.icons.live")}</label>
 									</li>
 									<li>
 										<i className="fas fa-book-reader" />
 										<br></br>
-										<label>Ler livros</label>
+										<label>{t("about.section1.slide2.icons.read")}</label>
 									</li>
 								</ul>
 							</div>
@@ -334,33 +400,38 @@ function About() {
 							className={yellow2 ? "comunication" : "comunication  close"}
 							onClick={ToggleYellow2}
 						>
-							<h2>Comunicação</h2>
+							<h2>{t("about.section1.slide3.title")}</h2>
 							<div className="iconcom">
 								<ul>
 									<li>
+										<i class="fas fa-users" />
+										<br></br>
+										<label>{t("about.section1.slide3.icons.team")}</label>
+									</li>
+									<li>
 										<i className="fas fa-comments" />
 										<br></br>
-										<label>Comunicação Interpessoal</label>
+										<label>{t("about.section1.slide3.icons.cominter")}</label>
 									</li>
 									<li>
 										<i className="fab fa-leanpub" />
 										<br></br>
-										<label>Aprender algo de novo</label>
+										<label>{t("about.section1.slide3.icons.learn")}</label>
 									</li>
 									<li>
 										<i className="fas fa-sitemap" />
 										<br></br>
-										<label>Organização das tarefas</label>
-									</li>
-									<li>
-										<i className="fas fa-newspaper" />
-										<br></br>
-										<label>Tentar estar informado</label>
+										<label>{t("about.section1.slide3.icons.todo")}</label>
 									</li>
 									<li>
 										<i className="fas fa-inventory" />
 										<br></br>
-										<label>Organização do espaço</label>
+										<label>{t("about.section1.slide3.icons.space")}</label>
+									</li>
+									<li>
+										<i className="fas fa-newspaper" />
+										<br></br>
+										<label>{t("about.section1.slide3.icons.news")}</label>
 									</li>
 								</ul>
 							</div>
@@ -389,7 +460,7 @@ function About() {
 			</div>
 			{/* Language */}
 			<div className="language">
-				<h2>Línguagem</h2>
+				<h2>{t("about.section3.title")}</h2>
 				<Line />
 				<div className="cards-contianer">
 					{allLang.map((langStatus) => {
@@ -405,160 +476,24 @@ function About() {
 					})}
 				</div>
 			</div>
+			{/* Experiances */}
 			<div className="timeline-container">
-				<h2>Experiência Profissional</h2>
+				<h2>{t("about.section4.title")}</h2>
 				<Line />
 				<div className="wrapper-time">
 					<div className="expericens-contianer">
-						<div className="card-experiences">
-							<div className="exper-info">
-								<h3>Design Gráfico</h3>
-								<data>09/2009 - 03/2013</data>
-								<br />
-								<label>Escola Sec. Padre António Vieira</label>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-									scelerisque lacus euismod nulla vulputate efficitur.
-									Pellentesque ultricies in dui eget dignissim. Donec malesuada
-									dictum quam vitae convallis. Integer non mi eget sapien cursus
-									interdum eu ac justo. Cras in egestas mauris, quis condimentum
-									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
-									a bibendum tempor, leo ante sollicitudin nulla, at ornare
-									mauris odio sed lorem. Pellentesque nec nisi nunc.
-								</p>
-							</div>
-							<div className="time-line">
-								<div className="year">
-									<data>2013</data>
-								</div>
-								<hr></hr>
-							</div>
-						</div>
-
-						<div className="card-experiences">
-							<div className="exper-info">
-								<h3>Design Gráfico</h3>
-								<data>09/2009 - 03/2013</data>
-								<br />
-								<label>Escola Sec. Padre António Vieira</label>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-									scelerisque lacus euismod nulla vulputate efficitur.
-									Pellentesque ultricies in dui eget dignissim. Donec malesuada
-									dictum quam vitae convallis. Integer non mi eget sapien cursus
-									interdum eu ac justo. Cras in egestas mauris, quis condimentum
-									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
-									a bibendum tempor, leo ante sollicitudin nulla, at ornare
-									mauris odio sed lorem. Pellentesque nec nisi nunc.
-								</p>
-							</div>
-							<div className="time-line">
-								<div className="year">
-									<data>2014</data>
-								</div>
-								<hr></hr>
-							</div>
-						</div>
-
-						<div className="card-experiences">
-							<div className="exper-info">
-								<h3>Design Gráfico</h3>
-								<data>09/2009 - 03/2013</data>
-								<br />
-								<label>Escola Sec. Padre António Vieira</label>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-									scelerisque lacus euismod nulla vulputate efficitur.
-									Pellentesque ultricies in dui eget dignissim. Donec malesuada
-									dictum quam vitae convallis. Integer non mi eget sapien cursus
-									interdum eu ac justo. Cras in egestas mauris, quis condimentum
-									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
-									a bibendum tempor, leo ante sollicitudin nulla, at ornare
-									mauris odio sed lorem. Pellentesque nec nisi nunc.
-								</p>
-							</div>
-							<div className="time-line">
-								<div className="year">
-									<data>2015</data>
-								</div>
-								<hr></hr>
-							</div>
-						</div>
-
-						<div className="card-experiences">
-							<div className="exper-info">
-								<h3>Design Gráfico</h3>
-								<data>09/2009 - 03/2013</data>
-								<br />
-								<label>Escola Sec. Padre António Vieira</label>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-									scelerisque lacus euismod nulla vulputate efficitur.
-									Pellentesque ultricies in dui eget dignissim. Donec malesuada
-									dictum quam vitae convallis. Integer non mi eget sapien cursus
-									interdum eu ac justo. Cras in egestas mauris, quis condimentum
-									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
-									a bibendum tempor, leo ante sollicitudin nulla, at ornare
-									mauris odio sed lorem. Pellentesque nec nisi nunc.
-								</p>
-							</div>
-							<div className="time-line">
-								<div className="year">
-									<data>2016</data>
-								</div>
-								<hr></hr>
-							</div>
-						</div>
-
-						<div className="card-experiences">
-							<div className="exper-info">
-								<h3>Design Gráfico</h3>
-								<data>09/2009 - 03/2013</data>
-								<br />
-								<label>Escola Sec. Padre António Vieira</label>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-									scelerisque lacus euismod nulla vulputate efficitur.
-									Pellentesque ultricies in dui eget dignissim. Donec malesuada
-									dictum quam vitae convallis. Integer non mi eget sapien cursus
-									interdum eu ac justo. Cras in egestas mauris, quis condimentum
-									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
-									a bibendum tempor, leo ante sollicitudin nulla, at ornare
-									mauris odio sed lorem. Pellentesque nec nisi nunc.
-								</p>
-							</div>
-							<div className="time-line">
-								<div className="year">
-									<data>2017</data>
-								</div>
-								<hr></hr>
-							</div>
-						</div>
-
-						<div className="card-experiences">
-							<div className="exper-info">
-								<h3>Design Gráfico</h3>
-								<data>09/2009 - 03/2013</data>
-								<br />
-								<label>Escola Sec. Padre António Vieira</label>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-									scelerisque lacus euismod nulla vulputate efficitur.
-									Pellentesque ultricies in dui eget dignissim. Donec malesuada
-									dictum quam vitae convallis. Integer non mi eget sapien cursus
-									interdum eu ac justo. Cras in egestas mauris, quis condimentum
-									purus. Cras posuere ac ipsum eget auctor. Nam ultrices, nulla
-									a bibendum tempor, leo ante sollicitudin nulla, at ornare
-									mauris odio sed lorem. Pellentesque nec nisi nunc.
-								</p>
-							</div>
-							<div className="time-line">
-								<div className="year">
-									<data>2018</data>
-								</div>
-								<hr></hr>
-							</div>
-						</div>
+						{allExp.map((ExpStatus) => {
+							return (
+								<ExpCards
+									key={ExpStatus.id}
+									title={t(ExpStatus.title)}
+									date={ExpStatus.date}
+									local={t(ExpStatus.local)}
+									body={t(ExpStatus.body)}
+									year={ExpStatus.year}
+								/>
+							);
+						})}
 					</div>
 				</div>
 			</div>

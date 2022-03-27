@@ -29,7 +29,34 @@
 			"education1": "Education:",
 			"education2": "12th",
 			"course1": "Course:",
-			"course2": "Graphic design"
+			"course2": "Graphic design",
+			"slide1": {
+				"title": "About me",
+				"text1": "I studied design in my high school with good results. Then I did some work for some people until a small business was made.",
+				"text2": "In the meantime, I did a lot of training, internships and work, I started to be interested in web-code, namely HTML, Javascript and CSS. I did two trainings within the context and how the design course further complemented my knowledge in the area of ​​web design.",
+				"text3": "So I created this page in order to get to know me and know what I do."
+			},
+			"slide2": {
+				"title": "Hobby",
+				"icons": {
+					"video": "Video and image editing",
+					"code": "Code experimentation",
+					"art": "Draw",
+					"live": "Livestream",
+					"read": "Read"
+				}
+			},
+			"slide3": {
+				"title": "Communication",
+				"icons": {
+					"team": "Teamwork",
+					"cominter": "Interpersonal comunication",
+					"learn": "Learn something new",
+					"todo": "Task Organization",
+					"space": "Space organization",
+					"news": "Try to be informed"
+				}
+			}
 		},
 		"section2": {
 			"title": "Programme Knowledge",
@@ -41,6 +68,7 @@
 			"advenplus": "Advanced +"
 		},
 		"section3": {
+			"title": "Language",
 			"speak": "Speak",
 			"write": "Write",
 			"portugal": {
@@ -57,6 +85,49 @@
 				"title": "France",
 				"speakPer": "8%",
 				"writePer": "10%"
+			}
+		},
+		"section4": {
+			"title": "Professional experience",
+			"card1": {
+				"title": "Graphic design",
+				"local": "School Sec. Father António Vieira",
+				"body": "Specialized course in logo creation. 1st Stage: F3 - Graphic Entity. 2nd Stage: Agir XXI - Social security service entity."
+			},
+			"card2": {
+				"title": "Credit Card and Marketing",
+				"local": "IFB - Banking Training Institute",
+				"body": "Studies on Credit Cards and their presentation in marketing."
+			},
+			"card3": {
+				"title": "Aerostructure Engineering",
+				"local": "IEFP - Institute for Employment and Vocational Training + OGMA",
+				"body": "Knowledge of drilling and driving parts for airplane assembly line. 500h Internship at OGMA."
+			},
+			"card4": {
+				"title": "Associations and Youth",
+				"local": "IEFP - Institute for Employment and Professional Training",
+				"body": "Knowing how an association is created and knowing how to relate to young people. 420h Internship at Casa de Juventude de Alverca."
+			},
+			"card5": {
+				"title": "Admnistrative technician",
+				"local": "IEFP - Institute for Employment and Professional Training",
+				"body": "Create document and organize these and know how to process complaints. 420h Internship at COPAM"
+			},
+			"card6": {
+				"title": "Administrative Technician - Human Resources",
+				"local": "COMPA - Portuguese Starch Company",
+				"body": "Process documents and claim management in the company."
+			},
+			"card7": {
+				"title": "Computing - Microsoft Academy",
+				"local": "IEFP - Institute for Employment and Professional Training",
+				"body": "Knowledge of computerization and Java, Html and CSS code."
+			},
+			"card8": {
+				"title": "Web Programming",
+				"local": "Cinel",
+				"body": "Knowledge of SQL, C++/C#, Javascript, Html, Css and PHP with final project using everything learned."
 			}
 		}
 	},

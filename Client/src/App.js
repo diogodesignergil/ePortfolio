@@ -47,7 +47,7 @@ function App() {
 				<Route path="/services/:id" element={<ServicesPage />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/*" element={<Error404 />} />
+				<Route path="*" element={<Error404 />} />
 			</Switch>
 			<Footer />
 		</Router>

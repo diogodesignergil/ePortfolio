@@ -1,76 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Share+Tech&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --red: #be0101;
-  --blue: #008cff;
-  --yellow: #cabc00;
-  --bg: #1e1e2b;
-  --white: #fff;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--red: #be0101;
+	--blue: #008cff;
+	--yellow: #cabc00;
+	--bg: #1e1e2b;
+	--white: #fff;
 }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #57577a #1e1e2b;
+	scrollbar-width: auto;
+	scrollbar-color: #57577a #1e1e2b;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 15px;
+	width: 15px;
 }
 @media screen and (max-width: 750px) {
-  /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: 0;
-    scrollbar-color: #57577a #1e1e2b;
-  }
+	/* ===== Scrollbar CSS ===== */
+	/* Firefox */
+	* {
+		scrollbar-width: auto;
+		scrollbar-color: #57577a #1e1e2b;
+	}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 0;
-  }
+	/* Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+		width: 0;
+	}
 }
 
 *::-webkit-scrollbar-track {
-  background: #54546b7c;
-  -webkit-box-shadow: inset 0px 0px 5px 1px #000000;
-  box-shadow: inset 0px 0px 5px 1px #000000;
+	background: #54546b7c;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #000000;
+	box-shadow: inset 0px 0px 5px 1px #000000;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #57577a;
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0px 0px 5px 1px #3d3d3d;
-  box-shadow: inset 0px 0px 5px 1px #3d3d3d;
+	background-color: #57577a;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #3d3d3d;
+	box-shadow: inset 0px 0px 5px 1px #3d3d3d;
 }
 
 body,
 html {
-  width: 100vw;
-  min-height: 100vh;
-  box-sizing: border-box;
-  background-color: var(--bg);
-  font-family: "Ubuntu", sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-  /* border: 3px darkgrey solid; */
-  overflow-x: hidden;
+	width: 100vw;
+	min-height: 100vh;
+	box-sizing: border-box;
+	background-color: var(--bg);
+	font-family: "Ubuntu", sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+	/* border: 3px darkgrey solid; */
+	overflow-x: hidden;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 ul,
 ul li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

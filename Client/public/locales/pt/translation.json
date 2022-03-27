@@ -29,7 +29,34 @@
 			"education1": "Escolaridade:",
 			"education2": "12º",
 			"course1": "Curso:",
-			"course2": "Design Gráfico"
+			"course2": "Design Gráfico",
+			"slide1": {
+				"title": "Sobre mim",
+				"text1": "Eu estudei design no meu secundário com bons resultados. Depois fiz alguns trabalhos para algumas pessoas até ser feito um pequeno negócio.",
+				"text2": "Entretanto, fiz várias formações, estágios e trabalho, comecei a ter interesse na web-code, nomeadamente HTML, Javascript e CSS. Fiz duas formações dentro do contexto e como o curso de design complementou mais o meu conhecimento na área de web design.",
+				"text3": "Então criei está página para o fim de conhecerem-me e saberem daquilo que faço."
+			},
+			"slide2": {
+				"title": "Passatempo",
+				"icons": {
+					"video": "Edição de vídeo e imagem",
+					"code": "Experimentação de código",
+					"art": "Desenhar",
+					"live": "Transmissão ao vivo",
+					"read": "Ler"
+				}
+			},
+			"slide3": {
+				"title": "Comunicação",
+				"icons": {
+					"team": "Trabalho em Equipa",
+					"cominter": "Comunicação Interpessoal",
+					"learn": "Aprender algo de novo",
+					"todo": "Organização das Tarefas",
+					"space": "Organização do espaço",
+					"news": "Tentar estar informado"
+				}
+			}
 		},
 		"section2": {
 			"title": "Conhecimento dos Programas",
@@ -41,7 +68,7 @@
 			"advenplus": "Avançado +"
 		},
 		"section3": {
-			"title": "",
+			"title": "Línguagem",
 			"speak": "Fala",
 			"write": "Escrita",
 			"portugal": {
@@ -60,7 +87,49 @@
 				"writePer": "10%"
 			}
 		},
-		"section4": {}
+		"section4": {
+			"title": "Experiência Profissional",
+			"card1": {
+				"title": "Design Gráfico",
+				"local": "Escola Sec. Padre António Vieira",
+				"body": "Curso especializado em criação de logotipos. 1º Estágio: F3 - Entidade Gráfia. 2º Estágio: Agir XXI - Entidade de serviço da segurança social."
+			},
+			"card2": {
+				"title": "Cartão de Crédito e Marketing",
+				"local": "IFB - Instituto de Formação Bancário",
+				"body": "Estudos sobre os Cartões de Créditos e apresentação do mesmo em marketing."
+			},
+			"card3": {
+				"title": "Engenharia Aeroestrutura",
+				"local": "IEFP - Instituto do Emprego e Formação Profissional + OGMA",
+				"body": "Conhecimento de furar e cravar peças para linha de montagem de avião. 500h Estágio na OGMA."
+			},
+			"card4": {
+				"title": "Associativismos e Juventude",
+				"local": "IEFP - Instituto do Emprego e Formação Profissional",
+				"body": "Conhecer com é criado um associativismo e saber relacionar com os jovens. 420h Estágio na Casa de Juventude de Alverca."
+			},
+			"card5": {
+				"title": "Técnico Administrativo",
+				"local": "IEFP - Instituto do Emprego e Formação Profissional",
+				"body": "Criar documento e organizar esses mesmos e saber como processar as reclamações. 420h Estágio na COPAM."
+			},
+			"card6": {
+				"title": "Técnico Administrativo - Recursos Humanos",
+				"local": "COMPA - Companhia Portuguesa de Amidos",
+				"body": "Processar documentos e gestão de reclamação na empresa."
+			},
+			"card7": {
+				"title": "Informática - Academia Microsoft",
+				"local": "IEFP - Instituto do Emprego e Formação Profissional",
+				"body": "Conhecimento computarização e código Java, Html e Css."
+			},
+			"card8": {
+				"title": "Programação Web",
+				"local": "Cinel",
+				"body": "Conehcimentos de SQL, C++/C#, Javascript, Html, Css e PHP com projeto final usando tudo que foi aprendido."
+			}
+		}
 	},
 	"services": {},
 	"projects": {},
