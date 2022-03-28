@@ -1,39 +1,43 @@
 import React from "react";
 import "./services.css";
 import Line from "../components/Line.js";
-import { Link } from "react-router-dom";
 
-import BannerLogo from "../asset/img/SBanner.png";
+import BannerLogo from "../asset/img/LogoBanner.png";
+
+import { useTranslation } from "react-i18next";
+import ServicesCards from "../components/ServicesCards";
+
+const allServices = [
+	{
+		id: "1",
+		image: BannerLogo,
+		title: "Logotipos",
+		descrition:
+			"Criação de logos personalizados para fins pessoais e empressial, com acabamento para wallpaper, papel timbrado, estampagem e muitos outros...",
+		link: "/services/1",
+	},
+];
 
 function Services() {
+	const [t] = useTranslation();
+
 	return (
 		<section className="services" data-aos="fade-in">
-			<h1>Services</h1>
+			<h1>{t("services.title")}</h1>
 			<Line />
-			<p>
-				Como designer, eu disponibilizo serviços que podem que encontrem em
-				baixo e poderão requisitar também.
-			</p>
+			<p>{t("services.info")}</p>
 			<div className="services-container">
-				<div className="services-card">
-					<div className="card-header">
-						<img src={BannerLogo} />
-					</div>
-					<div className="card-body">
-						<h2>Logotipos</h2>
-						<p>
-							Criação de logos personalizados para fins pessoais e empressial,
-							com acabamento para wallpaper, papel timbrado, estampagem e muitos
-							outros...
-						</p>
-					</div>
-					<div className="card-footer">
-						<Link to="/services/1">
-							<span>Saber mais </span>
-							<i className="far fa-angle-right" />
-						</Link>
-					</div>
-				</div>
+				{allServices.map((servicesStatus) => {
+					return (
+						<ServicesCards
+							key={servicesStatus.id}
+							image={servicesStatus.image}
+							title={servicesStatus.title}
+							descrition={servicesStatus.descrition}
+							link={servicesStatus.link}
+						/>
+					);
+				})}
 			</div>
 		</section>
 	);

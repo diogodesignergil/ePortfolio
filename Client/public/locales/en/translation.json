@@ -131,7 +131,11 @@
 			}
 		}
 	},
-	"services": {},
+	"services": {
+		"title": "Services",
+		"info": "As a designer, I provide services that you can find below and can request as well.",
+		"more": "More"
+	},
 	"projects": {},
 	"contact": {
 		"title": "Contact",
