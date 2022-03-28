@@ -33,21 +33,13 @@ function Home() {
 					</div>
 					<div className="button">
 						<a href={CV} download>
-							<Button
-								className="btns"
-								buttonStyle="btn--outline"
-								buttonSize="btn--large"
-							>
+							<Button buttonStyle="btn--outline" buttonSize="btn--large">
 								<i className="fas fa-download" />
 								&nbsp;{t("home.download")}
 							</Button>
 						</a>
 						<Link to="/contact">
-							<Button
-								className="btns"
-								buttonStyle="btn--primary"
-								buttonSize="btn--large"
-							>
+							<Button buttonStyle="btn--primary" buttonSize="btn--large">
 								{t("home.hire")}
 							</Button>
 						</Link>

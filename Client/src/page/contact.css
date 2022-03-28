@@ -1,118 +1,116 @@
 .contact {
-  margin-top: 8vh;
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+	margin-top: 8vh;
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 }
 
 .contact h1 {
-  font-size: 55px;
-  text-align: center;
+	font-size: 55px;
+	text-align: center;
 }
 
 .contact .line {
-  width: 75%;
+	width: 75%;
 }
 
 .contact p {
-  margin: 10px 5px;
-  font-size: 20px;
-  text-align: center;
+	margin: 10px 5px;
+	font-size: 20px;
+	text-align: center;
 }
 
 .contact form {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  font-size: 35px;
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  position: relative;
-  margin: auto;
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	font-size: 35px;
+	color: white;
+	font-family: "Ubuntu", sans-serif;
+	position: relative;
+	margin: auto;
 }
 
 @media screen and (max-width: 750px) {
-  .contact form {
-    width: 95%;
-    height: 60vh;
-    margin: 0 auto;
-  }
+	.contact form {
+		width: 95%;
+		height: 60vh;
+		margin: 0 auto;
+	}
 }
 
 input,
 textarea {
-  border: none;
-  background: transparent;
-  padding: 0.5rem 0;
-  border-bottom: 3px solid white;
-  margin: 15px 0;
-  color: white;
-  font-size: 1.8rem;
-  transition: 0.25s ease-in-out;
-  width: 100%;
+	border: none;
+	background: transparent;
+	padding: 0.5rem 0;
+	border-bottom: 3px solid white;
+	margin: 15px 0;
+	color: white;
+	font-size: 1.8rem;
+	transition: 0.25s ease-in-out;
+	width: 100%;
 }
 
 textarea {
-  min-height: 40%;
-  resize: none;
+	min-height: 40%;
+	resize: none;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
-  animation: border 10s infinite linear;
+	outline: none;
+	animation: border 10s infinite linear;
 }
 
 @keyframes border {
-  0% {
-    border-bottom: 3px solid var(--red);
-  }
-  25% {
-    border-bottom: 3px solid var(--blue);
-  }
-  75% {
-    border-bottom: 3px solid var(--yellow);
-  }
-  100% {
-    border-bottom: 3px solid var(--red);
-  }
+	0% {
+		border-bottom: 3px solid var(--red);
+	}
+	25% {
+		border-bottom: 3px solid var(--blue);
+	}
+	75% {
+		border-bottom: 3px solid var(--yellow);
+	}
+	100% {
+		border-bottom: 3px solid var(--red);
+	}
 }
 
 ::placeholder {
-  font-size: 25px;
-  font-family: "Ubuntu", sans-serif;
-  color: rgba(216, 216, 216, 1);
+	font-size: 25px;
+	font-family: "Ubuntu", sans-serif;
+	color: rgba(216, 216, 216, 1);
 }
 
-form Button {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
+form .btn {
+	width: 25%;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 340px) {
-  .contact {
-    height: 75vh;
-  }
-  .contact form {
-    width: 85%;
-    height: auto;
-  }
-  input,
-  textarea {
-    font-size: 1rem;
-  }
-  textarea {
-    min-height: 30%;
-  }
-  ::placeholder {
-    font-size: 20px;
-  }
+	.contact {
+		height: 75vh;
+	}
+	.contact form {
+		width: 85%;
+		height: auto;
+	}
+	input,
+	textarea {
+		font-size: 1rem;
+	}
+	textarea {
+		min-height: 30%;
+	}
+	::placeholder {
+		font-size: 20px;
+	}
 }

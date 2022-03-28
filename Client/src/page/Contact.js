@@ -67,7 +67,6 @@ function Contact() {
 					required
 				></textarea>
 				<Button
-					className="btns"
 					buttonStyle="btn--primary"
 					buttonSize="btn--large"
 					type="submit"
