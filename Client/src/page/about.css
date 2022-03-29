@@ -168,6 +168,7 @@
 	width: 20px;
 	top: 0;
 	left: -10px;
+	mix-blend-mode: darken;
 }
 .slide-contianer .hobby h2,
 .slide-contianer2 .hobby h2 {
@@ -238,6 +239,7 @@
 	width: 20px;
 	top: 0;
 	left: -10px;
+	mix-blend-mode: darken;
 }
 .slide-contianer .comunication h2,
 .slide-contianer2 .comunication h2 {

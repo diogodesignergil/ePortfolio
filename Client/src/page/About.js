@@ -293,7 +293,7 @@ function About() {
 										<label>{t("about.section1.slide2.icons.art")}</label>
 									</li>
 									<li>
-										<i class="fas fa-headset" />
+										<i className="fas fa-headset" />
 										<br></br>
 										<label>{t("about.section1.slide2.icons.live")}</label>
 									</li>
@@ -313,7 +313,7 @@ function About() {
 							<div className="iconcom">
 								<ul>
 									<li>
-										<i class="fas fa-users" />
+										<i className="fas fa-users" />
 										<br></br>
 										<label>{t("about.section1.slide3.icons.team")}</label>
 									</li>
@@ -384,7 +384,7 @@ function About() {
 										<label>{t("about.section1.slide2.icons.art")}</label>
 									</li>
 									<li>
-										<i class="fas fa-headset" />
+										<i className="fas fa-headset" />
 										<br></br>
 										<label>{t("about.section1.slide2.icons.live")}</label>
 									</li>
@@ -404,7 +404,7 @@ function About() {
 							<div className="iconcom">
 								<ul>
 									<li>
-										<i class="fas fa-users" />
+										<i className="fas fa-users" />
 										<br></br>
 										<label>{t("about.section1.slide3.icons.team")}</label>
 									</li>
