@@ -139,7 +139,7 @@
 	z-index: 2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
 	.ring {
 		display: none;
 	}
