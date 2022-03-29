@@ -42,7 +42,7 @@
 }
 @media screen and (max-width: 1000px) {
 	.info-contianer {
-		width: 90%;
+		width: 95%;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -177,10 +177,10 @@
 .slide-contianer2 .hobby .iconhobby {
 	display: block;
 	text-align: center;
+	overflow-y: auto;
 }
 .slide-contianer .hobby ul,
 .slide-contianer2 .hobby ul {
-	overflow-y: auto;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -190,14 +190,15 @@
 .slide-contianer2 .hobby ul li {
 	display: flex;
 	flex-direction: column;
-	width: 100px;
-	height: auto;
+
 	font-size: 15px;
 	margin: 5px 10px;
 }
 .slide-contianer2 .hobby ul li {
-	width: 100px;
-	height: auto;
+	flex-direction: row;
+	align-items: center;
+	width: 75%;
+	text-align: left;
 }
 .slide-contianer .hobby ul li i {
 	font-size: 40px;
@@ -205,6 +206,7 @@
 }
 .slide-contianer2 .hobby ul li i {
 	margin-bottom: 0.5px;
+	margin-right: 10px;
 	font-size: 20px;
 }
 .slide-contianer .hobby ul li label,
@@ -258,16 +260,14 @@
 .slide-contianer2 .comunication ul li {
 	display: flex;
 	flex-direction: column;
-	width: 100px;
-	height: auto;
 	font-size: 15px;
 	margin: 5px 10px;
-	/* border: 2px black solid; */
-	/* padding: 5px; */
 }
 .slide-contianer2 .comunication ul li {
-	width: 100px;
-	height: auto;
+	flex-direction: row;
+	align-items: center;
+	width: 75%;
+	text-align: left;
 }
 .slide-contianer .comunication ul li i {
 	font-size: 40px;
@@ -275,6 +275,7 @@
 }
 .slide-contianer2 .comunication ul li i {
 	margin-bottom: 0.5px;
+	margin-right: 10px;
 	font-size: 25px;
 }
 .slide-contianer .comunication ul li label,
