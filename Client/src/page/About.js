@@ -231,7 +231,7 @@ function About() {
 			<div className="info-contianer">
 				<div className="wrapp">
 					<div className="card-contianer">
-						<img src={Foto}></img>
+						<img src={Foto} alt="" />
 						<ul className="info">
 							<li>
 								<b>{t("about.section1.name")}</b> Diogo Oliveira Gil

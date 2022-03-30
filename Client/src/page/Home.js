@@ -52,7 +52,7 @@ function Home() {
 				data-aos-easing="ease-in-out"
 				data-aos-delay="250"
 			>
-				<img src={Ring} />
+				<img src={Ring} alt="" />
 			</div>
 		</section>
 	);

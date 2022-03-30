@@ -15,13 +15,20 @@ const allServices = [
 		descrition: "services.logocard.descrition",
 		link: "/services/1",
 	},
+	{
+		id: "2",
+		image: "",
+		title: "services.overlaycard.title",
+		descrition: "services.overlaycard.descrition",
+		link: "/services/2",
+	},
 ];
 
 function Services() {
 	const [t] = useTranslation();
 
 	return (
-		<section className="services">
+		<section className="services" data-aos="fade-in">
 			<h1>{t("services.title")}</h1>
 			<Line />
 			<p>{t("services.info")}</p>

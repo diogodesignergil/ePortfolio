@@ -12,7 +12,7 @@ const ServicesCards = ({ image, title, descrition, link }) => {
 	return (
 		<div className="services-card">
 			<div className="card-header">
-				<img src={image} />
+				<img src={image} alt="" />
 			</div>
 			<div className="card-body">
 				<h2>{title}</h2>

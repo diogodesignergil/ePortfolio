@@ -13,7 +13,7 @@ export class Header extends Component {
 				{/* Logo */}
 				<div className="logo">
 					<Link to="/">
-						<img src={Logo} />
+						<img src={Logo} alt="" />
 						<h1>Reveratel</h1>
 					</Link>
 				</div>

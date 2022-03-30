@@ -3,60 +3,137 @@ import Error404 from "./Error404";
 import { useParams } from "react-router-dom";
 import "./servicespage.css";
 
+// Tradutor
 import { useTranslation } from "react-i18next";
+
+// Line
 import Line from "../components/Line.js";
 
+// Button
 import { Button } from "../components/Button.js";
-
 import FiverrLogo from "../asset/img/fiverrLogo.png";
+
+// Icons
+import Interview from "../asset/img/interview.png";
+import Search from "../asset/img/search.png";
+import Draw from "../asset/img/draw.png";
+import Color from "../asset/img/color.png";
+import Proportion from "../asset/img/proportion.png";
+import Zip from "../asset/img/zip.png";
+import Display from "../asset/img/display.png";
+import BG from "../asset/img/BGOverlay.png";
+import Webcam from "../asset/img/webcam.png";
+import Alert from "../asset/img/alert.png";
+import Stringer from "../asset/img/Stringer.png";
+import Test from "../asset/img/test.png";
+import Chat from "../asset/img/chat.png";
 
 const services = [
 	{
 		id: 1,
-		title: "servicespage.title",
-		info: "Aqui poderá saber os passos à passos como é feito o processo deste serviços e no fim podera requisitar este mesmo serviço.",
+		title: "servicespage.logo.title",
+		info: "servicespage.info",
+		info2: "",
 		step: [
 			{
 				number: "01",
-				title: "Entrevista:",
-				text: "Irei fazer umas pequenas perguntas durante a entrevista à pessoa interessada/o no serviço. Este procedimento server para perceber sobre o produto pedido e poder demonstrar alguma pesquisa.",
-				image: "",
+				title: "servicespage.logo.step1.title",
+				text: "servicespage.logo.step1.text",
+				image: Interview,
 			},
 			{
 				number: "02",
-				title: "Pesquisa:",
-				text: "Eu faço inúmeras pesquisar ao tema do requisito do cliente, para essa mesma pessoa ter noção de uma ideia que poderá vir.",
-				image: "",
+				title: "servicespage.logo.step2.title",
+				text: "servicespage.logo.step2.text",
+				image: Search,
 			},
 			{
 				number: "03",
-				title: "Esboços do Logo:",
-				text: "O esboço é feito a mão e quando tiver o suficiente mostrou o resultado e pode haver ainda mais algumas mais a para frente. Nesta parte quem escolhe qual dos esboços é o cliente para avançar para o formado grande e por fim para formato digital.",
-				image: "",
+				title: "servicespage.logo.step3.title",
+				text: "servicespage.logo.step3.text",
+				image: Draw,
 			},
 			{
 				number: "04",
-				title: "Estudo das cores:",
-				text: "Depois de passar os esboço para digital, é feito uma estudo de cores (caso o cliente não tiver a ideia das cores). Expermento com fundo B/W, Red, Blue, Yellow, Green para não haver problemas com essas cores que são usados.",
-				image: "",
+				title: "servicespage.logo.step4.title",
+				text: "servicespage.logo.step4.text",
+				image: Color,
 			},
 			{
 				number: "05",
-				title: "Proporção:",
-				text: "Este passo exites para fazer as medidas adquadas para o formato web (nomeadamente: Facebook, Instagram, TikTok e muitos outros...), wallpaper de grandes formatos, impressão e muitos formatos.",
-				image: "",
+				title: "servicespage.logo.step5.title",
+				text: "servicespage.logo.step5.text",
+				image: Proportion,
+			},
+			{
+				number: "06",
+				title: "servicespage.logo.step6.title",
+				text: "servicespage.logo.step6.text",
+				image: Zip,
 			},
 		],
 	},
 	{
 		id: 2,
-		title: "servicespage.title",
-		step: [{ texto: "Teste" }, { texto: "Teste2" }],
-	},
-	{
-		id: 3,
-		title: "servicespage.title",
-		step: [{ texto: "Teste" }, { texto: "Teste2" }, { texto: "Teste3" }],
+		title: "servicespage.overlay.title",
+		info: "servicespage.overlay.info",
+		info2: "servicespage.overlay.info2",
+		step: [
+			{
+				number: "01",
+				title: "servicespage.overlay.step1.title",
+				text: "servicespage.overlay.step1.text",
+				image: Interview,
+			},
+			{
+				number: "02",
+				title: "servicespage.overlay.step2.title",
+				text: "servicespage.overlay.step2.text",
+				image: Display,
+			},
+			{
+				number: "03",
+				title: "servicespage.overlay.step3.title",
+				text: "servicespage.overlay.step3.text",
+				image: BG,
+			},
+			{
+				number: "04",
+				title: "servicespage.overlay.step4.title",
+				text: "servicespage.overlay.step4.text",
+				image: Webcam,
+			},
+			{
+				number: "05",
+				title: "servicespage.overlay.step5.title",
+				text: "servicespage.overlay.step5.text",
+				image: Alert,
+			},
+			{
+				number: "06",
+				title: "servicespage.overlay.step6.title",
+				text: "servicespage.overlay.step6.text",
+				image: Stringer,
+			},
+			{
+				number: "07",
+				title: "servicespage.overlay.step7.title",
+				text: "servicespage.overlay.step7.text",
+				image: Chat,
+			},
+			{
+				number: "08",
+				title: "servicespage.overlay.step8.title",
+				text: "servicespage.overlay.step8.text",
+				image: Test,
+			},
+			{
+				number: "09",
+				title: "servicespage.overlay.step9.title",
+				text: "servicespage.overlay.step9.text",
+				image: Zip,
+			},
+		],
 	},
 ];
 
@@ -88,21 +165,26 @@ function ServicesPage() {
 				<section className="servicepage" data-aos="fade-in">
 					<h1>{t(getServiceData.title)}</h1>
 					<Line />
-					<p className="info">{getServiceData.info}</p>
+					<p className="info">
+						{t(getServiceData.info)}
+						<br></br>
+						<span className="info2">{t(getServiceData.info2)}</span>
+					</p>
+
 					{getServiceData.step?.map((step) => {
 						return (
 							<div className="step">
 								<span>{step.number}</span>
 								<div className="text">
-									<h2>{step.title}</h2>
-									<p>{step.text}</p>
+									<h2>{t(step.title)}</h2>
+									<p>{t(step.text)}</p>
 								</div>
-								<img src={step.image} />
+								<img src={step.image} alt="" />
 							</div>
 						);
 					})}
 					<Button buttonStyle="btn--fiverr" buttonSize="btn--large">
-						<img src={FiverrLogo} />
+						<img src={FiverrLogo} alt="" />
 					</Button>
 				</section>
 			) : (

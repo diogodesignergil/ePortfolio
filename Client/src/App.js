@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 // import axios from "axios";
-import react, { Component } from "react";
+// import react, { Component } from "react";
 // import { head } from "../../Server/Routes/auth";
 import { Header } from "./components/layout/header/Header";
 import {

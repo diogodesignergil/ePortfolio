@@ -138,10 +138,82 @@
 		"logocard": {
 			"title": "Logos",
 			"descrition": "Creation of custom logos for personal and corporate purposes, with finishing for wallpaper, letterhead, stamping and many others..."
+		},
+		"overlaycard": {
+			"title": "Orverlay Streaming",
+			"descrition": "Streaming overlay customization for Youtube, Twitch, Facebook and many other streaming platforms, with alerts and goals."
 		}
 	},
 	"servicespage": {
-		"title": "Logos"
+		"logo": {
+			"title": "Logos",
+			"info": "Here you will be able to know the steps by step how the process of this services is done and in the end you can request this same service.",
+			"step1": {
+				"title": "Interview",
+				"text": "I will ask a few short questions during the interview with the customer interested in the service. This procedure serves to understand about the requested product and to be able to demonstrate some research."
+			},
+			"step2": {
+				"title": "Search:",
+				"text": "I do a lot of research on the topic of the client's requirement, for that same person to have an idea of ​​an idea that may come."
+			},
+			"step3": {
+				"title": "Logo Sketches:",
+				"text": "The sketch is done by hand and when you have enough you will show the result and there may be a few more to come. In this part, who chooses which of the sketches is the client to advance to the large format and finally to digital format."
+			},
+			"step4": {
+				"title": "Color Study:",
+				"text": "After passing the sketches to digital, a color study is carried out (if the client does not have the idea of ​​​​colors). I experiment with B/W, Red, Blue, Yellow, Green background so there are no problems with those colors that are used."
+			},
+			"step5": {
+				"title": "Proportion:",
+				"text": "This step is used to make the appropriate measurements for the web format (namely: Facebook, Instagram, TikTok and many others...), large format wallpaper, print and many formats."
+			},
+			"step6": {
+				"title": "Final:",
+				"text": "After all the steps, the final part comes, which is the delivery of documents. Where it will be stored in a zipped folder with the logo in .png, .jpg and .svg format. And you still get a .pdf of everything that was done."
+			}
+		},
+		"overlay": {
+			"title": "Orverlay Streaming",
+			"info": "Here you will be able to know the steps by step how the process of this services is done and in the end you can request this same service.",
+			"info2": "Note: A mandatory logo is required for this service!",
+			"step1": {
+				"title": "Interview:",
+				"text": "I will ask a few short questions during the interview with the customer interested in the service. This procedure serves to understand about the requested product and to be able to demonstrate some research."
+			},
+			"step2": {
+				"title": "Graphic Layout:",
+				"text": "Organization of the overlay space in 16:9 format (1920px:1080px resolution). Where each element will be located in each scenario."
+			},
+			"step3": {
+				"title": "Background creation:",
+				"text": "From the logo I am able to create a suitable background and thus create a theme around the background. Or do it in an animated way with Adobe After Effects."
+			},
+			"step4": {
+				"title": "Webcam:",
+				"text": "Customized customer webcam with 16:9 and 4:3 aspect ratio. And it can be animated or not."
+			},
+			"step5": {
+				"title": "Alerts:",
+				"text": "Creating alerts with FreeCopyright Sound and can be done with animation or simple."
+			},
+			"step6": {
+				"title": "Transition:",
+				"text": "Creating the unique transition for each overlay using Adobe After Effect."
+			},
+			"step7": {
+				"title": "Chat Box:",
+				"text": "Creation of Chat Box to become more professional and have a very solid community."
+			},
+			"step8": {
+				"title": "Test Phase:",
+				"text": "After all the creations, it's time to test the streaming program, Streamlabs and Streamelemntals."
+			},
+			"step9": {
+				"title": "Final:",
+				"text": "After all the steps, the final part comes, which is the delivery of documents. Where it will be stored in a compressed folder with .png (for simple overlay) and .webm (for animated overlay) format. And you still get a .pdf of everything that was done and how to organize the elements."
+			}
+		}
 	},
 	"projects": {},
 	"contact": {

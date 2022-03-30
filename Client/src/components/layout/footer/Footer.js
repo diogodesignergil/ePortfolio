@@ -19,7 +19,7 @@ function Footer() {
 						<i className="fab fa-codepen"></i>
 					</li>
 					<li>
-						<img src={Fiverr} className="fab" />
+						<img src={Fiverr} className="fab" alt="" />
 					</li>
 					<li>
 						<i className="fab fa-twitter"></i>
