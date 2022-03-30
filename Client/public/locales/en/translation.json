@@ -134,7 +134,14 @@
 	"services": {
 		"title": "Services",
 		"info": "As a designer, I provide services that you can find below and can request as well.",
-		"more": "More"
+		"more": "To know more",
+		"logocard": {
+			"title": "Logos",
+			"descrition": "Creation of custom logos for personal and corporate purposes, with finishing for wallpaper, letterhead, stamping and many others..."
+		}
+	},
+	"servicespage": {
+		"title": "Logos"
 	},
 	"projects": {},
 	"contact": {

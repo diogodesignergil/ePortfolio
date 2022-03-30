@@ -12,7 +12,7 @@
 
 .btn--primary {
 	background-color: #fff;
-	color: rgb(30, 30, 43);
+	color: var(--bg);
 	border: 3px solid #fff;
 }
 
@@ -22,6 +22,16 @@
 	border: 3px solid #fff;
 	padding: 8px 20px;
 	transition: all 0.3s ease-out;
+}
+
+.btn--fiverr {
+	background-color: #1dbf73;
+	color: var(--bg);
+	transition: all 0.3s ease-out;
+}
+
+.btn--fiverr:hover {
+	background-color: #11e682;
 }
 
 .btn-medium {
@@ -35,9 +45,8 @@
 	font-weight: bold;
 }
 
-.btn-medium:hover,
-.btn--large:hover {
+.btn--outline:hover {
 	background-color: white;
-	color: rgb(30, 30, 43);
+	color: var(--bg);
 	transition: all 0.3s ease-out;
 }

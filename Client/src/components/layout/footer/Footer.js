@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Fiverr from "../../../asset/img/fiverr.png";
 
 function Footer() {
 	return (
@@ -18,6 +18,9 @@ function Footer() {
 					<li>
 						<i className="fab fa-codepen"></i>
 					</li>
+					{/* <li>
+						<img src={Fiverr} />
+					</li> */}
 					<li>
 						<i className="fab fa-twitter"></i>
 					</li>

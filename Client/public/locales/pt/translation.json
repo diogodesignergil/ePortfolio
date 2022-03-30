@@ -134,7 +134,14 @@
 	"services": {
 		"title": "Serviços",
 		"info": "Como designer, eu disponibilizo serviços que podem que encontrem em baixo e poderão requisitar também.",
-		"more": "Saber mais"
+		"more": "Saber mais",
+		"logocard": {
+			"title": "Logotipos",
+			"descrition": "Criação de logos personalizados para fins pessoais e empressial, com acabamento para wallpaper, papel timbrado, estampagem e muitos outros..."
+		}
+	},
+	"servicespage": {
+		"title": "Logotipos"
 	},
 	"projects": {},
 	"contact": {

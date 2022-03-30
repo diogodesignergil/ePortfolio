@@ -11,9 +11,8 @@ const allServices = [
 	{
 		id: "1",
 		image: BannerLogo,
-		title: "Logotipos",
-		descrition:
-			"Criação de logos personalizados para fins pessoais e empressial, com acabamento para wallpaper, papel timbrado, estampagem e muitos outros...",
+		title: "services.logocard.title",
+		descrition: "services.logocard.descrition",
 		link: "/services/1",
 	},
 ];
@@ -22,7 +21,7 @@ function Services() {
 	const [t] = useTranslation();
 
 	return (
-		<section className="services" data-aos="fade-in">
+		<section className="services">
 			<h1>{t("services.title")}</h1>
 			<Line />
 			<p>{t("services.info")}</p>
@@ -32,8 +31,8 @@ function Services() {
 						<ServicesCards
 							key={servicesStatus.id}
 							image={servicesStatus.image}
-							title={servicesStatus.title}
-							descrition={servicesStatus.descrition}
+							title={t(servicesStatus.title)}
+							descrition={t(servicesStatus.descrition)}
 							link={servicesStatus.link}
 						/>
 					);

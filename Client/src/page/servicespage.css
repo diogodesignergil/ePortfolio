@@ -1,0 +1,72 @@
+.servicepage {
+	min-height: calc(100vh - 8vh - 12vh);
+	margin-top: 8vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.servicepage h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 55px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.servicepage .line {
+	width: 75%;
+}
+
+.servicepage .info {
+	margin: 10px auto;
+	font-size: 20px;
+	text-align: center;
+	width: 70%;
+}
+
+.step {
+	width: 55%;
+	border: 2px solid white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 15px 0;
+	position: relative;
+	min-height: 150px;
+}
+.step:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.step span {
+	font-size: 8em;
+	font-weight: bold;
+	/* letter-spacing: -26px; */
+	color: rgba(255, 255, 255, 0.15);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.step .text {
+	flex-direction: column;
+	padding-left: 7em;
+}
+
+.step:nth-child(odd) .text {
+	padding-left: 0;
+	padding-right: 7em;
+	text-align: right;
+}
+.step h2 {
+	margin-bottom: 5px;
+}
+
+.servicepage .btn img {
+	height: 50px;
+	width: auto;
+	filter: brightness(2000%);
+}

@@ -19,10 +19,14 @@ footer {
 	list-style: none;
 }
 .list-inline li {
-	display: inline-block;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
 	padding-right: 10px;
 	padding-left: 10px;
 }
+
 .social-icons .fab {
 	font-size: 1.5em;
 }
