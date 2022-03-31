@@ -20,7 +20,7 @@ const allProjects = [
 		altImg: "Team Eagle",
 		icons: ["html", "js", "css", "php"],
 		title: "Team Eagle: E-Sport Team",
-		discrition:
+		descrition:
 			"Página Web Full-Stock com objetivo no uso para uma equipa de competição de vídeo jogos. E este template podera ser usado para futuras paginações.",
 		link: "/projects/1",
 	},
@@ -30,7 +30,7 @@ const allProjects = [
 		altImg: "Magic: The Gathering Overlay",
 		icons: ["photoshop", "af"],
 		title: "Magic: The Gathering Overlay",
-		discrition:
+		descrition:
 			"Uma coleção completa de overlay streaming com tema titulada de Magic: the Gathering, um jogo de cartas criado por Wizard Coast.",
 		link: "/projects/2",
 	},
@@ -40,9 +40,19 @@ const allProjects = [
 		altImg: "Triangle Spark Overlay",
 		icons: ["illustrator", "af", "photoshop"],
 		title: "Triangle Spark Overlay",
-		discrition:
+		descrition:
 			"Uma coleção completa de overlay streaming com tema aleatório usando formas de triângulos.",
 		link: "/projects/3",
+	},
+	{
+		id: 3,
+		image: "",
+		altImg: "ePortfolio",
+		icons: ["react", "node", "js", "css", "html"],
+		title: "Meu ePortfolio",
+		descrition:
+			"Criação do meu ePortfolio para mostrar os meus trabalhos e os projetos andei envolvido.",
+		link: "/projects/4",
 	},
 ];
 
@@ -69,7 +79,7 @@ function Projects() {
 							altImg={projectsStatus.altImg}
 							icons={projectsStatus.icons}
 							title={projectsStatus.title}
-							descrition={projectsStatus.discrition}
+							descrition={projectsStatus.descrition}
 							link={projectsStatus.link}
 						/>
 					);

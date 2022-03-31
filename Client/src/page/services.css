@@ -1,5 +1,5 @@
 .services {
-	height: calc(100vh - 8vh - 13vh);
+	min-height: calc(100vh - 8vh - 13vh);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

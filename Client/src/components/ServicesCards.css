@@ -1,7 +1,8 @@
 .services-card {
-	width: 350px;
+	max-width: 350px;
+	min-width: 300px;
 	min-height: 250px;
-	max-height: 250px;
+	max-height: 350px;
 	border: 2px solid white;
 	border-radius: 10px;
 	overflow: hidden;
@@ -11,11 +12,15 @@
 
 .services-card .card-header {
 	width: 100%;
-	height: 100px;
+	height: auto;
+	margin-bottom: 5px;
 	/* border: 1px solid darkgrey; */
-	background-color: darkgrey;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+	/* background-color: darkgrey; */
+}
+
+.services-card .card-header img {
+	width: 100%;
+	object-fit: contain;
 }
 
 .services-card .card-body {

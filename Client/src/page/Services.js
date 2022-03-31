@@ -3,6 +3,7 @@ import "./services.css";
 import Line from "../components/Line.js";
 
 import BannerLogo from "../asset/img/LogoBanner.png";
+import BannerOverlay from "../asset/img/OverlayBanner.png";
 
 import { useTranslation } from "react-i18next";
 import ServicesCards from "../components/ServicesCards";
@@ -17,7 +18,7 @@ const allServices = [
 	},
 	{
 		id: "2",
-		image: "",
+		image: BannerOverlay,
 		title: "services.overlaycard.title",
 		descrition: "services.overlaycard.descrition",
 		link: "/services/2",
