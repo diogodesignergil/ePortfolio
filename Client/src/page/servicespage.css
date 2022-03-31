@@ -1,7 +1,6 @@
 .servicepage {
 	min-height: calc(100vh - 8vh - 13vh);
 	margin-top: 8vh;
-	width: calc(100% - 15px);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

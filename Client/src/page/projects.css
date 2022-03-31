@@ -1,15 +1,14 @@
-.services {
-	height: calc(100vh - 8vh - 13vh);
+.projects {
+	min-height: calc(100vh - 8vh - 13vh);
+	margin-top: 8vh;
+	/* width: calc(100% - 15px); */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-content: center;
-	margin-top: 8vh;
-	text-align: center;
-	/* width: 100%; */
+	align-items: center;
 }
 
-.services h1 {
+.projects h1 {
 	margin: 0;
 	padding: 0;
 	font-size: 55px;
@@ -17,23 +16,24 @@
 	margin-bottom: 15px;
 }
 
-.services .line {
+.projects .line {
 	width: 75%;
 }
 
-.services p {
+.projects p {
 	margin: 10px auto;
 	font-size: 20px;
 	text-align: center;
 	width: 70%;
 }
 
-.services .services-container {
-	width: 100%;
+.projects .card-container {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	padding: 25px;
+	width: 100%;
+	min-width: 320px;
+	max-width: 935px;
+	flex-wrap: wrap;
+	margin-top: 15px;
 }

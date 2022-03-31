@@ -34,6 +34,16 @@
 	background-color: #11e682;
 }
 
+.btn--patreon {
+	background-color: #ff9100;
+	color: var(--bg);
+	transition: all 0.3s ease-out;
+}
+
+.btn--patreon:hover {
+	background-color: #ffae00;
+}
+
 .btn-medium {
 	padding: 8px 20px;
 	font-size: 20px;

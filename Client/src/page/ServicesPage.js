@@ -24,7 +24,7 @@ import Display from "../asset/img/display.png";
 import BG from "../asset/img/BGOverlay.png";
 import Webcam from "../asset/img/webcam.png";
 import Alert from "../asset/img/alert.png";
-import Stringer from "../asset/img/Stringer.png";
+import Stinger from "../asset/img/stinger.png";
 import Test from "../asset/img/test.png";
 import Chat from "../asset/img/chat.png";
 
@@ -113,7 +113,7 @@ const services = [
 				number: "06",
 				title: "servicespage.overlay.step6.title",
 				text: "servicespage.overlay.step6.text",
-				image: Stringer,
+				image: Stinger,
 			},
 			{
 				number: "07",

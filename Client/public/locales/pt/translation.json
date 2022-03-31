@@ -214,7 +214,13 @@
 			}
 		}
 	},
-	"projects": {},
+	"projects": {
+		"title": "Projetos",
+		"info1": "Aqui esta a lista dos projetos que tenho estado a trabalhar ultimamente, enquanto designer e programador.",
+		"info2": "Podem apoiar-me tornarem-se Patreons para os futuros projetos.",
+		"patreon": "Torna-se Patreon",
+		"more": "Saber mais"
+	},
 	"contact": {
 		"title": "Contacto",
 		"info": "Entrar em contacto comigo, por favor usar o formulário em baixo.",

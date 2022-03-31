@@ -1,15 +1,10 @@
 /* Colers in variables */
 .about {
-	width: calc(100% - 15px);
+	/* width: calc(100% - 15px); */
 	min-height: calc(100vh - 8vh - 13vh);
 	margin: 25px 0;
 	display: block;
 	margin-top: 8vh;
-}
-@media screen and (max-width: 750px) {
-	.about {
-		width: 100%;
-	}
 }
 
 .about h1 {
