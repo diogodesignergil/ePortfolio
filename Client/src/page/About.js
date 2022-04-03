@@ -11,6 +11,8 @@ import SkillCards from "../components/SkillCards.js";
 import LangCards from "../components/LangCards.js";
 import ExpCards from "../components/ExpCards";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 function About() {
 	const [red, setRed] = useState(false);
 	const ToggleRed = () => setRed(!red) + setBlue(false) + setYellow(false);
@@ -225,7 +227,13 @@ function About() {
 	];
 
 	return (
-		<section className="about" id="about" data-aos="fade-in">
+		<motion.section
+			className="about"
+			id="about"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			<h1>{t("about.section1.title")}</h1>
 			<Line />
 			<div className="info-contianer">
@@ -497,7 +505,7 @@ function About() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 
