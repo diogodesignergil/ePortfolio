@@ -12,6 +12,8 @@ import ProjectCards from "../components/ProjectCards";
 import EsportGroup from "../asset/img/Portfoliogroup.png";
 import MagicOverlay from "../asset/img/magicoverlay.png";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 // Array
 const allProjects = [
 	{
@@ -23,6 +25,7 @@ const allProjects = [
 		descrition:
 			"Página Web Full-Stock com objetivo no uso para uma equipa de competição de vídeo jogos. E este template podera ser usado para futuras paginações.",
 		link: "/projects/1",
+		sort: Math.random(),
 	},
 	{
 		id: 2,
@@ -33,6 +36,7 @@ const allProjects = [
 		descrition:
 			"Uma coleção completa de overlay streaming com tema titulada de Magic: the Gathering, um jogo de cartas criado por Wizard Coast.",
 		link: "/projects/2",
+		sort: Math.random(),
 	},
 	{
 		id: 3,
@@ -43,6 +47,7 @@ const allProjects = [
 		descrition:
 			"Uma coleção completa de overlay streaming com tema aleatório usando formas de triângulos.",
 		link: "/projects/3",
+		sort: Math.random(),
 	},
 	{
 		id: 3,
@@ -53,6 +58,7 @@ const allProjects = [
 		descrition:
 			"Criação do meu ePortfolio para mostrar os meus trabalhos e os projetos andei envolvido.",
 		link: "/projects/4",
+		sort: Math.random(),
 	},
 ];
 
@@ -60,7 +66,7 @@ function Projects() {
 	const [t] = useTranslation();
 
 	return (
-		<section className="projects">
+		<motion.section className="projects">
 			<h1>{t("projects.title")}</h1>
 			<Line />
 			<p>
@@ -71,21 +77,23 @@ function Projects() {
 				<i className="fab fa-patreon" />
 			</Button>
 			<div className="card-container">
-				{allProjects.map((projectsStatus) => {
-					return (
-						<ProjectCards
-							key={projectsStatus.id}
-							image={projectsStatus.image}
-							altImg={projectsStatus.altImg}
-							icons={projectsStatus.icons}
-							title={projectsStatus.title}
-							descrition={projectsStatus.descrition}
-							link={projectsStatus.link}
-						/>
-					);
-				})}
+				{allProjects
+					.sort((a, b) => a.sort - b.sort)
+					.map((projectsStatus) => {
+						return (
+							<ProjectCards
+								key={projectsStatus.id}
+								image={projectsStatus.image}
+								altImg={projectsStatus.altImg}
+								icons={projectsStatus.icons}
+								title={projectsStatus.title}
+								descrition={projectsStatus.descrition}
+								link={projectsStatus.link}
+							/>
+						);
+					})}
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 

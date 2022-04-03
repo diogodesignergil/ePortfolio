@@ -8,13 +8,21 @@ import { useTranslation } from "react-i18next";
 import CV from "../asset/document/CV-DiogoGil.pdf";
 import Ring from "../asset/img/ring.png";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 function Home() {
 	const [t] = useTranslation();
 
 	return (
-		<section className="home" id="home">
+		<motion.section
+			className="home"
+			id="home"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			<div className="max-width">
-				<div className="home-content" data-aos="fade-right">
+				<div className="home-content">
 					<div className="static-txt-1">{t("home.text1")}</div>
 					<div className="static-txt-2">Diogo "Reveratel" Gil</div>
 					<div className="wrapper">
@@ -46,15 +54,10 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<div
-				className="ring"
-				data-aos="fade-left"
-				data-aos-easing="ease-in-out"
-				data-aos-delay="250"
-			>
+			<div className="ring">
 				<img src={Ring} alt="" />
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 

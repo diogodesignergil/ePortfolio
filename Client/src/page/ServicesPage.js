@@ -28,6 +28,8 @@ import Stinger from "../asset/img/stinger.png";
 import Test from "../asset/img/test.png";
 import Chat from "../asset/img/chat.png";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 const services = [
 	{
 		id: 1,
@@ -160,9 +162,13 @@ function ServicesPage() {
 	}, []);
 
 	return (
-		<div>
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			{checkArray(parseInt(id)) ? (
-				<section className="servicepage" data-aos="fade-in">
+				<section className="servicepage">
 					<h1>{t(getServiceData.title)}</h1>
 					<Line />
 					<p className="info">
@@ -190,7 +196,7 @@ function ServicesPage() {
 			) : (
 				<Error404 />
 			)}
-		</div>
+		</motion.div>
 	);
 }
 

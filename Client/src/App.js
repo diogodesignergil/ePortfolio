@@ -4,20 +4,9 @@ import "./App.css";
 // import react, { Component } from "react";
 // import { head } from "../../Server/Routes/auth";
 import { Header } from "./components/layout/header/Header";
-import {
-	BrowserRouter as Router,
-	Routes as Switch,
-	Route,
-} from "react-router-dom";
-import Home from "./page/Home";
-import About from "./page/About";
-import Contact from "./page/Contact";
-import Services from "./page/Services";
-import Projects from "./page/Projects";
+import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/layout/footer/Footer";
-import Error404 from "./page/Error404";
-import ServicesPage from "./page/ServicesPage";
-import ProjectsPage from "./page/ProjectsPage";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
 	// constructor(props) {
@@ -41,16 +30,7 @@ function App() {
 	return (
 		<Router>
 			<Header />
-			<Switch>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/services" element={<Services />} />
-				<Route path="/services/:id" element={<ServicesPage />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/projects/:id" element={<ProjectsPage />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="*" element={<Error404 />} />
-			</Switch>
+			<AnimatedRoutes />
 			<Footer />
 		</Router>
 	);

@@ -13,6 +13,8 @@ import Line from "../components/Line";
 
 import { useTranslation } from "react-i18next";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 function Contact() {
 	const [t] = useTranslation();
 
@@ -42,7 +44,12 @@ function Contact() {
 			.catch((err) => console.log(err));
 	}
 	return (
-		<section className="contact" data-aos="fade-in">
+		<motion.section
+			className="contact"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			<ToastContainer theme="dark" />
 			<h1>{t("contact.title")}</h1>
 			<Line />
@@ -74,7 +81,7 @@ function Contact() {
 					{t("contact.submit")}
 				</Button>
 			</form>
-		</section>
+		</motion.section>
 	);
 }
 

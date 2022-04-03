@@ -8,6 +8,8 @@ import BannerOverlay from "../asset/img/OverlayBanner.png";
 import { useTranslation } from "react-i18next";
 import ServicesCards from "../components/ServicesCards";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 const allServices = [
 	{
 		id: "1",
@@ -29,7 +31,7 @@ function Services() {
 	const [t] = useTranslation();
 
 	return (
-		<section className="services" data-aos="fade-in">
+		<motion.section className="services">
 			<h1>{t("services.title")}</h1>
 			<Line />
 			<p>{t("services.info")}</p>
@@ -46,7 +48,7 @@ function Services() {
 					);
 				})}
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 

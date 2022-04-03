@@ -4,15 +4,22 @@ import "./error404.css";
 
 import { useTranslation } from "react-i18next";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 function Error404() {
 	const [t] = useTranslation();
 
 	return (
-		<section className="error" data-aos="fade-in">
+		<motion.section
+			className="error"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			<h1>404</h1>
 			<p>Oooops...</p>
 			<p>{t("error.notfound")}</p>
-		</section>
+		</motion.section>
 	);
 }
 

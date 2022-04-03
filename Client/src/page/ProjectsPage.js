@@ -13,6 +13,8 @@ import Line from "../components/Line";
 import EsportGroup from "../asset/img/Portfoliogroup.png";
 import ArticleCards from "../components/ArticleCards";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 const projects = [
 	{
 		id: 1,
@@ -68,9 +70,13 @@ function ProjectsPage() {
 	}, []);
 
 	return (
-		<div>
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+		>
 			{checkArray(parseInt(id)) ? (
-				<section className="projectspage" data-aos="fade-in">
+				<section className="projectspage">
 					<h1>{t(getProjectData.title)}</h1>
 					<Line />
 					<p className="descrition">{t(getProjectData.descrition)}</p>
@@ -99,7 +105,7 @@ function ProjectsPage() {
 			) : (
 				<Error404 />
 			)}
-		</div>
+		</motion.div>
 	);
 }
 
