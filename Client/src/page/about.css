@@ -1,6 +1,7 @@
 /* Colers in variables */
 .about {
 	/* width: calc(100% - 15px); */
+	width: 100%;
 	min-height: calc(100vh - 8vh - 13vh);
 	margin: 25px 0;
 	display: block;

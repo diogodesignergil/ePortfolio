@@ -3,6 +3,7 @@
 	min-height: calc(100vh - 8vh - 13vh);
 	display: flex;
 	margin-top: 8vh;
+	width: 100%;
 }
 .home .max-width {
 	margin: auto 0 auto 200px;
@@ -10,17 +11,22 @@
 }
 @media screen and (max-width: 1200px) {
 	.home {
-		justify-content: center;
-		align-content: center;
+		justify-items: center;
+		align-items: center;
 		text-align: center;
 	}
 	.home .max-width {
 		margin: auto;
 	}
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
 	.home {
-		height: 75vh;
+		min-height: calc(100vh - 8vh - 22vh);
+		/* border: 2px solid white; */
+		margin-top: 8vh;
+	}
+	.home .max-width {
+		margin: 0;
 	}
 }
 .home .home-content .static-txt-1 {

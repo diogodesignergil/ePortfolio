@@ -26,22 +26,26 @@
 
 .btn--fiverr {
 	background-color: #1dbf73;
+	border: 3px solid #1dbf73;
 	color: var(--bg);
 	transition: all 0.3s ease-out;
 }
 
 .btn--fiverr:hover {
 	background-color: #11e682;
+	border: 3px solid #11e682;
 }
 
 .btn--patreon {
 	background-color: #ff9100;
+	border: 3px solid #ff9100;
 	color: var(--bg);
 	transition: all 0.3s ease-out;
 }
 
 .btn--patreon:hover {
-	background-color: #ffae00;
+	border: 3px solid #ffa42d;
+	background-color: #ffa42d;
 }
 
 .btn-medium {

@@ -32,7 +32,7 @@ const services = [
 	{
 		id: 1,
 		title: "servicespage.logo.title",
-		info: "servicespage.info",
+		info: "servicespage.logo.info",
 		info2: "",
 		step: [
 			{

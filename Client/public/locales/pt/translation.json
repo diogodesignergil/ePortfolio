@@ -221,6 +221,10 @@
 		"patreon": "Torna-se Patreon",
 		"more": "Saber mais"
 	},
+	"projectspage": {
+		"read": "Ler mais",
+		"articles": "Evolução do Projecto"
+	},
 	"contact": {
 		"title": "Contacto",
 		"info": "Entrar em contacto comigo, por favor usar o formulário em baixo.",

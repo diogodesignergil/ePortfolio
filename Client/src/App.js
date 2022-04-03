@@ -17,6 +17,7 @@ import Projects from "./page/Projects";
 import Footer from "./components/layout/footer/Footer";
 import Error404 from "./page/Error404";
 import ServicesPage from "./page/ServicesPage";
+import ProjectsPage from "./page/ProjectsPage";
 
 function App() {
 	// constructor(props) {
@@ -46,6 +47,7 @@ function App() {
 				<Route path="/services" element={<Services />} />
 				<Route path="/services/:id" element={<ServicesPage />} />
 				<Route path="/projects" element={<Projects />} />
+				<Route path="/projects/:id" element={<ProjectsPage />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Error404 />} />
 			</Switch>

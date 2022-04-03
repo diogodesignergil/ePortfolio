@@ -222,6 +222,10 @@
 		"patreon": "Become Patreon",
 		"more": "To know more"
 	},
+	"projectspage": {
+		"read": "Read more",
+		"articles": "Project Evolution"
+	},
 	"contact": {
 		"title": "Contact",
 		"info": "To contact me, please use the form below.",
