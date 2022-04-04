@@ -87,8 +87,7 @@
 }
 .project-card:first-child .card-head {
 	height: 200px;
-	width: auto;
-	min-width: 300px;
+	width: 400px;
 }
 .project-card:first-child .card-head img {
 	width: 100%;

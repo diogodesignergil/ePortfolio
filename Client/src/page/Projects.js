@@ -66,7 +66,12 @@ function Projects() {
 	const [t] = useTranslation();
 
 	return (
-		<motion.section className="projects">
+		<motion.section
+			className="projects"
+			initial={{ with: 0 }}
+			animate={{ with: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+		>
 			<h1>{t("projects.title")}</h1>
 			<Line />
 			<p>

@@ -31,7 +31,12 @@ function Services() {
 	const [t] = useTranslation();
 
 	return (
-		<motion.section className="services">
+		<motion.section
+			className="services"
+			initial={{ with: 0 }}
+			animate={{ with: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+		>
 			<h1>{t("services.title")}</h1>
 			<Line />
 			<p>{t("services.info")}</p>

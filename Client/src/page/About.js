@@ -230,9 +230,9 @@ function About() {
 		<motion.section
 			className="about"
 			id="about"
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
+			initial={{ with: 0 }}
+			animate={{ with: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
 		>
 			<h1>{t("about.section1.title")}</h1>
 			<Line />

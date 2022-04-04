@@ -17,9 +17,9 @@ function Home() {
 		<motion.section
 			className="home"
 			id="home"
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
+			initial={{ with: 0 }}
+			animate={{ with: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
 		>
 			<div className="max-width">
 				<div className="home-content">

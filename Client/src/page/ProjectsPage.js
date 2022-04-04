@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Error404 from "./Error404";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./projectspage.css";
 
 // Tradutor
@@ -30,7 +30,7 @@ const projects = [
 				altIMG: "",
 				title: "Teste",
 				descrition: "Teste de texto",
-				link: "/projects/1/1",
+				link: "/projects/1/article/1",
 			},
 			{
 				id: 2,
@@ -38,7 +38,7 @@ const projects = [
 				altIMG: "",
 				title: "Teste",
 				descrition: "Teste de texto",
-				link: "/projects/1/2",
+				link: "/projects/1/article/2",
 			},
 		],
 	},
@@ -71,9 +71,9 @@ function ProjectsPage() {
 
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			exit={{ opacity: 0 }}
+			initial={{ with: 0 }}
+			animate={{ with: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
 		>
 			{checkArray(parseInt(id)) ? (
 				<section className="projectspage">
