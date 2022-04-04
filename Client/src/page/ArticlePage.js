@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
+import "./articlepage.css";
+
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
+import Error404 from "./Error404";
+
+import { motion } from "framer-motion/dist/framer-motion";
+import Line from "../components/Line";
+import { Button } from "../components/Button";
 
 import EsportGroup from "../asset/img/Portfoliogroup.png";
-import Error404 from "./Error404";
 
 const projects = [
 	{
@@ -20,15 +27,20 @@ const projects = [
 				altIMG: "",
 				title: "Teste",
 				descrition: "Teste de texto",
-				link: "/projects/1/1",
+				link: "/projects/1/article/1",
+				text: ["test", "test2", "test3"],
+				next: [{ link: "/projects/1/article/2", title: "Test" }],
 			},
 			{
 				id: 2,
 				image: "",
 				altIMG: "",
-				title: "Teste",
+				title: "Teste2",
 				descrition: "Teste de texto",
-				link: "/projects/1/2",
+				link: "/projects/1/article/2",
+				text: ["test", "test2", "test3"],
+				prev: [{ link: "/projects/1/article/1", title: "Test" }],
+				next: [{ link: "/projects/1/article/3", title: "Test" }],
 			},
 		],
 	},
@@ -38,8 +50,7 @@ const projects = [
 ];
 
 function ArticlePage() {
-	const { id } = useParams();
-	const { articleid } = useParams();
+	const { id, articleid } = useParams();
 
 	const [getArticleData, setArticle] = useState({});
 
@@ -87,13 +98,57 @@ function ArticlePage() {
 	}, []);
 
 	return (
-		<div>
+		<motion.div
+			initial={{ with: 0 }}
+			animate={{ with: "100%" }}
+			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+		>
 			{checkArray(parseInt(id), parseInt(articleid)) ? (
-				<div>ArticlePage</div>
+				<section className="articlepage">
+					<h1>{t(getArticleData.title)}</h1>
+					<Line />
+					<img src={getArticleData.image} alt={getArticleData.altIMG} />
+					<p>{t(getArticleData.descrition)}</p>
+					{getArticleData.text?.map((text) => {
+						return <p>{t(text)}</p>;
+					})}
+					<div className="paginate-container">
+						{getArticleData.prev?.map((prev) => {
+							return (
+								<Link to={prev.link}>
+									<Button buttonStyle="btn--outline" buttonSize="btn--large">
+										<div className="prev">
+											<i className="fas fa-angle-left" />
+											<div>
+												<h4>Previous</h4>
+												<p>{prev.title}</p>
+											</div>
+										</div>
+									</Button>
+								</Link>
+							);
+						})}
+						{getArticleData.next?.map((next) => {
+							return (
+								<Link to={next.link}>
+									<Button buttonStyle="btn--outline" buttonSize="btn--large">
+										<div className="next">
+											<div>
+												<h4>Next</h4>
+												<p>{next.title}</p>
+											</div>
+											<i className="fas fa-angle-right" />
+										</div>
+									</Button>
+								</Link>
+							);
+						})}
+					</div>
+				</section>
 			) : (
 				<Error404 />
 			)}
-		</div>
+		</motion.div>
 	);
 }
 
