@@ -12,9 +12,13 @@ function Error404() {
 	return (
 		<motion.section
 			className="error"
-			initial={{ with: 0 }}
-			animate={{ with: "100%" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+			initial={{ y: window.innerHeight, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			exit={{
+				y: window.innerHeight,
+				opacity: 0,
+				transition: { duration: 0.1 },
+			}}
 		>
 			<h1>404</h1>
 			<p>Oooops...</p>

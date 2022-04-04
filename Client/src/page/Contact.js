@@ -46,9 +46,13 @@ function Contact() {
 	return (
 		<motion.section
 			className="contact"
-			initial={{ with: 0 }}
-			animate={{ width: "100%" }}
-			exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+			initial={{ y: window.innerHeight, opacity: 0 }}
+			animate={{ y: 0, opacity: 1 }}
+			exit={{
+				y: window.innerHeight,
+				opacity: 0,
+				transition: { duration: 0.1 },
+			}}
 		>
 			<ToastContainer theme="dark" />
 			<h1>{t("contact.title")}</h1>
