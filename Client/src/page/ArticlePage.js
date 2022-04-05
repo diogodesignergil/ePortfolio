@@ -9,50 +9,21 @@ import Error404 from "./Error404";
 import { motion } from "framer-motion/dist/framer-motion";
 import Line from "../components/Line";
 import { Button } from "../components/Button";
+import data from "../data/data";
 
-import EsportGroup from "../asset/img/Portfoliogroup.png";
-
-const projects = [
-	{
-		id: 1,
-		title: "TEAM EAGLE: E-SPORT TEAM",
-		image: EsportGroup,
-		altIMG: "E-sport Group Screenshot",
-		descrition:
-			"Este projeto teve início durante a formação que realizei como projeto final. Era para servir como grupo onde estou para mostramos o que andávamos a fazer enquanto criadores de conteúdos. Mas tomou uma rota diferente e acabou por ser um para um grupo de E-sports. E neste projeto contem vários processos que chegar a conclusão final e ficou como modelo para ser usado para vários grupos.",
-		article: [
-			{
-				id: 1,
-				image: "",
-				altIMG: "",
-				title: "Teste",
-				descrition: "Teste de texto",
-				link: "/projects/1/article/1",
-				text: ["test", "test2", "test3"],
-				next: [{ link: "/projects/1/article/2", title: "Test" }],
-			},
-			{
-				id: 2,
-				image: "",
-				altIMG: "",
-				title: "Teste2",
-				descrition: "Teste de texto",
-				link: "/projects/1/article/2",
-				text: ["test", "test2", "test3"],
-				prev: [{ link: "/projects/1/article/1", title: "Test" }],
-				next: [{ link: "/projects/1/article/3", title: "Test" }],
-			},
-		],
-	},
-	{ id: 2, title: "Test2" },
-	{ id: 3, title: "Test3" },
-	{ id: 4, title: "Test4" },
-];
+const projects = data.projects;
 
 function ArticlePage() {
 	const { id, articleid } = useParams();
-
+	const [getNextArticleData, setNextArticle] = useState({});
+	const [getPrevArticleData, setPrevArticle] = useState({});
 	const [getArticleData, setArticle] = useState({});
+
+	function getElement(articleID, type) {
+		const elementType = type == "next" ? 1 : -1;
+		const sum = parseInt(articleID) + elementType;
+		return getArticle(id, sum);
+	}
 
 	function checkArray(id, articleID) {
 		const projectExist = projects.some(function (project) {
@@ -95,6 +66,8 @@ function ArticlePage() {
 
 	useEffect(() => {
 		setArticle(getArticle(id, articleid));
+		setNextArticle(getElement(articleid, "next"));
+		setPrevArticle(getElement(articleid, "prev"));
 	}, []);
 
 	return (
@@ -117,36 +90,36 @@ function ArticlePage() {
 						return <p>{t(text)}</p>;
 					})}
 					<div className="paginate-container">
-						{getArticleData.prev?.map((prev) => {
-							return (
-								<Link to={prev.link}>
-									<Button buttonStyle="btn--outline" buttonSize="btn--large">
-										<div className="prev">
-											<i className="fas fa-angle-left" />
-											<div>
-												<h4>Previous</h4>
-												<p>{prev.title}</p>
-											</div>
+						{getPrevArticleData !== undefined ? (
+							<Link to={`${getPrevArticleData.link}`}>
+								<Button buttonStyle="btn--outline" buttonSize="btn--large">
+									<div className="prev">
+										<i className="fas fa-angle-left" />
+										<div>
+											<h4>Previous</h4>
+											<p>{getPrevArticleData.title}</p>
 										</div>
-									</Button>
-								</Link>
-							);
-						})}
-						{getArticleData.next?.map((next) => {
-							return (
-								<Link to={next.link}>
-									<Button buttonStyle="btn--outline" buttonSize="btn--large">
-										<div className="next">
-											<div>
-												<h4>Next</h4>
-												<p>{next.title}</p>
-											</div>
-											<i className="fas fa-angle-right" />
+									</div>
+								</Button>
+							</Link>
+						) : (
+							<></>
+						)}
+						{getNextArticleData !== undefined ? (
+							<Link to={`${getNextArticleData.link}`}>
+								<Button buttonStyle="btn--outline" buttonSize="btn--large">
+									<div className="next">
+										<div>
+											<h4>Next</h4>
+											<p>{getNextArticleData.title}</p>
 										</div>
-									</Button>
-								</Link>
-							);
-						})}
+										<i className="fas fa-angle-right" />
+									</div>
+								</Button>
+							</Link>
+						) : (
+							<></>
+						)}
 					</div>
 				</section>
 			) : (

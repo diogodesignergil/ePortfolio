@@ -6,7 +6,7 @@ import "./home.css";
 import { useTranslation } from "react-i18next";
 
 import CV from "../asset/document/CV-DiogoGil.pdf";
-import Ring from "../asset/img/ring.png";
+import Ring from "../asset/img/Ring.png";
 
 import { motion } from "framer-motion/dist/framer-motion";
 
@@ -22,7 +22,7 @@ function Home() {
 			exit={{
 				y: window.innerHeight,
 				opacity: 0,
-				transition: { duration: 0.1 },
+				transition: { duration: 0.1, ease: "easeInOut" },
 			}}
 		>
 			<div className="max-width">

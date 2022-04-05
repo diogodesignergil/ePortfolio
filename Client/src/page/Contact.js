@@ -51,7 +51,7 @@ function Contact() {
 			exit={{
 				y: window.innerHeight,
 				opacity: 0,
-				transition: { duration: 0.1 },
+				transition: { duration: 0.1, ease: "easeInOut" },
 			}}
 		>
 			<ToastContainer theme="dark" />
