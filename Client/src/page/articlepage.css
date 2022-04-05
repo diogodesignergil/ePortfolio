@@ -67,4 +67,5 @@
 .articlepage .paginate-container .btn .prev i {
 	font-size: 45px;
 	margin: auto 5px;
+	vertical-align: middle;
 }

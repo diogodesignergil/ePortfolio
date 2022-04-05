@@ -247,6 +247,7 @@
 .slide-contianer2 .comunication .iconcom {
 	display: block;
 	text-align: center;
+	overflow-y: auto;
 }
 .slide-contianer .comunication ul,
 .slide-contianer2 .comunication ul {
