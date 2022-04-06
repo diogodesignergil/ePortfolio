@@ -10,7 +10,7 @@ import "swiper/modules/navigation/navigation.scss";
 import "swiper/modules/pagination/pagination.scss";
 import "swiper/modules/a11y/a11y.scss";
 
-import { Navigation } from "swiper";
+import { Navigation, Scrollbar, Pagination } from "swiper";
 
 import data from "../data/data.js";
 
@@ -21,7 +21,7 @@ function Feedback() {
 		<Swiper
 			className="feedback-container"
 			// install Swiper modules
-			modules={[Navigation]}
+			modules={[Navigation, Scrollbar, Pagination]}
 			spaceBetween={50}
 			slidesPerView={1}
 			navigation
