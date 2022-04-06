@@ -7,8 +7,10 @@ import { Link, useParams } from "react-router-dom";
 import Error404 from "./Error404";
 
 import { motion } from "framer-motion/dist/framer-motion";
+
 import Line from "../components/Line";
 import { Button } from "../components/Button";
+
 import data from "../data/data";
 
 const projects = data.projects;
@@ -96,8 +98,8 @@ function ArticlePage() {
 									<div className="prev">
 										<i className="fas fa-angle-left" />
 										<div>
-											<h4>Previous</h4>
-											<p>{getPrevArticleData.title}</p>
+											<h4>{t("articles.prev")}</h4>
+											<p>{t(getPrevArticleData.title)}</p>
 										</div>
 									</div>
 								</Button>
@@ -110,8 +112,8 @@ function ArticlePage() {
 								<Button buttonStyle="btn--outline" buttonSize="btn--large">
 									<div className="next">
 										<div>
-											<h4>Next</h4>
-											<p>{getNextArticleData.title}</p>
+											<h4>{t("articles.next")}</h4>
+											<p>{t(getNextArticleData.title)}</p>
 										</div>
 										<i className="fas fa-angle-right" />
 									</div>

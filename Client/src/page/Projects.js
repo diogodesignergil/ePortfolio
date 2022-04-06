@@ -48,8 +48,8 @@ function Projects() {
 								image={projectsStatus.image}
 								altImg={projectsStatus.altImg}
 								icons={projectsStatus.icons}
-								title={projectsStatus.title}
-								descrition={projectsStatus.descriptionCard}
+								title={t(projectsStatus.title)}
+								descrition={t(projectsStatus.descriptionCard)}
 								link={projectsStatus.link}
 							/>
 						);

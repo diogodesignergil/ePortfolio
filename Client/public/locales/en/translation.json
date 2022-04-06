@@ -218,13 +218,17 @@
 	"projects": {
 		"title": "Projects",
 		"info1": "Here is the list of projects I've been working on lately, as a designer and programmer.",
-		"info2": "You can support me by becoming Patreons for future projects.",
+		"info2": "You can support me by becoming Patreons for my future projects.",
 		"patreon": "Become Patreon",
 		"more": "To know more"
 	},
 	"projectspage": {
 		"read": "Read more",
 		"articles": "Project Evolution"
+	},
+	"articles": {
+		"next": "Next",
+		"prev": "Previous"
 	},
 	"contact": {
 		"title": "Contact",
