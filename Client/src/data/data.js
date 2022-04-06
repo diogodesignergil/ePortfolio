@@ -333,25 +333,27 @@ export default {
 	projects: [
 		{
 			id: 1,
-			title: "TEAM EAGLE: E-SPORT TEAM",
+			title: "projects.project1.title",
 			image: Portfoliogroup,
 			icons: ["html", "js", "css", "php"],
 			altImg: "E-sport Group Screenshot",
 			link: "/projects/1",
-			description:
-				"Este projeto teve início durante a formação que realizei como projeto final. Era para servir como grupo onde estou para mostramos o que andávamos a fazer enquanto criadores de conteúdos. Mas tomou uma rota diferente e acabou por ser um para um grupo de E-sports. E neste projeto contem vários processos que chegar a conclusão final e ficou como modelo para ser usado para vários grupos.",
-			descriptionCard:
-				"Página Web Full-Stock com objetivo no uso para uma equipa de competição de vídeo jogos. E este template podera ser usado para futuras paginações.",
+			description: "projects.project1.discription",
+			descriptionCard: "projects.project1.discriptionCard",
 			sort: Math.random(),
 			article: [
 				{
 					id: 1,
 					image: Portfoliogroup,
 					altIMG: "Portfolio Group",
-					title: "Teste",
-					description: "Teste de texto",
+					title: "projects.project1.article1.title",
+					description: "projects.project1.article1.discription",
 					link: "/projects/1/article/1",
-					text: ["test", "test2", "test3"],
+					text: [
+						"projects.project1.article1.text.1",
+						"projects.project1.article1.text.2",
+						"projects.project1.article1.text.3",
+					],
 				},
 				{
 					id: 2,

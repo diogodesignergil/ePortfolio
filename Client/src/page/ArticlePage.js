@@ -98,7 +98,7 @@ function ArticlePage() {
 									<div className="prev">
 										<i className="fas fa-angle-left" />
 										<div>
-											<h4>{t("articles.prev")}</h4>
+											<h4>{t("projects.prev")}</h4>
 											<p>{t(getPrevArticleData.title)}</p>
 										</div>
 									</div>
@@ -112,7 +112,7 @@ function ArticlePage() {
 								<Button buttonStyle="btn--outline" buttonSize="btn--large">
 									<div className="next">
 										<div>
-											<h4>{t("articles.next")}</h4>
+											<h4>{t("projects.next")}</h4>
 											<p>{t(getNextArticleData.title)}</p>
 										</div>
 										<i className="fas fa-angle-right" />

@@ -219,15 +219,25 @@
 		"info1": "Aqui esta a lista dos projetos que tenho estado a trabalhar ultimamente, enquanto designer e programador.",
 		"info2": "Podem apoiar-me tornarem-se Patreons para os meus futuros projetos.",
 		"patreon": "Torna-se Patreon",
-		"more": "Saber mais"
-	},
-	"projectspage": {
+		"more": "Saber mais",
 		"read": "Ler mais",
-		"articles": "Evolução do Projecto"
-	},
-	"articles": {
+		"evolution": "Evolução do Projecto",
 		"prev": "Anterior",
-		"next": "Proximo"
+		"next": "Proximo",
+		"project1": {
+			"title": "EQUIPE EAGLE: EQUIPE DE E-SPORT",
+			"discription": "Este projeto teve início durante a formação que realizei como projeto final. Era para servir como grupo onde estou para mostramos o que andávamos a fazer enquanto criadores de conteúdos. Mas tomou uma rota diferente e acabou por ser um para um grupo de E-sports. E neste projeto contem vários processos que chegar a conclusão final e ficou como modelo para ser usado para vários grupos.",
+			"discriptionCard": "Página Web Full-Stock com objetivo no uso para uma equipa de competição de vídeo jogos. E este template podera ser usado para futuras paginações.",
+			"article1": {
+				"title": "Teste",
+				"discription": "Teste de texto",
+				"text": {
+					"1": "Teste",
+					"2": "Test2",
+					"3": "Test3"
+				}
+			}
+		}
 	},
 	"contact": {
 		"title": "Contacto",

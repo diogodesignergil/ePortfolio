@@ -56,7 +56,7 @@ function ProjectsPage() {
 						alt={getProjectData.altImg}
 						className="project-img"
 					/>
-					<h2>{t("projectspage.articles")}</h2>
+					<h2>{t("projects.evolution")}</h2>
 					<Line />
 					<div className="cards-container">
 						{getProjectData.article?.map((article) => {

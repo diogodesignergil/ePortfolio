@@ -220,15 +220,25 @@
 		"info1": "Here is the list of projects I've been working on lately, as a designer and programmer.",
 		"info2": "You can support me by becoming Patreons for my future projects.",
 		"patreon": "Become Patreon",
-		"more": "To know more"
-	},
-	"projectspage": {
+		"more": "To know more",
 		"read": "Read more",
-		"articles": "Project Evolution"
-	},
-	"articles": {
+		"evolution": "Project Evolution",
 		"next": "Next",
-		"prev": "Previous"
+		"prev": "Previous",
+		"project1": {
+			"title": "TEAM EAGLE: E-SPORT TEAM",
+			"discription": "This project started during the training I did as a final project. It was to serve as a group where I am to show what we were doing as content creators. But it took a different route and ended up being one for an Esports group. And this project contains several processes that reach the final conclusion and became a model to be used for various groups.",
+			"discriptionCard": "Full-Stock web page intended for use for a video game competition team. And this template can be used for future pagination.",
+			"article1": {
+				"title": "Teste EN",
+				"discription": "Teste de texto EN",
+				"text": {
+					"1": "Teste EN",
+					"2": "Teste2 EN",
+					"3": "Teste3 EN"
+				}
+			}
+		}
 	},
 	"contact": {
 		"title": "Contact",

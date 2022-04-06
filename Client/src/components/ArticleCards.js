@@ -18,7 +18,7 @@ const ArticleCards = ({ image, altIMG, title, descrition, link }) => {
 			</div>
 			<div className="card-footer">
 				<Link to={link}>
-					<span>{t("projectspage.read")} </span>
+					<span>{t("projects.read")} </span>
 					<i className="far fa-angle-right" />
 				</Link>
 			</div>
