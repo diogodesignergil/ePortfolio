@@ -22,7 +22,7 @@ function ArticlePage() {
 	const [getArticleData, setArticle] = useState({});
 
 	function getElement(articleID, type) {
-		const elementType = type == "next" ? 1 : -1;
+		const elementType = type === "next" ? 1 : -1;
 		const sum = parseInt(articleID) + elementType;
 		return getArticle(id, sum);
 	}

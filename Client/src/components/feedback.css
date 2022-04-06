@@ -1,0 +1,38 @@
+.feedback-container {
+	width: 50%;
+	/* border: 2px solid white; */
+	margin: 15px 0;
+	position: relative;
+}
+.feedback-container .swiper-button-prev,
+.feedback-container .swiper-button-next {
+	color: white;
+}
+
+.single-feedback {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.single-feedback img {
+	width: 75px;
+	height: 75px;
+	margin: auto;
+	/* border: 2px solid white; */
+	border-radius: 50%;
+	object-fit: contain;
+	background-color: white;
+}
+.single-feedback h3 {
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+
+.single-feedback p {
+	font-style: italic;
+	font-size: 1.1rem;
+	margin: 0 auto;
+}

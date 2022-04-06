@@ -3,7 +3,9 @@ import "./services.css";
 import Line from "../components/Line.js";
 
 import { useTranslation } from "react-i18next";
+
 import ServicesCards from "../components/ServicesCards";
+import Feedback from "../components/Feedback";
 
 import { motion } from "framer-motion/dist/framer-motion";
 
@@ -28,6 +30,9 @@ function Services() {
 			<h1>{t("services.title")}</h1>
 			<Line />
 			<p>{t("services.info")}</p>
+
+			<Feedback />
+
 			<div className="services-container">
 				{allServices.map((servicesStatus) => {
 					return (

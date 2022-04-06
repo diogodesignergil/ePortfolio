@@ -18,6 +18,8 @@ import Stinger from "../asset/img/stinger.png";
 import Test from "../asset/img/test.png";
 import Chat from "../asset/img/chat.png";
 
+import BeriTech from "../asset/img/beritech.png";
+
 export default {
 	skill: [
 		{
@@ -220,6 +222,16 @@ export default {
 			title: "services.overlaycard.title",
 			descrition: "services.overlaycard.descrition",
 			link: "/services/2",
+		},
+	],
+	feedback: [
+		{
+			id: 1,
+			image: BeriTech,
+			altImg: "BeriTech",
+			name: "BeriTech",
+			feedback:
+				"Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5🌟, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho.",
 		},
 	],
 	servicespage: [
