@@ -231,7 +231,7 @@ export default {
 			altImg: "BeriTech",
 			name: "BeriTech",
 			feedback:
-				"Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5🌟, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho.",
+				"Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5★, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho.",
 		},
 		// {
 		// 	id: 1,
@@ -239,7 +239,7 @@ export default {
 		// 	altImg: "BeriTech",
 		// 	name: "BeriTech",
 		// 	feedback:
-		// 		"Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5🌟, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho.",
+		// 		"Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5★, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho.",
 		// },
 	],
 	servicespage: [

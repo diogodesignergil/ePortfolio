@@ -1,8 +1,6 @@
 .feedback-container {
 	width: 45%;
-	height: 300px;
 	/* border: 2px solid white; */
-	margin: -20px 0;
 	position: relative;
 	overflow-x: visible;
 }
@@ -16,12 +14,6 @@
 @media screen and (max-width: 768px) {
 	.feedback-container {
 		width: 90%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.feedback-container {
-		height: 375px;
 	}
 }
 
@@ -51,23 +43,31 @@
 	justify-content: center;
 	align-content: center;
 	text-align: center;
+	margin: 35px auto;
 }
 
-.single-feedback img {
+.single-feedback div {
+	padding: auto;
+	background-color: white;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.single-feedback div img {
 	width: 75px;
 	height: 75px;
-	margin: 10px auto;
-	/* border: 2px solid white; */
-	border-radius: 50%;
 	object-fit: contain;
-	background-color: white;
+	object-position: center;
 }
 .single-feedback h3 {
 	font-size: 1.5rem;
+	margin-top: 10px;
 }
 
 .single-feedback p {
 	font-style: italic;
 	font-size: 1.1rem;
-	margin: 0 auto;
+	margin: auto;
 }

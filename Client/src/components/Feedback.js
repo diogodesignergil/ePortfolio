@@ -32,7 +32,9 @@ function Feedback() {
 			{allFeedback.map((feedbackStatus) => {
 				return (
 					<SwiperSlide className="single-feedback" key={feedbackStatus.id}>
-						<img src={feedbackStatus.image} alt={feedbackStatus.altImg} />
+						<div>
+							<img src={feedbackStatus.image} alt={feedbackStatus.altImg} />
+						</div>
 						<h3>{feedbackStatus.name}</h3>
 						<p>"{feedbackStatus.feedback}"</p>
 					</SwiperSlide>
