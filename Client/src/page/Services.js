@@ -31,8 +31,6 @@ function Services() {
 			<Line />
 			<p>{t("services.info")}</p>
 
-			<Feedback />
-
 			<div className="services-container">
 				{allServices.map((servicesStatus) => {
 					return (
@@ -46,6 +44,7 @@ function Services() {
 					);
 				})}
 			</div>
+			<Feedback />
 		</motion.section>
 	);
 }
