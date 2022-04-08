@@ -1,287 +1,288 @@
 /* Colers in variables */
 .about {
-	/* width: calc(100% - 15px); */
-	width: 100%;
-	min-height: calc(100vh - 8vh - 13vh);
-	margin: 25px 0;
-	display: block;
-	margin-top: 8vh;
+  /* width: calc(100% - 15px); */
+  width: 100%;
+  min-height: calc(100vh - 8vh - 13vh);
+  margin: 25px 0;
+  display: block;
+  margin-top: 8vh;
 }
 
 .about h1 {
-	margin: 0;
-	padding: 0;
-	font-size: 55px;
-	text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 55px;
+  text-align: center;
 }
 .about .line {
-	width: 75%;
+  width: 75%;
 }
 
 /* Cards Person */
 .info-contianer {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 50px auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  min-width: 320px;
 }
 .info-contianer .wrapp {
-	width: auto;
-	display: flex;
-	justify-content: center;
-	align-content: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 @media screen and (max-width: 1300px) {
-	.info-contianer {
-		width: 75%;
-	}
+  .info-contianer {
+    width: 75%;
+  }
 }
 @media screen and (max-width: 1000px) {
-	.info-contianer {
-		width: 95%;
-	}
+  .info-contianer {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 768px) {
-	.info-contianer .wrapp {
-		width: auto;
-		flex-direction: column;
-	}
+  .info-contianer .wrapp {
+    width: auto;
+    flex-direction: column;
+  }
 }
 .card-contianer {
-	border-radius: 10px;
-	/* width: 285px; */
-	/* border: 1px solid white; */
-	min-width: 270px;
-	max-width: 270px;
-	background-color: white;
-	margin: 0 auto;
-	z-index: 4;
-	-webkit-box-shadow: 5px 0 20px black;
-	box-shadow: 5px 0 20px black;
-	transition: 0.25s ease-in-out;
+  border-radius: 10px;
+  /* width: 285px; */
+  /* border: 1px solid white; */
+  min-width: 270px;
+  max-width: 270px;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 4;
+  -webkit-box-shadow: 5px 0 20px black;
+  box-shadow: 5px 0 20px black;
 }
 @media screen and (max-width: 768px) {
-	.card-contianer {
-		box-shadow: 0 5px 20px black;
-	}
+  .card-contianer {
+    box-shadow: 0 5px 20px black;
+  }
 }
 
 .card-contianer img {
-	min-width: 270px;
-	max-width: 270px;
-	height: 200px;
-	object-fit: cover;
-	object-position: 50% 60%;
-	border-radius: 10px;
-	transform: scale(0.95);
+  min-width: 270px;
+  max-width: 270px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 60%;
+  border-radius: 10px;
+  transform: scale(0.95);
 }
 
 .card-contianer .info {
-	display: flex;
-	margin: 10px;
-	margin-top: -2px;
-	flex-direction: column;
-	flex-wrap: wrap;
-	color: #1e1e2b;
+  display: flex;
+  margin: 10px;
+  margin-top: -2px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #1e1e2b;
 }
 
 .card-contianer .info li {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .slide-contianer {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto 0;
-	max-height: 355px;
-	height: 355px;
-	width: 100%;
-	overflow: hidden;
-	color: white;
-	text-shadow: 3px 3px 5px var(--bg), 1px 1px 2.5px var(--bg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  max-height: 355px;
+  height: 355px;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  text-shadow: 3px 3px 5px var(--bg), 1px 1px 2.5px var(--bg);
 }
 
 .slide-contianer2 {
-	display: none;
-	color: white;
-	text-shadow: 3px 3px 5px var(--bg), 1px 1px 2.5px var(--bg);
+  display: none;
+  color: white;
+  text-shadow: 3px 3px 5px var(--bg), 1px 1px 2.5px var(--bg);
 }
 
 .slide-contianer .aboutme,
 .slide-contianer2 .aboutme {
-	background-color: var(--red);
-	z-index: 3;
-	position: relative;
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
-	border-radius: 0 10px 10px 0;
-	transition: 0.25s ease-in-out;
+  background-color: var(--red);
+  z-index: 3;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  transition: 0.25s ease-in-out;
 }
 .slide-contianer2 .aboutme {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 
 .slide-contianer .aboutme h2,
 .slide-contianer2 .aboutme h2 {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .slide-contianer .aboutme p,
 .slide-contianer2 .aboutme p {
-	line-height: 25px;
-	overflow-y: auto;
+  line-height: 25px;
+  overflow-y: auto;
 }
 
 .slide-contianer .hobby,
 .slide-contianer2 .hobby {
-	background-color: var(--blue);
+  background-color: var(--blue);
 
-	z-index: 2;
-	position: relative;
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 0 10px 10px 0;
-	transition: 0.25s ease-in-out;
-	flex-direction: column;
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  transition: 0.25s ease-in-out;
+  flex-direction: column;
 }
 .slide-contianer .hobby::after,
 .slide-contianer2 .hobby::after {
-	content: "";
-	background-color: var(--blue);
-	position: absolute;
-	height: 100%;
-	width: 20px;
-	top: 0;
-	left: -10px;
-	mix-blend-mode: darken;
+  content: "";
+  background-color: var(--blue);
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  top: 0;
+  left: -10px;
+  mix-blend-mode: darken;
 }
 .slide-contianer .hobby h2,
 .slide-contianer2 .hobby h2 {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .slide-contianer .hobby .iconhobby,
 .slide-contianer2 .hobby .iconhobby {
-	display: block;
-	text-align: center;
-	overflow-y: auto;
+  display: block;
+  text-align: center;
+  overflow-y: auto;
 }
 .slide-contianer .hobby ul,
 .slide-contianer2 .hobby ul {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .slide-contianer .hobby ul li,
 .slide-contianer2 .hobby ul li {
-	display: flex;
-	flex-direction: column;
-
-	font-size: 15px;
-	margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  font-size: 15px;
+  margin: 5px 10px;
 }
 .slide-contianer2 .hobby ul li {
-	flex-direction: row;
-	align-items: center;
-	width: 75%;
-	text-align: left;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+  text-align: left;
 }
 .slide-contianer .hobby ul li i {
-	font-size: 40px;
-	margin-bottom: 0.5px;
+  font-size: 40px;
+  margin-bottom: 0.5px;
 }
 .slide-contianer2 .hobby ul li i {
-	margin-bottom: 0.5px;
-	margin-right: 10px;
-	font-size: 20px;
+  margin-bottom: 0.5px;
+  margin-right: 10px;
+  font-size: 20px;
 }
 .slide-contianer .hobby ul li label,
 .slide-contianer2 .hobby ul li label {
-	margin-bottom: 0;
-	/* padding: 0; */
+  margin-bottom: 0;
+  /* padding: 0; */
 }
 .slide-contianer .comunication,
 .slide-contianer2 .comunication {
-	background-color: var(--yellow);
-	z-index: 1;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	padding: 20px;
-	width: 100%;
-	height: 100%;
-	border-radius: 0 10px 10px 0;
-	transition: 0.25s ease-in-out;
-	flex-direction: column;
+  background-color: var(--yellow);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  transition: 0.25s ease-in-out;
+  flex-direction: column;
 }
 .slide-contianer .comunication::after,
 .slide-contianer2 .comunication::after {
-	content: "";
-	background-color: var(--yellow);
-	position: absolute;
-	height: 100%;
-	width: 20px;
-	top: 0;
-	left: -10px;
-	mix-blend-mode: darken;
+  content: "";
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  top: 0;
+  left: -10px;
+  mix-blend-mode: darken;
 }
 .slide-contianer .comunication h2,
 .slide-contianer2 .comunication h2 {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .slide-contianer .comunication .iconcom,
 .slide-contianer2 .comunication .iconcom {
-	display: block;
-	text-align: center;
-	overflow-y: auto;
+  display: block;
+  text-align: center;
+  overflow-y: auto;
 }
 .slide-contianer .comunication ul,
 .slide-contianer2 .comunication ul {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .slide-contianer .comunication ul li,
 .slide-contianer2 .comunication ul li {
-	display: flex;
-	flex-direction: column;
-	font-size: 15px;
-	margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin: 5px 10px;
+  width: 100px;
 }
 .slide-contianer2 .comunication ul li {
-	flex-direction: row;
-	align-items: center;
-	width: 75%;
-	text-align: left;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+  text-align: left;
 }
 .slide-contianer .comunication ul li i {
-	font-size: 40px;
-	margin-bottom: 0.5px;
+  font-size: 40px;
+  margin-bottom: 0.5px;
 }
 .slide-contianer2 .comunication ul li i {
-	margin-bottom: 0.5px;
-	margin-right: 10px;
-	font-size: 25px;
+  margin-bottom: 0.5px;
+  margin-right: 10px;
+  font-size: 25px;
 }
 .slide-contianer .comunication ul li label,
 .slide-contianer2 .comunication ul li label {
-	margin-bottom: 0;
-	/* padding: 0; */
+  margin-bottom: 0;
+  /* padding: 0; */
 }
 
 .slide-contianer .aboutme.close,
@@ -290,13 +291,13 @@
 .slide-contianer2 .aboutme.close,
 .slide-contianer2 .hobby.close,
 .slide-contianer2 .comunication.close {
-	width: auto;
-	padding: 10px;
-	transition: 0.25s ease-in-out;
-	cursor: pointer;
-	display: flex;
-	justify-content: flex-start;
-	align-content: flex-start;
+  width: auto;
+  padding: 10px;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 .slide-contianer .aboutme.close h2,
 .slide-contianer .hobby.close h2,
@@ -304,9 +305,9 @@
 .slide-contianer2 .aboutme.close h2,
 .slide-contianer2 .hobby.close h2,
 .slide-contianer2 .comunication.close h2 {
-	writing-mode: vertical-rl;
-	transition: 0.25s ease-in-out;
-	margin-top: 15px;
+  writing-mode: vertical-rl;
+  transition: 0.25s ease-in-out;
+  margin-top: 15px;
 }
 
 .slide-contianer .aboutme.close p,
@@ -315,90 +316,90 @@
 .slide-contianer2 .aboutme.close p,
 .slide-contianer2 .hobby.close ul,
 .slide-contianer2 .comunication.close ul {
-	width: 0%;
-	right: 50%;
-	display: none;
-	transition: 0.25s ease-in-out;
+  width: 0%;
+  right: 50%;
+  display: none;
+  transition: 0.25s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
-	.slide-contianer {
-		display: none;
-	}
-	.slide-contianer2 {
-		position: relative;
-		display: flex;
-		margin: auto 0;
-		margin-top: -8px;
-		max-height: 355px;
-		height: 355px;
-		width: 100%;
-		overflow: hidden;
-	}
+  .slide-contianer {
+    display: none;
+  }
+  .slide-contianer2 {
+    position: relative;
+    display: flex;
+    margin: auto 0;
+    margin-top: -8px;
+    max-height: 355px;
+    height: 355px;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 .skill-contianer,
 .language {
-	width: 100%;
-	padding: 25px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Font-size h2 */
 .skill-contianer h2,
 .language h2,
 .timeline-container h2 {
-	margin: 0 auto;
-	margin-bottom: 5px;
-	width: 50%;
-	text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 50%;
+  text-align: center;
 }
 
 /* Line */
 .about .skill-contianer .line,
 .about .language .line,
 .about .timeline-container .line {
-	width: 45%;
-	margin-bottom: 2rem;
+  width: 45%;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-	.about .skill-contianer .line,
-	.about .language .line,
-	.about .timeline-container .line {
-		width: 75%;
-	}
+  .about .skill-contianer .line,
+  .about .language .line,
+  .about .timeline-container .line {
+    width: 75%;
+  }
 }
 
 /* Card Skill */
 .cards-contianer {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Timeline */
 
 .timeline-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .timeline-container .wrapper-time {
-	overflow-x: auto;
-	width: 95%;
-	margin: 0 auto;
-	position: relative;
-	overflow-y: hidden;
+  overflow-x: auto;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .timeline-container .wrapper-time .expericens-contianer {
-	margin-bottom: 10px;
-	display: flex;
-	flex-wrap: nowrap;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
 }
