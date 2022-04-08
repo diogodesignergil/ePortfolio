@@ -22,6 +22,7 @@ function Feedback() {
 			className="feedback-container"
 			// install Swiper modules
 			modules={[Navigation, Scrollbar, Pagination]}
+			autoplay={{ delay: 5000 }}
 			spaceBetween={50}
 			slidesPerView={1}
 			navigation
