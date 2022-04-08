@@ -32,7 +32,6 @@ function Feedback() {
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
       {allFeedback.map((feedbackStatus) => {
         return (
