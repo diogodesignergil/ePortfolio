@@ -1,253 +1,256 @@
 {
-	"menu": {
-		"languages": {
-			"portuguese": "Português",
-			"english": "Inglês"
-		},
-		"sidebar": {
-			"home": "Início",
-			"about": "Sobre Mim",
-			"services": "Serviços",
-			"projects": "Projetos",
-			"contact": "Contacto"
-		}
-	},
-	"home": {
-		"text1": "Olá, o meu nome é",
-		"text3": "E eu sou",
-		"download": "TRANSFERIR CV",
-		"hire": "CONTRATE-ME"
-	},
-	"about": {
-		"section1": {
-			"title": "Sobre Mim",
-			"name": "Nome:",
-			"nickname": "Alcunha:",
-			"birth": "Data de Nascimento:",
-			"local1": "Localização:",
-			"local2": "Lisboa, Portugal",
-			"education1": "Escolaridade:",
-			"education2": "12º",
-			"course1": "Curso:",
-			"course2": "Design Gráfico",
-			"slide1": {
-				"title": "Sobre mim",
-				"text1": "Eu estudei design no meu secundário com bons resultados. Depois fiz alguns trabalhos para algumas pessoas até ser feito um pequeno negócio.",
-				"text2": "Entretanto, fiz várias formações, estágios e trabalho, comecei a ter interesse na web-code, nomeadamente HTML, Javascript e CSS. Fiz duas formações dentro do contexto e como o curso de design complementou mais o meu conhecimento na área de web design.",
-				"text3": "Então criei está página para o fim de conhecerem-me e saberem daquilo que faço."
-			},
-			"slide2": {
-				"title": "Passatempo",
-				"icons": {
-					"video": "Edição de vídeo e imagem",
-					"code": "Experimentação de código",
-					"art": "Desenhar",
-					"live": "Transmissão ao vivo",
-					"read": "Ler"
-				}
-			},
-			"slide3": {
-				"title": "Comunicação",
-				"icons": {
-					"team": "Trabalho em Equipa",
-					"cominter": "Comunicação Interpessoal",
-					"learn": "Aprender algo de novo",
-					"todo": "Organização das Tarefas",
-					"space": "Organização do espaço",
-					"news": "Tentar estar informado"
-				}
-			}
-		},
-		"section2": {
-			"title": "Conhecimento dos Programas",
-			"level": "Nível",
-			"basic": "Básico",
-			"interm": "Intermédio",
-			"intermplus": "Intermédio +",
-			"adven": "Avançado",
-			"advenplus": "Avançado +"
-		},
-		"section3": {
-			"title": "Línguagem",
-			"speak": "Fala",
-			"write": "Escrita",
-			"portugal": {
-				"title": "Português",
-				"speakPer": "Nativo",
-				"writePer": "Nativo"
-			},
-			"english": {
-				"title": "Inglês",
-				"speakPer": "74%",
-				"writePer": "78%"
-			},
-			"france": {
-				"title": "Francês",
-				"speakPer": "8%",
-				"writePer": "10%"
-			}
-		},
-		"section4": {
-			"title": "Experiência Profissional",
-			"card1": {
-				"title": "Design Gráfico",
-				"local": "Escola Sec. Padre António Vieira",
-				"body": "Curso especializado em criação de logotipos. 1º Estágio: F3 - Entidade Gráfia. 2º Estágio: Agir XXI - Entidade de serviço da segurança social."
-			},
-			"card2": {
-				"title": "Cartão de Crédito e Marketing",
-				"local": "IFB - Instituto de Formação Bancário",
-				"body": "Estudos sobre os Cartões de Créditos e apresentação do mesmo em marketing."
-			},
-			"card3": {
-				"title": "Engenharia Aeroestrutura",
-				"local": "IEFP - Instituto do Emprego e Formação Profissional + OGMA",
-				"body": "Conhecimento de furar e cravar peças para linha de montagem de avião. 500h Estágio na OGMA."
-			},
-			"card4": {
-				"title": "Associativismos e Juventude",
-				"local": "IEFP - Instituto do Emprego e Formação Profissional",
-				"body": "Conhecer com é criado um associativismo e saber relacionar com os jovens. 420h Estágio na Casa de Juventude de Alverca."
-			},
-			"card5": {
-				"title": "Técnico Administrativo",
-				"local": "IEFP - Instituto do Emprego e Formação Profissional",
-				"body": "Criar documento e organizar esses mesmos e saber como processar as reclamações. 420h Estágio na COPAM."
-			},
-			"card6": {
-				"title": "Técnico Administrativo - Recursos Humanos",
-				"local": "COMPA - Companhia Portuguesa de Amidos",
-				"body": "Processar documentos e gestão de reclamação na empresa."
-			},
-			"card7": {
-				"title": "Informática - Academia Microsoft",
-				"local": "IEFP - Instituto do Emprego e Formação Profissional",
-				"body": "Conhecimento computarização e código Java, Html e Css."
-			},
-			"card8": {
-				"title": "Programação Web",
-				"local": "Cinel",
-				"body": "Conehcimentos de SQL, C++/C#, Javascript, Html, Css e PHP com projeto final usando tudo que foi aprendido."
-			}
-		}
-	},
-	"services": {
-		"title": "Serviços",
-		"info": "Como designer, eu disponibilizo serviços que podem que encontrem em baixo e poderão requisitar também.",
-		"more": "Saber mais",
-		"logocard": {
-			"title": "Logotipos",
-			"descrition": "Criação de logos personalizados para fins pessoais e empressial, com acabamento para wallpaper, papel timbrado, estampagem e muitos outros..."
-		},
-		"overlaycard": {
-			"title": "Orverlay Streaming",
-			"descrition": "Customização de overlay streaming para Youtube, Twitch, Facebook e muitos outras plataformas streaming, com alertas e goals."
-		}
-	},
-	"servicespage": {
-		"info": "Aqui poderá saber os passos à passos como é feito o processo deste serviços e no fim podera requisitar este mesmo serviço.",
-		"info2": "Nota: Para este serviços requere um logotipo obrigatório!",
-		"logo": {
-			"title": "Logotipos",
-			"step1": {
-				"title": "Entrevista:",
-				"text": "Irei fazer umas pequenas perguntas durante a entrevista ao cliente interessado/a no serviço. Este procedimento server para perceber sobre o produto pedido e poder demonstrar alguma pesquisa."
-			},
-			"step2": {
-				"title": "Pesquisa:",
-				"text": "Eu faço inúmeras pesquisar ao tema do requisito do cliente, para essa mesma pessoa ter noção de uma ideia que poderá vir."
-			},
-			"step3": {
-				"title": "Esboços do Logotipo:",
-				"text": "O esboço é feito a mão e quando tiver o suficiente mostrou o resultado e pode haver ainda mais algumas mais a para frente. Nesta parte quem escolhe qual dos esboços é o cliente para avançar para o formado grande e por fim para formato digital."
-			},
-			"step4": {
-				"title": "Estudo das cores:",
-				"text": "Depois de passar os esboço para digital, é feito uma estudo de cores (caso o cliente não tiver a ideia das cores). Expermento com fundo B/W, Red, Blue, Yellow, Green para não haver problemas com essas cores que são usados."
-			},
-			"step5": {
-				"title": "Proporção:",
-				"text": "Este passo exites para fazer as medidas adquadas para o formato web (nomeadamente: Facebook, Instagram, TikTok e muitos outros...), wallpaper de grandes formatos, impressão e muitos formatos."
-			},
-			"step6": {
-				"title": "Final:",
-				"text": "Depois de todos os passos, chega a parte final que é a entrega dos documentos. Onde será guardado em uma pasta compactada com logo em formato .png, .jpg e .svg. E ainda recebe um .pdf de todo que foi feito."
-			}
-		},
-		"overlay": {
-			"title": "Orverlay Streaming",
-			"step1": {
-				"title": "Entrevista:",
-				"text": "Irei fazer umas pequenas perguntas durante a entrevista ao cliente interessado/a no serviço. Este procedimento server para perceber sobre o produto pedido e poder demonstrar alguma pesquisa."
-			},
-			"step2": {
-				"title": "Disposição Gráfica:",
-				"text": "Organização do espaço overlay no formato 16:9 (1920px:1080px de resolução). Onde cada elementos irá estar situado em cada cenário."
-			},
-			"step3": {
-				"title": "Criação de plano de fundo:",
-				"text": "A partir do logotipo sou capaz criar um fundo adquado e assim cria-se um tema a volta do fundo. Ou fazer de forma animada com Adobe After Effects."
-			},
-			"step4": {
-				"title": "Webcam:",
-				"text": "Webcam personalizado para o cliente com proporção de 16:9 e 4:3. E pode ser animado ou não."
-			},
-			"step5": {
-				"title": "Alertas:",
-				"text": "Criação de alertas com FreeCopyrigth Sound e pode ser feito com animação ou simples."
-			},
-			"step6": {
-				"title": "Transição:",
-				"text": "Criação da transição única para cada overlay usando o Adobe After Effect."
-			},
-			"step7": {
-				"title": "Chat Box:",
-				"text": "Criação da Chat Box para ficar mais profissional e terem um comunidade muito sólida."
-			},
-			"step8": {
-				"title": "Fase de Teste:",
-				"text": "Depois de todas as criações, esta na hora fazer testes no programa de streaming, no Streamlabs e Streamelemntals."
-			},
-			"step9": {
-				"title": "Final:",
-				"text": "Depois de todos os passos, chega a parte final que é a entrega dos documentos. Onde será guardado em uma pasta compactada com formado .png (para overlay simples) e .webm (para overlay animado). E ainda recebe um .pdf de todo que foi feito e como organizar os elementos."
-			}
-		}
-	},
-	"projects": {
-		"title": "Projetos",
-		"info1": "Aqui esta a lista dos projetos que tenho estado a trabalhar ultimamente, enquanto designer e programador.",
-		"info2": "Podem apoiar-me tornarem-se Patreons para os meus futuros projetos.",
-		"patreon": "Torna-se Patreon",
-		"more": "Saber mais",
-		"read": "Ler mais",
-		"evolution": "Evolução do Projecto",
-		"prev": "Anterior",
-		"next": "Proximo",
-		"project1": {
-			"title": "EQUIPE EAGLE: EQUIPE DE E-SPORT",
-			"discription": "Este projeto teve início durante a formação que realizei como projeto final. Era para servir como grupo onde estou para mostramos o que andávamos a fazer enquanto criadores de conteúdos. Mas tomou uma rota diferente e acabou por ser um para um grupo de E-sports. E neste projeto contem vários processos que chegar a conclusão final e ficou como modelo para ser usado para vários grupos.",
-			"discriptionCard": "Página Web Full-Stock com objetivo no uso para uma equipa de competição de vídeo jogos. E este template podera ser usado para futuras paginações.",
-			"article1": {
-				"title": "Teste",
-				"discription": "Teste de texto",
-				"text": {
-					"1": "Teste",
-					"2": "Test2",
-					"3": "Test3"
-				}
-			}
-		}
-	},
-	"contact": {
-		"title": "Contacto",
-		"info": "Entrar em contacto comigo, por favor usar o formulário em baixo.",
-		"name": "Nome",
-		"subject": "Assunto",
-		"message": "Mensagem",
-		"submit": "Submeter"
-	},
-	"error": {
-		"notfound": "Página Não Encontrado"
-	}
+  "menu": {
+    "languages": {
+      "portuguese": "Português",
+      "english": "Inglês"
+    },
+    "sidebar": {
+      "home": "Início",
+      "about": "Sobre Mim",
+      "services": "Serviços",
+      "projects": "Projetos",
+      "contact": "Contacto"
+    }
+  },
+  "home": {
+    "text1": "Olá, o meu nome é",
+    "text3": "E eu sou",
+    "download": "TRANSFERIR CV",
+    "hire": "CONTRATE-ME"
+  },
+  "about": {
+    "section1": {
+      "title": "Sobre Mim",
+      "name": "Nome:",
+      "nickname": "Alcunha:",
+      "birth": "Data de Nascimento:",
+      "local1": "Localização:",
+      "local2": "Lisboa, Portugal",
+      "education1": "Escolaridade:",
+      "education2": "12º",
+      "course1": "Curso:",
+      "course2": "Design Gráfico",
+      "slide1": {
+        "title": "Sobre mim",
+        "text1": "Eu estudei design no meu secundário com bons resultados. Depois fiz alguns trabalhos para algumas pessoas até ser feito um pequeno negócio.",
+        "text2": "Entretanto, fiz várias formações, estágios e trabalho, comecei a ter interesse na web-code, nomeadamente HTML, Javascript e CSS. Fiz duas formações dentro do contexto e como o curso de design complementou mais o meu conhecimento na área de web design.",
+        "text3": "Então criei está página para o fim de conhecerem-me e saberem daquilo que faço."
+      },
+      "slide2": {
+        "title": "Passatempo",
+        "icons": {
+          "video": "Edição de vídeo e imagem",
+          "code": "Experimentação de código",
+          "art": "Desenhar",
+          "live": "Transmissão ao vivo",
+          "read": "Ler"
+        }
+      },
+      "slide3": {
+        "title": "Comunicação",
+        "icons": {
+          "team": "Trabalho em Equipa",
+          "cominter": "Comunicação Interpessoal",
+          "learn": "Aprender algo de novo",
+          "todo": "Organização das Tarefas",
+          "space": "Organização do espaço",
+          "news": "Tentar estar informado"
+        }
+      }
+    },
+    "section2": {
+      "title": "Conhecimento dos Programas",
+      "level": "Nível",
+      "basic": "Básico",
+      "interm": "Intermédio",
+      "intermplus": "Intermédio +",
+      "adven": "Avançado",
+      "advenplus": "Avançado +"
+    },
+    "section3": {
+      "title": "Línguagem",
+      "speak": "Fala",
+      "write": "Escrita",
+      "portugal": {
+        "title": "Português",
+        "speakPer": "Nativo",
+        "writePer": "Nativo"
+      },
+      "english": {
+        "title": "Inglês",
+        "speakPer": "74%",
+        "writePer": "78%"
+      },
+      "france": {
+        "title": "Francês",
+        "speakPer": "8%",
+        "writePer": "10%"
+      }
+    },
+    "section4": {
+      "title": "Experiência Profissional",
+      "card1": {
+        "title": "Design Gráfico",
+        "local": "Escola Sec. Padre António Vieira",
+        "body": "Curso especializado em criação de logotipos. 1º Estágio: F3 - Entidade Gráfia. 2º Estágio: Agir XXI - Entidade de serviço da segurança social."
+      },
+      "card2": {
+        "title": "Cartão de Crédito e Marketing",
+        "local": "IFB - Instituto de Formação Bancário",
+        "body": "Estudos sobre os Cartões de Créditos e apresentação do mesmo em marketing."
+      },
+      "card3": {
+        "title": "Engenharia Aeroestrutura",
+        "local": "IEFP - Instituto do Emprego e Formação Profissional + OGMA",
+        "body": "Conhecimento de furar e cravar peças para linha de montagem de avião. 500h Estágio na OGMA."
+      },
+      "card4": {
+        "title": "Associativismos e Juventude",
+        "local": "IEFP - Instituto do Emprego e Formação Profissional",
+        "body": "Conhecer com é criado um associativismo e saber relacionar com os jovens. 420h Estágio na Casa de Juventude de Alverca."
+      },
+      "card5": {
+        "title": "Técnico Administrativo",
+        "local": "IEFP - Instituto do Emprego e Formação Profissional",
+        "body": "Criar documento e organizar esses mesmos e saber como processar as reclamações. 420h Estágio na COPAM."
+      },
+      "card6": {
+        "title": "Técnico Administrativo - Recursos Humanos",
+        "local": "COMPA - Companhia Portuguesa de Amidos",
+        "body": "Processar documentos e gestão de reclamação na empresa."
+      },
+      "card7": {
+        "title": "Informática - Academia Microsoft",
+        "local": "IEFP - Instituto do Emprego e Formação Profissional",
+        "body": "Conhecimento computarização e código Java, Html e Css."
+      },
+      "card8": {
+        "title": "Programação Web",
+        "local": "Cinel",
+        "body": "Conehcimentos de SQL, C++/C#, Javascript, Html, Css e PHP com projeto final usando tudo que foi aprendido."
+      }
+    }
+  },
+  "services": {
+    "title": "Serviços",
+    "info": "Como designer, eu disponibilizo serviços que podem que encontrem em baixo e poderão requisitar também.",
+    "more": "Saber mais",
+    "logocard": {
+      "title": "Logotipos",
+      "descrition": "Criação de logos personalizados para fins pessoais e empressial, com acabamento para wallpaper, papel timbrado, estampagem e muitos outros..."
+    },
+    "overlaycard": {
+      "title": "Orverlay Streaming",
+      "descrition": "Customização de overlay streaming para Youtube, Twitch, Facebook e muitos outras plataformas streaming, com alertas e goals."
+    }
+  },
+  "feedback": {
+    "beritech": "Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5★, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho."
+  },
+  "servicespage": {
+    "info": "Aqui poderá saber os passos à passos como é feito o processo deste serviços e no fim podera requisitar este mesmo serviço.",
+    "info2": "Nota: Para este serviços requere um logotipo obrigatório!",
+    "logo": {
+      "title": "Logotipos",
+      "step1": {
+        "title": "Entrevista:",
+        "text": "Irei fazer umas pequenas perguntas durante a entrevista ao cliente interessado/a no serviço. Este procedimento server para perceber sobre o produto pedido e poder demonstrar alguma pesquisa."
+      },
+      "step2": {
+        "title": "Pesquisa:",
+        "text": "Eu faço inúmeras pesquisar ao tema do requisito do cliente, para essa mesma pessoa ter noção de uma ideia que poderá vir."
+      },
+      "step3": {
+        "title": "Esboços do Logotipo:",
+        "text": "O esboço é feito a mão e quando tiver o suficiente mostrou o resultado e pode haver ainda mais algumas mais a para frente. Nesta parte quem escolhe qual dos esboços é o cliente para avançar para o formado grande e por fim para formato digital."
+      },
+      "step4": {
+        "title": "Estudo das cores:",
+        "text": "Depois de passar os esboço para digital, é feito uma estudo de cores (caso o cliente não tiver a ideia das cores). Expermento com fundo B/W, Red, Blue, Yellow, Green para não haver problemas com essas cores que são usados."
+      },
+      "step5": {
+        "title": "Proporção:",
+        "text": "Este passo exites para fazer as medidas adquadas para o formato web (nomeadamente: Facebook, Instagram, TikTok e muitos outros...), wallpaper de grandes formatos, impressão e muitos formatos."
+      },
+      "step6": {
+        "title": "Final:",
+        "text": "Depois de todos os passos, chega a parte final que é a entrega dos documentos. Onde será guardado em uma pasta compactada com logo em formato .png, .jpg e .svg. E ainda recebe um .pdf de todo que foi feito."
+      }
+    },
+    "overlay": {
+      "title": "Orverlay Streaming",
+      "step1": {
+        "title": "Entrevista:",
+        "text": "Irei fazer umas pequenas perguntas durante a entrevista ao cliente interessado/a no serviço. Este procedimento server para perceber sobre o produto pedido e poder demonstrar alguma pesquisa."
+      },
+      "step2": {
+        "title": "Disposição Gráfica:",
+        "text": "Organização do espaço overlay no formato 16:9 (1920px:1080px de resolução). Onde cada elementos irá estar situado em cada cenário."
+      },
+      "step3": {
+        "title": "Criação de plano de fundo:",
+        "text": "A partir do logotipo sou capaz criar um fundo adquado e assim cria-se um tema a volta do fundo. Ou fazer de forma animada com Adobe After Effects."
+      },
+      "step4": {
+        "title": "Webcam:",
+        "text": "Webcam personalizado para o cliente com proporção de 16:9 e 4:3. E pode ser animado ou não."
+      },
+      "step5": {
+        "title": "Alertas:",
+        "text": "Criação de alertas com FreeCopyrigth Sound e pode ser feito com animação ou simples."
+      },
+      "step6": {
+        "title": "Transição:",
+        "text": "Criação da transição única para cada overlay usando o Adobe After Effect."
+      },
+      "step7": {
+        "title": "Chat Box:",
+        "text": "Criação da Chat Box para ficar mais profissional e terem um comunidade muito sólida."
+      },
+      "step8": {
+        "title": "Fase de Teste:",
+        "text": "Depois de todas as criações, esta na hora fazer testes no programa de streaming, no Streamlabs e Streamelemntals."
+      },
+      "step9": {
+        "title": "Final:",
+        "text": "Depois de todos os passos, chega a parte final que é a entrega dos documentos. Onde será guardado em uma pasta compactada com formado .png (para overlay simples) e .webm (para overlay animado). E ainda recebe um .pdf de todo que foi feito e como organizar os elementos."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "info1": "Aqui esta a lista dos projetos que tenho estado a trabalhar ultimamente, enquanto designer e programador.",
+    "info2": "Podem apoiar-me tornarem-se Patreons para os meus futuros projetos.",
+    "patreon": "Torna-se Patreon",
+    "more": "Saber mais",
+    "read": "Ler mais",
+    "evolution": "Evolução do Projecto",
+    "prev": "Anterior",
+    "next": "Proximo",
+    "project1": {
+      "title": "EQUIPE EAGLE: EQUIPE DE E-SPORT",
+      "discription": "Este projeto teve início durante a formação que realizei como projeto final. Era para servir como grupo onde estou para mostramos o que andávamos a fazer enquanto criadores de conteúdos. Mas tomou uma rota diferente e acabou por ser um para um grupo de E-sports. E neste projeto contem vários processos que chegar a conclusão final e ficou como modelo para ser usado para vários grupos.",
+      "discriptionCard": "Página Web Full-Stock com objetivo no uso para uma equipa de competição de vídeo jogos. E este template podera ser usado para futuras paginações.",
+      "article1": {
+        "title": "Teste",
+        "discription": "Teste de texto",
+        "text": {
+          "1": "Teste",
+          "2": "Test2",
+          "3": "Test3"
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "info": "Entrar em contacto comigo, por favor usar o formulário em baixo.",
+    "name": "Nome",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "submit": "Submeter"
+  },
+  "error": {
+    "notfound": "Página Não Encontrado"
+  }
 }
