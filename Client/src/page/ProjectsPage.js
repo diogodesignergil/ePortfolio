@@ -15,69 +15,67 @@ import { motion } from "framer-motion/dist/framer-motion";
 const projects = data.projects;
 
 function ProjectsPage() {
-	const { id } = useParams();
-	const [getProjectData, setProject] = useState({});
+  const { id } = useParams();
+  const [getProjectData, setProject] = useState({});
 
-	function checkArray(id) {
-		return projects.some(function (project) {
-			return project.id === id;
-		});
-	}
+  function checkArray(id) {
+    return projects.some(function (project) {
+      return project.id === id;
+    });
+  }
 
-	function getProject(id) {
-		return projects.find(function (project) {
-			return project.id === parseInt(id);
-		});
-	}
+  function getProject(id) {
+    return projects.find(function (project) {
+      return project.id === parseInt(id);
+    });
+  }
 
-	const [t] = useTranslation();
+  const [t] = useTranslation();
 
-	useEffect(() => {
-		setProject(getProject(id));
-	}, []);
+  useEffect(() => {
+    setProject(getProject(id));
+  }, []);
 
-	return (
-		<motion.div
-			initial={{ y: window.innerHeight, opacity: 0 }}
-			animate={{ y: 0, opacity: 1 }}
-			exit={{
-				y: window.innerHeight,
-				opacity: 0,
-				transition: { duration: 0.1 },
-			}}
-		>
-			{checkArray(parseInt(id)) ? (
-				<section className="projectspage">
-					<h1>{t(getProjectData.title)}</h1>
-					<Line />
-					<p className="descrition">{t(getProjectData.description)}</p>
-					<img
-						src={getProjectData.image}
-						alt={getProjectData.altImg}
-						className="project-img"
-					/>
-					<h2>{t("projects.evolution")}</h2>
-					<Line />
-					<div className="cards-container">
-						{getProjectData.article?.map((article) => {
-							return (
-								<ArticleCards
-									key={article.id}
-									image={article.image}
-									altIMG={article.altIMG}
-									title={t(article.title)}
-									descrition={t(article.description)}
-									link={article.link}
-								/>
-							);
-						})}
-					</div>
-				</section>
-			) : (
-				<Error404 />
-			)}
-		</motion.div>
-	);
+  return (
+    <motion.div
+      initial={{ y: window.innerHeight, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{
+        y: window.innerHeight,
+        opacity: 0,
+        transition: { duration: 0.1 },
+      }}
+    >
+      {checkArray(parseInt(id)) ? (
+        <section className="projectspage">
+          <h1>{t(getProjectData.title)}</h1>
+          <Line />
+          <p className="descrition">{t(getProjectData.description)}</p>
+          <img src={getProjectData.image} alt={getProjectData.altImg} />
+          <div className="evol-contianer">
+            <h2>{t("projects.evolution")}</h2>
+            <Line />
+            <div className="cards-container">
+              {getProjectData.article?.map((article) => {
+                return (
+                  <ArticleCards
+                    key={article.id}
+                    image={article.image}
+                    altIMG={article.altIMG}
+                    title={t(article.title)}
+                    descrition={t(article.description)}
+                    link={article.link}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <Error404 />
+      )}
+    </motion.div>
+  );
 }
 
 export default ProjectsPage;

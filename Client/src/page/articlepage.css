@@ -1,71 +1,96 @@
 .articlepage {
-	min-height: calc(100vh - 8vh - 13vh);
-	margin-top: 8vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	width: 100%;
-	/* border: 2px solid white; */
+  min-height: calc(100vh - 8vh - 13vh);
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid white; */
 }
 
 .articlepage h1 {
-	margin: 0;
-	padding: 0;
-	font-size: 55px;
-	text-align: center;
-	margin-bottom: 15px;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .articlepage .line {
-	width: 75%;
+  width: 75%;
 }
 
 .articlepage img {
+  min-width: 300px;
+  max-height: 400px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.articlepage p {
+  text-align: justify;
+  text-align-last: left;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 1140px;
+  min-width: 300px;
+}
+
+.articlepage p:last-child {
+  margin-bottom: 0;
+}
+
+.articlepage .discription {
+  font-weight: bold;
+  font-size: 20px;
+  width: 85%;
+  text-align: center;
+  text-align-last: center;
 }
 
 .articlepage .paginate-container {
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-items: center;
-	justify-content: space-around;
-	align-content: center;
-	/* border: 2px solid white; */
-	margin: 10px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-around;
+  align-content: center;
+  /* border: 2px solid white; */
+  margin: 10px 0;
 }
 
 .articlepage .paginate-container .btn {
-	max-width: 250px;
-	margin: auto;
+  max-width: 250px;
+  margin: auto;
 }
 
 .articlepage .paginate-container .btn div {
-	display: flex;
-	margin: auto 0;
+  display: flex;
+  margin: auto 0;
 }
 .articlepage .paginate-container .btn .prev div {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 .articlepage .paginate-container .btn .next {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 .articlepage .paginate-container .btn .next div {
-	display: flex;
-	flex-direction: column;
-	text-align: right;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
 .articlepage .paginate-container .btn div div p {
-	font-size: 15px;
-	width: auto;
-	font-weight: normal;
+  font-size: 15px;
+  width: auto;
+  font-weight: normal;
 }
 
 .articlepage .paginate-container .btn .next i,
 .articlepage .paginate-container .btn .prev i {
-	font-size: 45px;
-	margin: auto 5px;
-	vertical-align: middle;
+  font-size: 45px;
+  margin: auto 5px;
+  vertical-align: middle;
 }

@@ -1,9 +1,14 @@
+// Portfolio
 import Portfoliogroup from "../asset/img/Portfoliogroup.png";
-import MagicOverlay from "../asset/img/magicoverlay.png";
 
+// Magic
+import MagicOverlay from "../asset/img/magicoverlay.png";
+import MagicBegin from "../asset/img/Magic/magic1.png";
+
+// Services
 import BannerLogo from "../asset/img/LogoBanner.png";
 import BannerOverlay from "../asset/img/OverlayBanner.png";
-
+// Services Page
 import Interview from "../asset/img/interview.png";
 import Search from "../asset/img/search.png";
 import Draw from "../asset/img/draw.png";
@@ -17,7 +22,7 @@ import Alert from "../asset/img/alert.png";
 import Stinger from "../asset/img/stinger.png";
 import Test from "../asset/img/test.png";
 import Chat from "../asset/img/chat.png";
-
+// Feedback Clients
 import BeriTech from "../asset/img/beritech.png";
 
 export default {
@@ -391,12 +396,27 @@ export default {
       altImg: "Magic: The Gathering Overlay",
       icons: ["photoshop", "af"],
       title: "Magic: The Gathering Overlay",
-      description: "",
+      description:
+        "Este projeto teve como início uns dos meus vícios de infância, e ainda tenho. E como eu faço livestream na Twitch, então eu decidi criar um overlay completo dentro do tema, e esse tema é Magic: the Gathering da Wizard Cost.",
       descriptionCard:
         "Uma coleção completa de overlay streaming com tema titulada de Magic: the Gathering, um jogo de cartas criado por Wizard Coast.",
       link: "/projects/2",
       sort: Math.random(),
-      article: [],
+      article: [
+        {
+          id: 1,
+          image: MagicBegin,
+          altIMG: "Magic Overlay Begin",
+          title: "Magic Overlay: Planeamento",
+          description:
+            "Para o início do projeto tive de planear o que cada passo, nomeadamente cenários, webcam, plano de fundo e muito mais. E este projeto terá como proteção segura de direitos.",
+          link: "/projects/2/article/1",
+          text: [
+            "Neste projeto precisei fazer várias pesquisas, um para cenários, webcam, caixa de chat, alertas, planos de fundo e organização desses mesmos elementos. Como este projeto abrange num jogo de cartas onde os elementos tem suas próprias cores e eu baseie nessas cores que são branco, azul, preto, vermelho, verde, coloress (escala de cinza) e dourado.",
+            "Na pesquisa fiz um analise da organização dos elementos as melhores posições para ser o máximo profissional para o streamer e como irá ser mais usado no jogo de Magic: The Gathering Arena terá uma posição única no cenário do jogo.",
+          ],
+        },
+      ],
     },
     {
       id: 3,
