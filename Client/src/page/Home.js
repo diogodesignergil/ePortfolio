@@ -28,7 +28,9 @@ function Home() {
       <div className="max-width">
         <div className="home-content">
           <div className="static-txt-1">{t("home.text1")}</div>
-          <div className="static-txt-2">Diogo "Reveratel" Gil</div>
+          <div className="static-txt-2">
+            Diogo <span>"Reveratel"</span> Gil
+          </div>
           <div className="wrapper">
             <div className="static-txt-3">{t("home.text3")}</div>
             <ul className="dynamic-txts">
@@ -58,7 +60,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="ring">
+      <div className="profil">
         <img src={Ring} alt="" />
       </div>
     </motion.section>

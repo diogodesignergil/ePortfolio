@@ -8,11 +8,12 @@
   justify-content: flex-end;
   top: 0;
   /* background: #1e1e2bb6; */
+  transition: 0.25s ease-in-out;
 }
 
 .header.active {
   backdrop-filter: blur(5px);
-  background-color: rgba(30, 30, 43, 0.75);
+  background-color: rgba(62, 75, 94, 0.75);
 }
 
 .logo {
