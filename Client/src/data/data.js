@@ -414,6 +414,7 @@ export default {
           text: [
             "Neste projeto precisei fazer várias pesquisas, um para cenários, webcam, caixa de chat, alertas, planos de fundo e organização desses mesmos elementos. Como este projeto abrange num jogo de cartas onde os elementos tem suas próprias cores e eu baseie nessas cores que são branco, azul, preto, vermelho, verde, coloress (escala de cinza) e dourado.",
             "Na pesquisa fiz um analise da organização dos elementos as melhores posições para ser o máximo profissional para o streamer e como irá ser mais usado no jogo de Magic: The Gathering Arena terá uma posição única no cenário do jogo.",
+            "A webcam pensei em usar o formato da carta com a estrutura da criatura lendária e ira receber informações do streamer referente. Assim como irá ter essa estrutura ira ter a cor que a pessoa escolheu para o seu overlay.",
           ],
         },
       ],
