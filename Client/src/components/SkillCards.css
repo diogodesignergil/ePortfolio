@@ -1,64 +1,64 @@
 * {
-	--ps1: #8bc3fc;
-	--ps2: #3c327b;
-	--ps3: #111727;
-	--ai1: #fbbb4d;
-	--ai2: #5f4b26;
-	--ai3: #3d3119;
-	--pr1: #db76fa;
-	--pr2: #523a5c;
-	--pr3: #33243a;
-	--ae1: #cf96fd;
-	--ae2: #393665;
-	--ae3: #33243a;
-	--mo1: #f25022;
-	--mo2: #993418;
-	--mo3: #3a1308;
-	--html1: #f27522;
-	--html2: #993d18;
-	--html3: #4e1e0b;
-	--css1: #6f95ee;
-	--css2: #264de4;
-	--css3: #003a61;
-	--js1: #ffff00;
-	--js2: #b4b400;
-	--js3: #6e6e00;
-	--php1: #787cb5;
-	--php2: #474a8a;
-	--php3: #21223f;
-	--react1: #7cc5d9;
-	--react2: #4c768d;
-	--react3: #21223f;
-	--cc1: #5e97d0;
-	--cc2: #684d95;
-	--cc3: #312641;
-	--java1: #ea2a30;
-	--java2: #0474bb;
-	--java3: #21223f;
+  --ps1: #8bc3fc;
+  --ps2: #3c327b;
+  --ps3: #111727;
+  --ai1: #fbbb4d;
+  --ai2: #5f4b26;
+  --ai3: #3d3119;
+  --pr1: #db76fa;
+  --pr2: #523a5c;
+  --pr3: #33243a;
+  --ae1: #cf96fd;
+  --ae2: #393665;
+  --ae3: #33243a;
+  --mo1: #f25022;
+  --mo2: #993418;
+  --mo3: #3a1308;
+  --html1: #f27522;
+  --html2: #993d18;
+  --html3: #4e1e0b;
+  --css1: #6f95ee;
+  --css2: #264de4;
+  --css3: #003a61;
+  --js1: #ffff00;
+  --js2: #b4b400;
+  --js3: #6e6e00;
+  --php1: #787cb5;
+  --php2: #474a8a;
+  --php3: #21223f;
+  --react1: #7cc5d9;
+  --react2: #4c768d;
+  --react3: #21223f;
+  --cc1: #5e97d0;
+  --cc2: #684d95;
+  --cc3: #312641;
+  --java1: #ea2a30;
+  --java2: #0474bb;
+  --java3: #21223f;
 }
 
 .card {
-	position: relative;
-	width: 250px;
-	height: 300px;
-	border-radius: 20px;
-	overflow: hidden;
-	margin: 5px 10px;
-	cursor: default;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 5px 10px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .card::after {
-	content: "";
-	width: 250px;
-	height: 300px;
-	position: absolute;
-	z-index: 1;
+  content: "";
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
 }
 
 /* Card Skill Opacity */
@@ -74,78 +74,78 @@
 .card.react:hover .card-skill,
 .card.cc:hover .card-skill,
 .card.java:hover .card-skill {
-	opacity: 1;
+  opacity: 1;
 }
 .card-skill {
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	margin: auto 0;
-	opacity: 0;
-	transition: 0.25s ease-in-out;
-	padding: 1%;
-	position: relative;
-	z-index: 2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto 0;
+  opacity: 0;
+  transition: 0.25s ease-in-out;
+  padding: 1%;
+  position: relative;
+  z-index: 2;
 }
 
 .card-skill h3 {
-	font-size: 40px;
-	margin-bottom: 10px;
-	line-height: 40px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
 }
 .card-skill h3 label {
-	font-size: 15px;
-	margin: 0;
-	padding: 0;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .card-skill p {
-	font-size: 25px;
+  font-size: 25px;
 }
 .card-skill p span {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 .bar {
-	display: flex;
-	width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .bar div {
-	width: 45px;
-	height: 15px;
-	border-radius: 50px;
-	margin: 25px 5px;
-	margin-bottom: 0;
-	border: 2px solid;
+  width: 45px;
+  height: 15px;
+  border-radius: 50px;
+  margin: 25px 5px;
+  margin-bottom: 0;
+  border: 2px solid;
 }
 
 /* Photoshop */
 .photoshop {
-	border: 5px var(--ps1) solid;
-	background: linear-gradient(180deg, var(--ps2), var(--ps3));
+  border: 5px var(--ps1) solid;
+  background: linear-gradient(180deg, var(--ps2), var(--ps3));
 }
 .photoshop::after {
-	content: "Ps";
-	color: var(--ps1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
+  content: "Ps";
+  color: var(--ps1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
 }
 .photoshop:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .photoshop .bar div {
-	border-color: var(--ps1);
+  border-color: var(--ps1);
 }
 
 .photoshop .basic div:nth-child(-n + 1),
@@ -153,32 +153,32 @@
 .photoshop .intermplus div:nth-child(-n + 3),
 .photoshop .adven div:nth-child(-n + 4),
 .photoshop .advenplus div:nth-child(-n + 5) {
-	background-color: var(--ps1);
-	box-shadow: 0 0 10px var(--ps1);
+  background-color: var(--ps1);
+  box-shadow: 0 0 10px var(--ps1);
 }
 
 /* Illustrator */
 .illustrator {
-	border: 5px var(--ai1) solid;
-	background: linear-gradient(180deg, var(--ai2), var(--ai3));
+  border: 5px var(--ai1) solid;
+  background: linear-gradient(180deg, var(--ai2), var(--ai3));
 }
 .illustrator::after {
-	content: "Ai";
-	color: var(--ai1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
+  content: "Ai";
+  color: var(--ai1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
 }
 .illustrator:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .illustrator .bar div {
-	border-color: var(--ai1);
+  border-color: var(--ai1);
 }
 
 .illustrator .basic div:nth-child(-n + 1),
@@ -186,32 +186,32 @@
 .illustrator .intermplus div:nth-child(-n + 3),
 .illustrator .adven div:nth-child(-n + 4),
 .illustrator .advenplus div:nth-child(-n + 5) {
-	background-color: var(--ai1);
-	box-shadow: 0 0 10px var(--ai1);
+  background-color: var(--ai1);
+  box-shadow: 0 0 10px var(--ai1);
 }
 
 /* Premierer */
 .premierer {
-	border: 5px var(--pr1) solid;
-	background: linear-gradient(180deg, var(--pr2), var(--pr3));
+  border: 5px var(--pr1) solid;
+  background: linear-gradient(180deg, var(--pr2), var(--pr3));
 }
 .premierer::after {
-	content: "Pr";
-	color: var(--pr1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
+  content: "Pr";
+  color: var(--pr1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
 }
 .premierer:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .premierer .bar div {
-	border-color: var(--pr1);
+  border-color: var(--pr1);
 }
 
 .premierer .basic div:nth-child(-n + 1),
@@ -219,32 +219,32 @@
 .premierer .intermplus div:nth-child(-n + 3),
 .premierer .adven div:nth-child(-n + 4),
 .premierer .advenplus div:nth-child(-n + 5) {
-	background-color: var(--pr1);
-	box-shadow: 0 0 10px var(--pr1);
+  background-color: var(--pr1);
+  box-shadow: 0 0 10px var(--pr1);
 }
 
 /* Aftert Effects */
 .aftereffect {
-	border: 5px var(--ae1) solid;
-	background: linear-gradient(180deg, var(--ae2), var(--ae3));
+  border: 5px var(--ae1) solid;
+  background: linear-gradient(180deg, var(--ae2), var(--ae3));
 }
 .aftereffect::after {
-	content: "Ae";
-	color: var(--ae1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
+  content: "Ae";
+  color: var(--ae1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
 }
 .aftereffect:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .aftereffect .bar div {
-	border-color: var(--ae1);
+  border-color: var(--ae1);
 }
 
 .aftereffect .basic div:nth-child(-n + 1),
@@ -252,35 +252,35 @@
 .aftereffect .intermplus div:nth-child(-n + 3),
 .aftereffect .adven div:nth-child(-n + 4),
 .aftereffect .advenplus div:nth-child(-n + 5) {
-	background-color: var(--ae1);
-	box-shadow: 0 0 10px var(--ae1);
+  background-color: var(--ae1);
+  box-shadow: 0 0 10px var(--ae1);
 }
 
 /* Microsoft Office */
 .microOffice {
-	border: 5px var(--mo1) solid;
-	background: linear-gradient(180deg, var(--mo2), var(--mo3));
+  border: 5px var(--mo1) solid;
+  background: linear-gradient(180deg, var(--mo2), var(--mo3));
 }
 .microOffice::after {
-	content: "";
-	color: var(--mo1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/office.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--mo1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/office.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .microOffice:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .microOffice .bar div {
-	border-color: var(--mo1);
+  border-color: var(--mo1);
 }
 
 .microOffice .basic div:nth-child(-n + 1),
@@ -288,35 +288,35 @@
 .microOffice .intermplus div:nth-child(-n + 3),
 .microOffice .adven div:nth-child(-n + 4),
 .microOffice .advenplus div:nth-child(-n + 5) {
-	background-color: var(--mo1);
-	box-shadow: 0 0 10px var(--mo1);
+  background-color: var(--mo1);
+  box-shadow: 0 0 10px var(--mo1);
 }
 
 /* Html */
 .html {
-	border: 5px var(--html1) solid;
-	background: linear-gradient(180deg, var(--html2), var(--html3));
+  border: 5px var(--html1) solid;
+  background: linear-gradient(180deg, var(--html2), var(--html3));
 }
 .html::after {
-	content: "";
-	color: var(--html1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/html.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--html1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/html.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .html:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .html .bar div {
-	border-color: var(--html1);
+  border-color: var(--html1);
 }
 
 .html .basic div:nth-child(-n + 1),
@@ -324,35 +324,35 @@
 .html .intermplus div:nth-child(-n + 3),
 .html .adven div:nth-child(-n + 4),
 .html .advenplus div:nth-child(-n + 5) {
-	background-color: var(--html1);
-	box-shadow: 0 0 10px var(--html1);
+  background-color: var(--html1);
+  box-shadow: 0 0 10px var(--html1);
 }
 
 /* CSS */
 .css {
-	border: 5px var(--css1) solid;
-	background: linear-gradient(180deg, var(--css2), var(--css3));
+  border: 5px var(--css1) solid;
+  background: linear-gradient(180deg, var(--css2), var(--css3));
 }
 .css::after {
-	content: "";
-	color: var(--css1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/css-3.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--css1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/css-3.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .css:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .css .bar div {
-	border-color: var(--css1);
+  border-color: var(--css1);
 }
 
 .css .basic div:nth-child(-n + 1),
@@ -360,35 +360,36 @@
 .css .intermplus div:nth-child(-n + 3),
 .css .adven div:nth-child(-n + 4),
 .css .advenplus div:nth-child(-n + 5) {
-	background-color: var(--css1);
-	box-shadow: 0 0 10px var(--css1);
+  background-color: var(--css1);
+  box-shadow: 0 0 10px var(--css1);
 }
 
 /* Javascript */
 .js {
-	border: 5px var(--js1) solid;
-	background: linear-gradient(180deg, var(--js2), var(--js3));
+  border: 5px var(--js1) solid;
+  background: linear-gradient(180deg, var(--js2), var(--js3));
+  text-shadow: 0 0 5px black;
 }
 .js::after {
-	content: "";
-	color: var(--js1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/js.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--js1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/js.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .js:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .js .bar div {
-	border-color: var(--js1);
+  border-color: var(--js1);
 }
 
 .js .basic div:nth-child(-n + 1),
@@ -396,35 +397,35 @@
 .js .intermplus div:nth-child(-n + 3),
 .js .adven div:nth-child(-n + 4),
 .js .advenplus div:nth-child(-n + 5) {
-	background-color: var(--js1);
-	box-shadow: 0 0 10px var(--js1);
+  background-color: var(--js1);
+  box-shadow: 0 0 10px rgb(161, 105, 0);
 }
 
 /* PHP */
 .php {
-	border: 5px var(--php1) solid;
-	background: linear-gradient(180deg, var(--php2), var(--php3));
+  border: 5px var(--php1) solid;
+  background: linear-gradient(180deg, var(--php2), var(--php3));
 }
 .php::after {
-	content: "";
-	color: var(--php1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/php.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--php1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/php.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .php:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .php .bar div {
-	border-color: var(--php1);
+  border-color: var(--php1);
 }
 
 .php .basic div:nth-child(-n + 1),
@@ -432,35 +433,35 @@
 .php .intermplus div:nth-child(-n + 3),
 .php .adven div:nth-child(-n + 4),
 .php .advenplus div:nth-child(-n + 5) {
-	background-color: var(--php1);
-	box-shadow: 0 0 10px var(--php1);
+  background-color: var(--php1);
+  box-shadow: 0 0 10px var(--php1);
 }
 
 /* React */
 .react {
-	border: 5px var(--react1) solid;
-	background: linear-gradient(180deg, var(--react2), var(--react3));
+  border: 5px var(--react1) solid;
+  background: linear-gradient(180deg, var(--react2), var(--react3));
 }
 .react::after {
-	content: "";
-	color: var(--react1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/react.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--react1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/react.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .react:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .react .bar div {
-	border-color: var(--react1);
+  border-color: var(--react1);
 }
 
 .react .basic div:nth-child(-n + 1),
@@ -468,35 +469,35 @@
 .react .intermplus div:nth-child(-n + 3),
 .react .adven div:nth-child(-n + 4),
 .react .advenplus div:nth-child(-n + 5) {
-	background-color: var(--react1);
-	box-shadow: 0 0 10px var(--react1);
+  background-color: var(--react1);
+  box-shadow: 0 0 10px var(--react1);
 }
 
 /* C++ / C# */
 .cc {
-	border: 5px var(--cc1) solid;
-	background: linear-gradient(180deg, var(--cc2), var(--cc3));
+  border: 5px var(--cc1) solid;
+  background: linear-gradient(180deg, var(--cc2), var(--cc3));
 }
 .cc::after {
-	content: "";
-	color: var(--cc1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/c.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--cc1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/c.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .cc:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .cc .bar div {
-	border-color: var(--cc1);
+  border-color: var(--cc1);
 }
 
 .cc .basic div:nth-child(-n + 1),
@@ -504,35 +505,35 @@
 .cc .intermplus div:nth-child(-n + 3),
 .cc .adven div:nth-child(-n + 4),
 .cc .advenplus div:nth-child(-n + 5) {
-	background-color: var(--cc1);
-	box-shadow: 0 0 10px var(--cc1);
+  background-color: var(--cc1);
+  box-shadow: 0 0 10px var(--cc1);
 }
 
 /* Java */
 .java {
-	border: 5px var(--java1) solid;
-	background: linear-gradient(180deg, var(--java2), var(--java3));
+  border: 5px var(--java1) solid;
+  background: linear-gradient(180deg, var(--java2), var(--java3));
 }
 .java::after {
-	content: "";
-	color: var(--java1);
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40%, -35%);
-	font-size: 10em;
-	transition: 0.25s ease-in-out;
-	background-image: url(../asset/img/java.png);
-	background-size: 200px;
-	background-repeat: no-repeat;
+  content: "";
+  color: var(--java1);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 10em;
+  transition: 0.25s ease-in-out;
+  background-image: url(../asset/img/java.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
 }
 .java:hover::after {
-	filter: blur(5px);
-	opacity: 0.25;
+  filter: blur(5px);
+  opacity: 0.25;
 }
 
 .java .bar div {
-	border-color: var(--java1);
+  border-color: var(--java1);
 }
 
 .java .basic div:nth-child(-n + 1),
@@ -540,6 +541,6 @@
 .java .intermplus div:nth-child(-n + 3),
 .java .adven div:nth-child(-n + 4),
 .java .advenplus div:nth-child(-n + 5) {
-	background-color: var(--java1);
-	box-shadow: 0 0 10px var(--java1);
+  background-color: var(--java1);
+  box-shadow: 0 0 10px var(--java1);
 }
