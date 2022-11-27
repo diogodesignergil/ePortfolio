@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 
 import CV from "../asset/document/CV-DiogoGil.pdf";
 import Ring from "../asset/img/Ring.png";
+import Photo from "../asset/img/Rever Home Photo.png";
 
 import { motion } from "framer-motion/dist/framer-motion";
 
@@ -25,6 +26,9 @@ function Home() {
         transition: { duration: 0.1, ease: "easeInOut" },
       }}
     >
+      <div className="ring-top">
+        <img src={Ring} />
+      </div>
       <div className="max-width">
         <div className="home-content">
           <div className="static-txt-1">{t("home.text1")}</div>
@@ -60,8 +64,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="profil">
-        <img src={Ring} alt="" />
+      <div className="photo">
+        <img src={Photo} />
+      </div>
+      <div className="bot-ring">
+        <div className="ring-bot">
+          <img src={Ring} />
+        </div>
       </div>
     </motion.section>
   );

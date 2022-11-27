@@ -2,18 +2,24 @@
   width: 100%;
   min-height: calc(100vh - 75px - 13vh);
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 75px;
   padding: 10px;
   width: 100%;
   position: relative;
+  /* overflow: hidden; */
 }
 .home .max-width {
   z-index: 3;
+  margin-left: 230px;
+  transform: scale(1.5);
 }
 @media screen and (max-width: 1350px) {
+  .home {
+    justify-content: center;
+  }
   .home .max-width {
     margin: 50px auto;
   }
@@ -26,10 +32,16 @@
     text-align: center;
     justify-items: center;
     align-items: center;
+    justify-content: center;
   }
   .home .max-width {
     margin: 0;
+    transform: scale(1);
   }
+}
+
+.home .home-content {
+  text-shadow: 2px 2px 2px #757575;
 }
 .home .home-content .static-txt-1 {
   font-size: 27px;
@@ -147,42 +159,58 @@
   margin-left: 0;
 }
 
-.profil {
-  z-index: 2;
-  padding: 25px;
-  min-width: 300px;
-  min-height: 300px;
-  position: relative;
+.photo {
+  position: absolute;
+  bottom: -13vh;
+  right: 25px;
+  /* border: 2px white solid; */
+  overflow: hidden;
 }
 
-@media screen and (max-width: 1026px) {
-  .profil {
-    border: 2px solid #484869;
-    border-radius: 25px;
-    /* overflow: hidden; */
-    background: rgb(30, 30, 43);
-    background: -moz-linear-gradient(
-      135deg,
-      rgba(30, 30, 43, 1) 85%,
-      rgba(36, 90, 122, 1) 85%
-    );
-    background: -webkit-linear-gradient(
-      135deg,
-      rgba(30, 30, 43, 1) 85%,
-      rgba(36, 90, 122, 1) 85%
-    );
-    background: linear-gradient(
-      135deg,
-      rgba(30, 30, 43, 1) 85%,
-      rgba(36, 90, 122, 1) 85%
-    );
+.photo::after {
+  content: "";
+  height: 750px;
+  width: 750px;
+  position: absolute;
+  /* border: 2px white solid; */
+  background-color: var(--bg);
+  border-radius: 50%;
+  right: -150px;
+  bottom: -400px;
+}
+
+.photo img {
+  height: 975px;
+}
+
+@media screen and (max-width: 1350px) {
+  .photo {
+    display: none;
   }
 }
 
-.profil img {
-  width: 100%;
-  animation: 20s rotate infinite linear;
-  filter: drop-shadow(0 0 10px #4b4b6b);
+.ring-top {
+  position: absolute;
+  top: -350px;
+  left: -200px;
+  animation: rotate 125s infinite linear;
+}
+
+.bot-ring {
+  position: absolute;
+  bottom: -13vh;
+  right: -125px;
+  height: 370px;
+  width: auto;
+  overflow: hidden;
+}
+
+.ring-bot {
+  animation: rotate 125s infinite linear;
+}
+
+.ring-bot img {
+  height: 750px;
 }
 
 @keyframes rotate {
