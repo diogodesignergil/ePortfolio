@@ -10,6 +10,7 @@
   width: 100%;
   position: relative;
   /* overflow: hidden; */
+  z-index: 0;
 }
 .home .max-width {
   z-index: 3;
@@ -183,12 +184,6 @@
   height: 975px;
 }
 
-@media screen and (max-width: 1350px) {
-  .photo {
-    display: none;
-  }
-}
-
 .ring-top {
   position: absolute;
   top: -350px;
@@ -203,6 +198,7 @@
   height: 370px;
   width: auto;
   overflow: hidden;
+  z-index: 1;
 }
 
 .ring-bot {
@@ -216,5 +212,17 @@
 @keyframes rotate {
   to {
     transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .photo {
+    display: none;
+  }
+  .photo::after {
+    display: none;
+  }
+  .bot-ring {
+    z-index: -1;
   }
 }
