@@ -3,10 +3,14 @@ import "./App.css";
 // import axios from "axios";
 // import react, { Component } from "react";
 // import { head } from "../../Server/Routes/auth";
-import Header from "./components/layout/header/Header";
-import { BrowserRouter as Router } from "react-router-dom";
-import Footer from "./components/layout/footer/Footer";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import LandingPage from "./components/layout/landing/LandingPage";
+import Error404 from "./components/layout/error404/Error404";
 
 function App() {
   // constructor(props) {
@@ -27,11 +31,13 @@ function App() {
   //     return <p>{data.text}</p>;
   //   });
   // }
+  const location = useLocation();
   return (
     <Router>
-      <Header />
-      <AnimatedRoutes />
-      <Footer />
+      <Route location={location} key={location.pathname}>
+        <Routes path="/" element={<LandingPage />} />
+        <Routes path="*" element={<Error404 />} />
+      </Route>
     </Router>
   );
 }

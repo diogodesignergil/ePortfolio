@@ -7,7 +7,7 @@
   --red: #be0101;
   --blue: #008cff;
   --yellow: #cabc00;
-  --bg: #1e1e2b;
+  --bg: #181818;
   --white: #fff;
 }
 
@@ -24,13 +24,6 @@
   height: 8px;
 }
 @media screen and (max-width: 750px) {
-  /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #57577a #1e1e2b;
-  }
-
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 0;

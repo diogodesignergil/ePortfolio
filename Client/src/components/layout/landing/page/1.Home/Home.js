@@ -1,34 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../components/Button";
+import { Button } from "../../../../button/Button";
 import "./home.css";
 // Translation
 import { useTranslation } from "react-i18next";
 
-import CV from "../asset/document/CV-DiogoGil.pdf";
-import Ring from "../asset/img/Ring.png";
-import Photo from "../asset/img/Rever Home Photo.png";
-
-import { motion } from "framer-motion/dist/framer-motion";
+import CV from "../../../../../asset/document/CV-DiogoGil.pdf";
+import Photo from "../../../../../asset/img/Rever Home Photo.png";
 
 function Home() {
   const [t] = useTranslation();
 
   return (
-    <motion.section
-      className="home"
-      id="home"
-      initial={{ y: window.innerHeight, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{
-        y: window.innerHeight,
-        opacity: 0,
-        transition: { duration: 0.1, ease: "easeInOut" },
-      }}
-    >
-      <div className="ring-top">
-        <img src={Ring} />
-      </div>
+    <section className="home" id="home">
       <div className="max-width">
         <div className="home-content">
           <div className="static-txt-1">{t("home.text1")}</div>
@@ -67,12 +51,7 @@ function Home() {
       <div className="photo">
         <img src={Photo} />
       </div>
-      <div className="bot-ring">
-        <div className="ring-bot">
-          <img src={Ring} />
-        </div>
-      </div>
-    </motion.section>
+    </section>
   );
 }
 

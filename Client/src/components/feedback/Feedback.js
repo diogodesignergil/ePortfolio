@@ -14,7 +14,7 @@ import "swiper/modules/a11y/a11y.scss";
 
 import { Navigation, Scrollbar, Pagination } from "swiper";
 
-import data from "../data/data.js";
+import data from "../../data/data.js";
 
 const allFeedback = data.feedback;
 

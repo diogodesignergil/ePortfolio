@@ -20,18 +20,24 @@ function Header() {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <header className={navbar ? "header active" : "header"}>
-      {/* Logo */}
-      <div className="logo">
-        <Link to="/">
-          <img src={Logo} alt="" />
-          <h1>Reveratel</h1>
-        </Link>
+    <header className={navbar ? "header scroller" : "header"}>
+      <div className="header-container">
+        {/* Logo */}
+        <div className="logo">
+          <Link to="/">
+            <img src={Logo} alt="" />
+            <h1>
+              <span className="name1">Diogo</span>
+              <div className="diamond"></div>
+              <span className="name2">Gil</span>
+            </h1>
+          </Link>
+        </div>
+        {/* Menu Linguagens */}
+        <LanguageMenu />
+        {/* Menu tipo hambuger */}
+        <Menu />
       </div>
-      {/* Menu Linguagens */}
-      <LanguageMenu />
-      {/* Menu tipo hambuger */}
-      <Menu />
     </header>
   );
 }

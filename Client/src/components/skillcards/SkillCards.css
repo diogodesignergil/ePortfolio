@@ -270,7 +270,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/office.png);
+  background-image: url(../../asset/img/office.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -306,7 +306,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/html.png);
+  background-image: url(../../asset/img/html.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -342,7 +342,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/css-3.png);
+  background-image: url(../../asset/img/css-3.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -379,7 +379,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/js.png);
+  background-image: url(../../asset/img/js.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -415,7 +415,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/php.png);
+  background-image: url(../../asset/img/php.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -451,7 +451,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/react.png);
+  background-image: url(../../asset/img/react.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -487,7 +487,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/c.png);
+  background-image: url(../../asset/img/c.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }
@@ -523,7 +523,7 @@
   transform: translate(-40%, -35%);
   font-size: 10em;
   transition: 0.25s ease-in-out;
-  background-image: url(../asset/img/java.png);
+  background-image: url(../../asset/img/java.png);
   background-size: 200px;
   background-repeat: no-repeat;
 }

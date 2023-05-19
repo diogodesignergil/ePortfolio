@@ -1,26 +1,36 @@
 .header {
-  display: flex;
   position: fixed;
   z-index: 100;
-  height: 75px;
+  height: 80px;
   width: 100%;
-  /* border: 1px white solid; */
-  justify-content: flex-end;
+
   top: 0;
   /* background: #1e1e2bb6; */
   transition: 0.25s ease-in-out;
 }
 
-.header.active {
+.header * {
+  background-color: rgba(154, 190, 107, 0.75);
+}
+
+.header.scroller {
   backdrop-filter: blur(5px);
   background-color: rgba(62, 75, 94, 0.75);
   height: 55px;
 }
 
-.logo {
-  position: absolute;
+.header-container {
+  width: min(100% - 25px, 1440px);
   height: 100%;
-  left: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 100%;
 }
 
 .logo a {
@@ -30,17 +40,43 @@
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  margin: auto 25px;
 }
 .logo a img {
   margin-right: 10px;
-  height: 45px;
+  height: min(100% - 15px);
 }
-.logo h1 {
+
+.logo a h1 {
   line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
 }
+
+.logo a h1 .name1 {
+  color: var(--red);
+  z-index: 1;
+}
+
+.logo a h1 .diamond {
+  background-color: var(--yellow);
+  height: 100%;
+  width: 25px;
+  clip-path: polygon(20% 50%, 100% 0%, 80% 50%, 0 100%);
+  margin-left: -10px;
+  margin-right: -10px;
+  z-index: 2;
+}
+
+.logo a h1 .name2 {
+  color: var(--blue);
+  z-index: 3;
+}
+
 @media screen and (max-width: 480px) {
-  .logo h1 {
+  .logo a h1 {
     display: none;
   }
 }
