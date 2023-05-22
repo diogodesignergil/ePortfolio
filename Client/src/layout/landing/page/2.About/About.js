@@ -3,13 +3,13 @@ import "./about.css";
 
 import { useTranslation } from "react-i18next";
 
-import Foto from "../../../../../asset/img/foto.jpg";
+import Foto from "../../../../asset/img/foto.jpg";
 
-import SkillCards from "../../../../skillcards/SkillCards.js";
-import LangCards from "../../../../langcard/LangCards.js";
-import ExpCards from "../../../../expcards/ExpCards";
+import SkillCards from "../../../../components/skillcards/SkillCards.js";
+import LangCards from "../../../../components/langcard/LangCards.js";
+import ExpCards from "../../../../components/expcards/ExpCards";
 
-import data from "../../../../../data/data";
+import data from "../../../../data/data";
 
 const allSkill = data.skill;
 const allLang = data.lang;

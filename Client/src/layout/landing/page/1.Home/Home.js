@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../../../../button/Button";
+import { Button } from "../../../../components/button/Button";
 import "./home.css";
 // Translation
 import { useTranslation } from "react-i18next";
 
-import CV from "../../../../../asset/document/CV-DiogoGil.pdf";
-import Photo from "../../../../../asset/img/Rever Home Photo.png";
+import CV from "../../../../asset/document/CV-DiogoGil.pdf";
+import Photo from "../../../../asset/img/Rever Home Photo.png";
 
 function Home() {
   const [t] = useTranslation();

@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact.css";
 
-import { Button } from "../../../../button/Button";
+import { Button } from "../../../../components/button/Button";
 
 import emailjs from "emailjs-com";
 

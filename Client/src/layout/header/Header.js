@@ -4,7 +4,7 @@ import Menu from "./menu/Menu";
 import LanguageMenu from "./language/language";
 import { Link } from "react-router-dom";
 
-import Logo from "../../../asset/img/logo.png";
+import Logo from "../../asset/img/logo.png";
 
 function Header() {
   const [navbar, setNavbar] = useState(false);

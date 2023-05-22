@@ -3,10 +3,10 @@ import "./services.css";
 
 import { useTranslation } from "react-i18next";
 
-import ServicesCards from "../../../../servicecard/ServicesCards";
-import Feedback from "../../../../feedback/Feedback";
+import ServicesCards from "../../../../components/servicecard/ServicesCards";
+import Feedback from "../../../../components/feedback/Feedback";
 
-import data from "../../../../../data/data";
+import data from "../../../../data/data";
 
 const allServices = data.services;
 

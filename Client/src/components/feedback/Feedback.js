@@ -3,16 +3,15 @@ import "./feedback.css";
 
 import { useTranslation } from "react-i18next";
 
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar } from "swiper";
 import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.scss";
 
-// import Swiper modules
-import "swiper/modules/navigation/navigation.scss";
-import "swiper/modules/pagination/pagination.scss";
-import "swiper/modules/a11y/a11y.scss";
-
-import { Navigation, Scrollbar, Pagination } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 import data from "../../data/data.js";
 

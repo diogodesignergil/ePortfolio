@@ -3,11 +3,11 @@ import "./projects.css";
 
 import { useTranslation } from "react-i18next";
 
-import { Button } from "../../../../button/Button";
+import { Button } from "../../../../components/button/Button";
 
-import ProjectCards from "../../../../projectcard/ProjectCards";
+import ProjectCards from "../../../../components/projectcard/ProjectCards";
 
-import data from "../../../../../data/data";
+import data from "../../../../data/data";
 
 // Array
 const allProjects = data.projects;
