@@ -7,15 +7,14 @@
   top: 0;
   /* background: #1e1e2bb6; */
   transition: 0.25s ease-in-out;
+  background-color: rgb(0, 0, 0);
 }
 
 .header * {
-  background-color: rgba(154, 190, 107, 0.75);
+  /* background-color: rgba(154, 190, 107, 0.75); */
 }
 
 .header.scroller {
-  backdrop-filter: blur(5px);
-  background-color: rgba(62, 75, 94, 0.75);
   height: 55px;
 }
 
@@ -31,6 +30,7 @@
 
 .logo {
   height: 100%;
+  z-index: 10;
 }
 
 .logo a {

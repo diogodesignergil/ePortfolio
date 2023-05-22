@@ -1,7 +1,6 @@
 // import React from "react";
 import "./menu.css";
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageMenu from "../language/language";
 
@@ -27,19 +26,19 @@ function Menu() {
               </a>
             </li>
             <li>
-              <Link to="/services" onClick={closeMenu}>
+              <a href="#services" onClick={closeMenu}>
                 {t("menu.sidebar.services")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/projects" onClick={closeMenu}>
+              <a href="#projects" onClick={closeMenu}>
                 {t("menu.sidebar.projects")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/contact" onClick={closeMenu}>
+              <a href="#contact" onClick={closeMenu}>
                 {t("menu.sidebar.contact")}
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

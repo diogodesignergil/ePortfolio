@@ -107,23 +107,29 @@ nav {
   right: 50%;
 }
 
+/* Css Menu */
+
 .list {
   display: flex;
-  flex-direction: column;
-  right: 1%;
-  padding: 100px 0 0;
   flex-wrap: nowrap;
 }
 
 .list .listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
   margin: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 15px;
+  height: 25px;
 }
 
 .list .listItem li {
-  margin: 2px 25px;
   cursor: pointer;
   transition: 0.25s ease-in-out;
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: white;
   transition-delay: 0.25s;
@@ -132,127 +138,8 @@ nav {
   z-index: 10;
 }
 .list .listItem li:hover {
-  font-size: 4.5rem;
+  transform: scale(1.15);
 }
 
-.menuOpen {
-  height: 100vh;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 0;
-  background-color: var(--yellow);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
-  width: 45%;
-  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
-  z-index: 9;
-}
-.menuOpen::after {
-  height: 100vh;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 0;
-  background-color: var(--red);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 45% 100%);
-  width: 100%;
-  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
-  z-index: -1;
-  content: "";
-}
-.menuOpen::before {
-  height: 100vh;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 0;
-  background-color: var(--blue);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%);
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
-  width: 100%;
-  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
-  content: "";
-  z-index: -1;
-}
-
-.menu.menuClose {
-  position: absolute;
-  right: -45%;
-  height: 100vh;
-  top: 0;
-  background-color: var(--yellow);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
-  width: 45%;
-  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
-  z-index: 4;
-}
-
-.menuClose::after {
-  height: 100vh;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 0;
-  background-color: var(--red);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 45% 100%);
-  width: 100%;
-  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
-  z-index: -1;
-  content: "";
-  transition-delay: 6s;
-}
-.menuClose::before {
-  height: 100vh;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 0;
-  background-color: var(--blue);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%);
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 45% 100%);
-  width: 100%;
-  transition: 0.25s right cubic-bezier(0.77, 0, 0.175, 1);
-  content: "";
-  z-index: -1;
-  transition-delay: 3s;
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .menu.menuClose {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .menu.menuOpen {
-    width: 100%;
-  }
-  .menu.menuClose {
-    right: -100%;
-    width: 100%;
-  }
-  .list .listItem li {
-    font-size: 2.3rem;
-  }
-  .list .listItem li:hover {
-    font-size: 2.6rem;
-  }
-}
-@media screen and (max-width: 319px) {
-  .menu.menuOpen {
-    width: 100%;
-  }
-  .menu.menuClose {
-    right: -100%;
-    width: 100%;
-  }
-  .list .listItem li {
-    font-size: 2rem;
-  }
-  .list .listItem li:hover {
-    font-size: 2.3rem;
-  }
+@media screen and (min-width: 481) {
 }
