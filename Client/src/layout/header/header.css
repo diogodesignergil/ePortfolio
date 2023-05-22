@@ -20,11 +20,11 @@
 }
 
 .header-container {
-  width: min(100% - 25px, 1440px);
+  width: min(100% - 25px);
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
@@ -79,8 +79,4 @@
   .logo a h1 {
     display: none;
   }
-}
-
-Menu {
-  float: right;
 }

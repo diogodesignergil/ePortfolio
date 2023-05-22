@@ -52,6 +52,7 @@ html {
   /* border: 3px darkgrey solid; */
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 a {

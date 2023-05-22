@@ -1,7 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px;
+}
+@media screen and (min-width: 481px) {
+  nav {
+    display: none;
+  }
+}
 nav {
   width: 40px;
   height: 40px;
 }
+
 .icon {
   width: 100%;
   height: 100%;
@@ -120,6 +134,7 @@ nav {
 .list .listItem li:hover {
   font-size: 4.5rem;
 }
+
 .menuOpen {
   height: 100vh;
   position: absolute;
@@ -205,42 +220,10 @@ nav {
   z-index: -1;
   transition-delay: 3s;
 }
-/* @media screen and (max-width: 1700px) {
-	.list .listItem li {
-		font-size: 3rem;
-	}
-	.list .listItem li:hover {
-		font-size: 3.5rem;
-	}
-} */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .menu.menuOpen {
-    width: 50%;
-  }
-  .menu.menuClose {
-    right: -50%;
-    width: 50%;
-  }
-  .list .listItem li {
-    font-size: 2.6rem;
-  }
-  .list .listItem li:hover {
-    font-size: 2.9rem;
-  }
-}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .menu.menuOpen {
-    width: 70%;
-  }
   .menu.menuClose {
-    right: -70%;
-    width: 70%;
-  }
-  .list .listItem li {
-    font-size: 2.4rem;
-  }
-  .list .listItem li:hover {
-    font-size: 2.7rem;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {

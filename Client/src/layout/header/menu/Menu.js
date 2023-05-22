@@ -3,6 +3,7 @@ import "./menu.css";
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import LanguageMenu from "../language/language";
 
 function Menu() {
   const [active, setMode] = useState(false);
@@ -11,25 +12,19 @@ function Menu() {
   const [t] = useTranslation();
 
   return (
-    <nav>
-      <div className={active ? "icon iconActive" : "icon"} onClick={ToggleMode}>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <div className="navbar">
       <div className={active ? "menu menuOpen" : "menu menuClose"}>
         <div className="list">
           <ul className="listItem">
             <li>
-              <Link to="/" onClick={closeMenu}>
+              <a href="#home" onClick={closeMenu}>
                 {t("menu.sidebar.home")}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/about" onClick={closeMenu}>
+              <a href="#about" onClick={closeMenu}>
                 {t("menu.sidebar.about")}
-              </Link>
+              </a>
             </li>
             <li>
               <Link to="/services" onClick={closeMenu}>
@@ -49,7 +44,19 @@ function Menu() {
           </ul>
         </div>
       </div>
-    </nav>
+      <LanguageMenu />{" "}
+      <nav>
+        <div
+          className={active ? "icon iconActive" : "icon"}
+          onClick={ToggleMode}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
   );
 }
 
