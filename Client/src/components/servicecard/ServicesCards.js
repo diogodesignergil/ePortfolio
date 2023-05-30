@@ -6,26 +6,30 @@ import "./ServicesCards.css";
 
 import { useTranslation } from "react-i18next";
 
-const ServicesCards = ({ image, title, descrition, link }) => {
-	const [t] = useTranslation();
+const STYLES = ["design", "webdesign", "mediadesign"];
 
-	return (
-		<div className="services-card">
-			<div className="card-header">
-				<img src={image} alt="" />
-			</div>
-			<div className="card-body">
-				<h2>{title}</h2>
-				<p>{descrition}</p>
-			</div>
-			<div className="card-footer">
-				<Link to={link}>
-					<span>{t("services.more")} </span>
-					<i className="far fa-angle-right" />
-				</Link>
-			</div>
-		</div>
-	);
+const ServicesCards = ({ cardStyle, icon, title, descrition, link }) => {
+  const checkCardStyle = STYLES.includes(cardStyle) ? cardStyle : STYLES[0];
+
+  const [t] = useTranslation();
+
+  return (
+    <div className={`services-card ${checkCardStyle}`}>
+      <div className="card-header">
+        <i class={icon}></i>
+      </div>
+      <div className="card-body">
+        <h2>{title}</h2>
+        <p>{descrition}</p>
+      </div>
+      <div className="card-footer">
+        <Link to={link}>
+          <span>{t("services.more")} </span>
+          <i class="fa-solid fa-diagram-project"></i>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default ServicesCards;

@@ -5,9 +5,6 @@ import Portfoliogroup from "../asset/img/Portfoliogroup.png";
 import MagicOverlay from "../asset/img/magicoverlay.png";
 import MagicBegin from "../asset/img/Magic/magic1.png";
 
-// Services
-import BannerLogo from "../asset/img/LogoBanner.png";
-import BannerOverlay from "../asset/img/OverlayBanner.png";
 // Services Page
 import Interview from "../asset/img/interview.png";
 import Search from "../asset/img/search.png";
@@ -216,17 +213,27 @@ export default {
   services: [
     {
       id: "1",
-      image: BannerLogo,
+      style: "design",
+      icon: "fa-sharp fa-solid fa-palette",
       title: "services.logocard.title",
       descrition: "services.logocard.descrition",
       link: "/services/1",
     },
     {
       id: "2",
-      image: BannerOverlay,
+      style: "webdesign",
+      icon: "fa-solid fa-code",
       title: "services.overlaycard.title",
       descrition: "services.overlaycard.descrition",
       link: "/services/2",
+    },
+    {
+      id: "3",
+      style: "mediadesign",
+      icon: "fa-solid fa-film",
+      title: "services.overlaycard.title",
+      descrition: "services.overlaycard.descrition",
+      link: "/services/3",
     },
   ],
   feedback: [

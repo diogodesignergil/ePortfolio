@@ -23,7 +23,8 @@ function Services() {
           return (
             <ServicesCards
               key={servicesStatus.id}
-              image={servicesStatus.image}
+              cardStyle={servicesStatus.style}
+              icon={servicesStatus.icon}
               title={t(servicesStatus.title)}
               descrition={t(servicesStatus.descrition)}
               link={servicesStatus.link}
