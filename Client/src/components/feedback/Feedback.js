@@ -29,17 +29,18 @@ function Feedback() {
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
     >
       {allFeedback.map((feedbackStatus) => {
         return (
           <SwiperSlide className="single-feedback" key={feedbackStatus.id}>
-            <div>
+            <div className="img-feedback">
               <img src={feedbackStatus.image} alt={feedbackStatus.altImg} />
             </div>
-            <h3>{feedbackStatus.name}</h3>
-            <p>"{t(feedbackStatus.feedback)}"</p>
+            <div className="text-feedback">
+              <h3>{feedbackStatus.name}</h3>
+              <p>"{t(feedbackStatus.feedback)}"</p>
+            </div>
           </SwiperSlide>
         );
       })}

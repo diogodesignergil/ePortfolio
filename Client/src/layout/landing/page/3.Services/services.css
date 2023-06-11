@@ -1,40 +1,120 @@
 .services {
-  min-height: calc(100vh - 8vh - 13vh);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
-  margin-top: 8vh;
-  text-align: center;
   width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.services h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 55px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.services .line {
-  width: 75%;
-}
-
-.services p {
-  margin: 10px auto;
-  font-size: 20px;
-  text-align: center;
-  width: 70%;
+.services::before {
+  content: "";
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+  width: 100%;
+  height: 150px;
+  top: 0px;
+  left: 0;
+  background-color: var(--red);
+  position: absolute;
 }
 
 .services .services-container {
+  width: min(100% - 25px, 850px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  gap: 25px;
+  background-color: var(--bg2);
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 150px;
+  color: white;
+  border: 5px solid var(--red);
+  position: relative;
+}
+
+.services .services-container h1 {
+  font-size: 55px;
+  text-align: center;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg2);
+  border-radius: 25px;
+  border: 5px solid var(--red);
+  padding: 10px;
+}
+
+.services .services-container p {
+  margin: 50px auto 25px;
+  font-size: 20px;
+  text-align: center;
+  width: min(100% - 25px, 900px);
+}
+
+.services .services-container .services-wrap {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 25px;
   gap: 20px;
+}
+
+@media screen and (max-width: 894px) {
+  .services .services-container .services-wrap {
+    gap: 75px;
+  }
+}
+
+.services .services-container .fiverr-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.services .services-container .fiverr-container span {
+  font-size: 1.5em;
+  position: relative;
+}
+
+.services .services-container .fiverr-container span::after {
+  content: "";
+  width: 150px;
+  height: 0;
+  border: 2px solid white;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+}
+
+.services .services-container .fiverr-container span::before {
+  content: "";
+  width: 150px;
+  height: 0;
+  border: 2px solid white;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+}
+
+@media screen and (max-width: 385px) {
+  .services .services-container .fiverr-container span::before,
+  .services .services-container .fiverr-container span::after {
+    width: 75px;
+  }
+}
+
+.services .services-container .fiverr-container a {
+  width: 200px;
+}
+
+.services .services-container .fiverr-container a img {
+  width: min(100% - 10px, 100px);
 }

@@ -1,66 +1,66 @@
 :root {
-	font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .btn {
-	padding: 8px 20px;
-	border-radius: 50px;
-	outline: none;
-	border: none;
-	cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 50px;
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
 }
 
 .btn--primary {
-	background-color: #fff;
-	color: var(--bg);
-	border: 3px solid #fff;
+  background-color: #fff;
+  color: var(--bg);
+  border: 3px solid #fff;
 }
 
 .btn--outline {
-	background-color: transparent;
-	color: white;
-	border: 3px solid #fff;
-	padding: 8px 20px;
-	transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: white;
+  border: 3px solid #fff;
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
 }
 
 .btn--fiverr {
-	background-color: #1dbf73;
-	border: 3px solid #1dbf73;
-	color: var(--bg);
-	transition: all 0.3s ease-out;
+  background-color: #44fda7;
+  border: 3px solid #44fda7;
+  color: var(--bg);
+  transition: all 0.3s ease-out;
 }
 
 .btn--fiverr:hover {
-	background-color: #11e682;
-	border: 3px solid #11e682;
+  background-color: #11e682;
+  border: 3px solid #11e682;
 }
 
 .btn--patreon {
-	background-color: #ff9100;
-	border: 3px solid #ff9100;
-	color: var(--bg);
-	transition: all 0.3s ease-out;
+  background-color: #ff9100;
+  border: 3px solid #ff9100;
+  color: var(--bg);
+  transition: all 0.3s ease-out;
 }
 
 .btn--patreon:hover {
-	border: 3px solid #ffa42d;
-	background-color: #ffa42d;
+  border: 3px solid #ffa42d;
+  background-color: #ffa42d;
 }
 
 .btn-medium {
-	padding: 8px 20px;
-	font-size: 20px;
+  padding: 8px 20px;
+  font-size: 20px;
 }
 
 .btn--large {
-	padding: 12px 26px;
-	font-size: 20px;
-	font-weight: bold;
+  padding: 12px 26px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .btn--outline:hover {
-	background-color: white;
-	color: var(--bg);
-	transition: all 0.3s ease-out;
+  background-color: white;
+  color: var(--bg);
+  transition: all 0.3s ease-out;
 }

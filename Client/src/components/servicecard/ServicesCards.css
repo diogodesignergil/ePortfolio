@@ -46,35 +46,39 @@
   /* padding-bottom: 25px; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .services-card .card-body h2 {
   font-size: 20px;
 }
 .services-card .card-body p {
   font-size: 15px;
-  width: auto;
+  margin: 15px auto;
 }
 
-.design .card-footer a {
+.design .card-footer button {
   background-color: var(--red);
   box-shadow: inset 0px -5px 5px rgb(255, 0, 0);
 }
 
-.webdesign .card-footer a {
+.webdesign .card-footer button {
   background-color: var(--yellow);
   box-shadow: inset 0px -5px 5px rgb(255, 207, 49);
 }
 
-.mediadesign .card-footer a {
+.mediadesign .card-footer button {
   background-color: var(--blue);
+  border: none;
   box-shadow: inset 0px -5px 5px rgb(49, 207, 255);
 }
 
 .services-container .services-card .card-footer {
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
 }
-.services-card .card-footer a {
+.services-card .card-footer button {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -83,12 +87,13 @@
   padding: 10px 25px;
   border-radius: 20px;
   width: 100%;
+  border: none;
 }
-.services-card .card-footer a span {
+.services-card .card-footer button span {
   margin-right: 5px;
   font-weight: bold;
 }
-.services-card .card-footer a i {
+.services-card .card-footer button i {
   font-size: 25px;
   margin-top: -2px;
 }

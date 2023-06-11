@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import "./ServicesCards.css";
 
 import { useTranslation } from "react-i18next";
@@ -23,10 +21,10 @@ const ServicesCards = ({ cardStyle, icon, title, descrition, link }) => {
         <p>{descrition}</p>
       </div>
       <div className="card-footer">
-        <Link to={link}>
+        <button>
           <span>{t("services.more")} </span>
           <i class="fa-solid fa-diagram-project"></i>
-        </Link>
+        </button>
       </div>
     </div>
   );
