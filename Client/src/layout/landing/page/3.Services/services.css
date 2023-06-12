@@ -15,7 +15,16 @@
   top: 0px;
   left: 0;
   background-color: var(--red);
-  position: absolute;
+}
+
+.services::after {
+  content: "";
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  width: 100%;
+  height: 150px;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--yellow);
 }
 
 .services .services-container {
@@ -29,10 +38,10 @@
   background-color: var(--bg2);
   border-radius: 25px;
   margin: 0 auto;
-  margin-top: 150px;
   color: white;
   border: 5px solid var(--red);
   position: relative;
+  z-index: 2;
 }
 
 .services .services-container h1 {
@@ -117,4 +126,5 @@
 
 .services .services-container .fiverr-container a img {
   width: min(100% - 10px, 100px);
+  filter: brightness(100);
 }

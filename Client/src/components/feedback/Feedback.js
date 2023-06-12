@@ -33,13 +33,21 @@ function Feedback() {
     >
       {allFeedback.map((feedbackStatus) => {
         return (
-          <SwiperSlide className="single-feedback" key={feedbackStatus.id}>
-            <div className="img-feedback">
-              <img src={feedbackStatus.image} alt={feedbackStatus.altImg} />
-            </div>
-            <div className="text-feedback">
-              <h3>{feedbackStatus.name}</h3>
-              <p>"{t(feedbackStatus.feedback)}"</p>
+          <SwiperSlide key={feedbackStatus.id}>
+            <div
+              className="single-feedback"
+              style={{ border: `5px solid ${feedbackStatus.color}` }}
+            >
+              <div
+                className="img-feedback"
+                style={{ border: `5px solid ${feedbackStatus.color}` }}
+              >
+                <img src={feedbackStatus.image} alt={feedbackStatus.altImg} />
+              </div>
+              <div className="text-feedback">
+                <h3>{feedbackStatus.name}</h3>
+                <p>"{t(feedbackStatus.feedback)}"</p>
+              </div>
             </div>
           </SwiperSlide>
         );

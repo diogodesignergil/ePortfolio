@@ -21,6 +21,7 @@ import Test from "../asset/img/test.png";
 import Chat from "../asset/img/chat.png";
 // Feedback Clients
 import BeriTech from "../asset/img/beritech.png";
+import BlueFeather from "../asset/img/bluefeather.png";
 
 export default {
   skill: [
@@ -240,17 +241,19 @@ export default {
     {
       id: 1,
       image: BeriTech,
+      color: "#661081",
       altImg: "BeriTech",
       name: "BeriTech",
       feedback: "feedback.beritech",
     },
     {
-      id: 1,
-      image: BeriTech,
-      altImg: "BeriTech",
-      name: "BeriTech",
+      id: 2,
+      image: BlueFeather,
+      color: "#00AAC4",
+      altImg: "BlueFeather",
+      name: "BlueFeather",
       feedback:
-        "Obrigado pelo trabalho e pela paciência, da minha parte e do meu colega. Gostamos muito de trabalhar contigo e o trabalho ficou 5★, vamos vender mais só por causa do logo. Abraço e continuação de bom trabalho.",
+        "O logotipo ficou bastante simples, porém, ao mesmo tempo, chamativo. Parabéns! Provavelmente, iremos solicitar mais projetos como esse no futuro.",
     },
   ],
   servicespage: [

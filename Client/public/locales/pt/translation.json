@@ -6,7 +6,7 @@
     },
     "sidebar": {
       "home": "Início",
-      "about": "Sobre Mim",
+      "about": "Sobre",
       "services": "Serviços",
       "projects": "Projetos",
       "contact": "Contacto"
@@ -20,7 +20,7 @@
   },
   "about": {
     "section1": {
-      "title": "Sobre Mim",
+      "title": "Sobre",
       "name": "Nome:",
       "nickname": "Alcunha:",
       "birth": "Data de Nascimento:",
@@ -31,7 +31,7 @@
       "course1": "Curso:",
       "course2": "Design Gráfico",
       "slide1": {
-        "title": "Sobre mim",
+        "title": "Sobre",
         "text1": "Eu estudei design no meu secundário com bons resultados. Depois fiz alguns trabalhos para algumas pessoas até ser feito um pequeno negócio.",
         "text2": "Entretanto, fiz várias formações, estágios e trabalho, comecei a ter interesse na web-code, nomeadamente HTML, Javascript e CSS. Fiz duas formações dentro do contexto e como o curso de design complementou mais o meu conhecimento na área de web design.",
         "text3": "Então criei está página para o fim de conhecerem-me e saberem daquilo que faço."

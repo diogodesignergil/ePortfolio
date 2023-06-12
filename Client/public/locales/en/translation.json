@@ -6,7 +6,7 @@
     },
     "sidebar": {
       "home": "Home",
-      "about": "About Me",
+      "about": "About",
       "services": "Services",
       "projects": "Projects",
       "contact": "Contact"
@@ -20,7 +20,7 @@
   },
   "about": {
     "section1": {
-      "title": "About Me",
+      "title": "About",
       "name": "Name:",
       "nickname": "Nickname:",
       "birth": "Birth date:",
@@ -31,7 +31,7 @@
       "course1": "Course:",
       "course2": "Graphic design",
       "slide1": {
-        "title": "About me",
+        "title": "About",
         "text1": "I studied design in my high school with good results. Then I did some work for some people until a small business was made.",
         "text2": "In the meantime, I did a lot of training, internships and work, I started to be interested in web-code, namely HTML, Javascript and CSS. I did two trainings within the context and how the design course further complemented my knowledge in the area of ​​web design.",
         "text3": "So I created this page in order to get to know me and know what I do."
