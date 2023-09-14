@@ -1,0 +1,30 @@
+.typewriter {
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 5px;
+  /* margin-top: 5px; */
+  position: relative;
+}
+
+.typewriter::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 5px;
+  background-color: white;
+  border-radius: 5px;
+  right: -8px;
+  top: 5px;
+  animation: 1s opacity infinite;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

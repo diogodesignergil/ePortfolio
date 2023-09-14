@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../../../components/button/Button";
+import TypewriterAnimation from "../../../../components/typewriter/TypewriterAnimation";
 import "./home.css";
 // Translation
 import { useTranslation } from "react-i18next";
@@ -21,17 +22,7 @@ function Home() {
           </div>
           <div className="wrapper">
             <div className="static-txt-3">{t("home.text3")}</div>
-            <ul className="dynamic-txts">
-              <li>
-                <span>Designer</span>
-              </li>
-              <li>
-                <span>Developer</span>
-              </li>
-              <li>
-                <span>Freelancer</span>
-              </li>
-            </ul>
+            <TypewriterAnimation />
           </div>
           <div className="button">
             <a href={CV} download>
