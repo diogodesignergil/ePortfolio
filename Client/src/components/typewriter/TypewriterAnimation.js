@@ -45,7 +45,13 @@ const TypewriterAnimation = () => {
 
   return (
     <div className="typewriter">
-      <span style={{ color: colors[currentWordIndex] }}>{currentWord}</span>
+      <span
+        style={{
+          color: colors[currentWordIndex],
+        }}
+      >
+        {currentWord}
+      </span>
     </div>
   );
 };
